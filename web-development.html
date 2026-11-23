@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover creative, responsive and modern web development services at AMORIDWEB STUDIO.">
+
+    <title>Web Development | AMORIDWEB STUDIO</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="css/web-development.css">
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- Website Favicon -->
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="images/Glossy Blue A Monogram Emblem.png"
+    >
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="#home" class="brand">
+            <img src="images/Glossy Blue A Monogram Emblem.png" alt="AMORIDWEB STUDIO logo">
+            <span class="logo-text">
+            <strong>AMORIDWEB</strong>
+            <small>STUDIO</small>
+            </span>
+        </a>
+
+        <!-- Mobile menu button -->
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="mainNav">
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" class="nav-link active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">
+                        <i class="fa-solid fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+
+                <!-- Services dropdown -->
+                <li class="dropdown">
+                    <button class="nav-link dropdown-toggle"
+                            id="serviceToggle"
+                            aria-expanded="false"
+                            aria-controls="serviceMenu">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Service</span>
+                        <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </button>
+
+                    <ul class="dropdown-menu" id="serviceMenu">
+                        <li><a href="web-development.html"><i class="fa-solid fa-code"></i> Web Development</a></li>
+                        <li><a href="frontend-development.html"><i class="fa-solid fa-laptop-code"></i> Frontend Development</a></li>
+                        <li><a href="website-management.html"><i class="fa-solid fa-gears"></i> Website Management</a></li>
+                        <li><a href="web-design.html"><i class="fa-solid fa-pen-ruler"></i> Web Design</a></li>
+                        <li><a href="javascript-development.html"><i class="fa-brands fa-js"></i> JavaScript Development</a></li>
+                        <li><a href="ui-creation.html"><i class="fa-solid fa-palette"></i> UI Creation</a></li>
+                        <li><a href="responsive-websites.html"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Websites</a></li>
+                        <li><a href="website-improvements.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Website Improvements</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#skills" class="nav-link">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="nav-link">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Project</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Right-side controls -->
+        <div class="nav-actions">
+
+            <div class="online-badge">
+                <span class="online-dot"></span>
+                <span>ONLINE</span>
+            </div>
+
+            <!-- Day / Night toggle -->
+            <button class="theme-toggle" id="themeToggle"
+                    type="button"
+                    aria-label="Switch to light mode"
+                    aria-pressed="false"
+                    title="Switch theme">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+
+        <section class="wd-hero">
+
+            <!-- Background Effects -->
+            <div class="wd-grid-background"></div>
+            <div class="wd-glow wd-glow-one"></div>
+            <div class="wd-glow wd-glow-two"></div>
+            <div class="wd-glow wd-glow-three"></div>
+
+            <!-- Floating Particles -->
+            <div class="wd-particle wd-particle-one"></div>
+            <div class="wd-particle wd-particle-two"></div>
+            <div class="wd-particle wd-particle-three"></div>
+            <div class="wd-particle wd-particle-four"></div>
+
+            <div class="wd-hero-container">
+
+                <!-- LEFT CONTENT -->
+
+                <div class="wd-hero-content">
+
+                    <div class="wd-eyebrow">
+                        <span class="wd-eyebrow-dot"></span>
+                        <span>AMORIDWEB STUDIO / OUR SERVICES</span>
+                    </div>
+
+                    <h1>
+                        WE BUILD
+                        <span class="wd-heading-highlight">POWERFUL</span>
+                        <span class="wd-heading-outline">WEBSITES.</span>
+                    </h1>
+
+                    <p class="wd-hero-description">
+                        Transforming ideas into modern digital experiences.
+                        We create responsive, interactive and visually
+                        engaging websites designed to make your brand
+                        stand out online.
+                    </p>
+
+                    <div class="wd-hero-buttons">
+
+                        <a href="index.html#contact" class="wd-primary-btn">
+                            Start a Project
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                        <a href="index.html#projects" class="wd-secondary-btn">
+                            Explore Projects
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- TECHNOLOGY TAGS -->
+
+                    <div class="wd-tech-stack">
+
+                        <span class="wd-stack-label">BUILT WITH</span>
+
+                        <div class="wd-stack-items">
+
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                            <span><i class="fas fa-database"></i> PostgreSQL</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="wd-hero-bottom-line">
+                        <span></span>
+                        <p>DESIGN. DEVELOP. INNOVATE.</p>
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT VISUAL -->
+
+                <div class="wd-hero-visual">
+
+                    <div class="wd-visual-glow"></div>
+
+                    <!-- Floating Label -->
+                    <div class="wd-floating-label wd-label-top">
+                        <i class="fas fa-circle-check"></i>
+                        <span>Modern Development</span>
+                    </div>
+
+                    <!-- Browser Mockup -->
+                    <div class="wd-browser">
+
+                        <div class="wd-browser-top">
+
+                            <div class="wd-browser-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="wd-browser-address">
+                                <i class="fas fa-lock"></i>
+                                amoridweb.studio
+                            </div>
+
+                            <i class="fas fa-ellipsis"></i>
+
+                        </div>
+
+                        <div class="wd-browser-content">
+
+                            <div class="wd-mock-nav">
+                                <div class="wd-mock-logo">
+                                    <span></span>
+                                    AMORIDWEB
+                                </div>
+
+                                <div class="wd-mock-links">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <div class="wd-mock-hero">
+
+                                <div class="wd-mock-text">
+
+                                    <span class="wd-mock-small">
+                                        DIGITAL EXPERIENCES
+                                    </span>
+
+                                    <div class="wd-mock-heading">
+                                        BUILD<br>
+                                        SOMETHING<br>
+                                        <span>AMAZING.</span>
+                                    </div>
+
+                                    <div class="wd-mock-description"></div>
+                                    <div class="wd-mock-description short"></div>
+
+                                    <div class="wd-mock-button"></div>
+
+                                </div>
+
+                                <div class="wd-mock-art">
+
+                                    <div class="wd-art-circle">
+                                        <div class="wd-art-inner">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="wd-art-ring"></div>
+                                    <div class="wd-art-dot"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="wd-mock-bottom">
+
+                                <div></div>
+                                <div></div>
+                                <div></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Floating Code Card -->
+                    <div class="wd-floating-code">
+
+                        <div class="wd-code-heading">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <p>website.js</p>
+                        </div>
+
+                        <div class="wd-code-lines">
+                            <span><b>01</b> const website = {</span>
+                            <span><b>02</b> &nbsp; design: <em>"modern"</em>,</span>
+                            <span><b>03</b> &nbsp; responsive: <i>true</i>,</span>
+                            <span><b>04</b> &nbsp; creativity: <em>"limitless"</em></span>
+                            <span><b>05</b> };</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Floating Status -->
+                    <div class="wd-floating-label wd-label-bottom">
+                        <span class="wd-status-dot"></span>
+                        <span>Responsive by Design</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SCROLL INDICATOR -->
+            <a href="#web-features" class="wd-scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <i class="fas fa-arrow-down"></i>
+            </a>
+
+        </section>
+
+
+        <!-- NEXT SECTION PLACEHOLDER -->
+
+        <section id="web-features" class="wd-next-section">
+            <p>MORE ABOUT OUR WEB DEVELOPMENT SERVICES</p>
+        </section>
+
+
+<!-- =====================================
+     WEB DEVELOPMENT OVERVIEW
+===================================== -->
+
+<section class="wd-overview" id="web-overview">
+
+    <div class="wd-overview-container">
+
+        <!-- SECTION HEADING -->
+
+        <div class="wd-overview-heading">
+
+            <span class="wd-section-label">
+                <span class="wd-label-line"></span>
+                WHAT WE DO
+                <span class="wd-label-line"></span>
+            </span>
+
+            <h2>
+                MORE THAN JUST
+                <span>BUILDING WEBSITES.</span>
+            </h2>
+
+            <p>
+                We turn ideas into meaningful digital experiences.
+                From the first concept to the final launch, we focus
+                on creating websites that look impressive, work smoothly
+                and connect with your audience.
+            </p>
+
+        </div>
+
+
+        <!-- OVERVIEW CARDS -->
+
+        <div class="wd-overview-grid">
+
+            <!-- CARD 1 -->
+
+            <article class="wd-overview-card">
+
+                <div class="wd-card-top">
+                    <span class="wd-card-number">01</span>
+
+                    <div class="wd-card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <h3>Custom Website Development</h3>
+
+                <p>
+                    Building modern websites around your ideas,
+                    brand identity and business goals with clean,
+                    organized and maintainable code.
+                </p>
+
+                <div class="wd-card-tags">
+                    <span>Custom Builds</span>
+                    <span>Clean Code</span>
+                </div>
+
+                <div class="wd-card-bottom">
+                    <span>01 / DEVELOPMENT</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 2 -->
+
+            <article class="wd-overview-card">
+
+                <div class="wd-card-top">
+                    <span class="wd-card-number">02</span>
+
+                    <div class="wd-card-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                    </div>
+                </div>
+
+                <h3>Responsive Web Design</h3>
+
+                <p>
+                    Creating flexible layouts that adapt to different
+                    screen sizes, helping your website deliver a
+                    consistent experience across devices.
+                </p>
+
+                <div class="wd-card-tags">
+                    <span>Mobile Friendly</span>
+                    <span>Adaptive Layouts</span>
+                </div>
+
+                <div class="wd-card-bottom">
+                    <span>02 / RESPONSIVENESS</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 3 -->
+
+            <article class="wd-overview-card">
+
+                <div class="wd-card-top">
+                    <span class="wd-card-number">03</span>
+
+                    <div class="wd-card-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                </div>
+
+                <h3>Interactive Experiences</h3>
+
+                <p>
+                    Adding thoughtful interactions, smooth animations
+                    and engaging interface elements that make browsing
+                    your website more enjoyable.
+                </p>
+
+                <div class="wd-card-tags">
+                    <span>JavaScript</span>
+                    <span>Animations</span>
+                </div>
+
+                <div class="wd-card-bottom">
+                    <span>03 / INTERACTIVITY</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 4 -->
+
+            <article class="wd-overview-card">
+
+                <div class="wd-card-top">
+                    <span class="wd-card-number">04</span>
+
+                    <div class="wd-card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+
+                <h3>Database Integration</h3>
+
+                <p>
+                    Connecting websites to structured databases
+                    to support organized information, data handling
+                    and dynamic website functionality.
+                </p>
+
+                <div class="wd-card-tags">
+                    <span>PostgreSQL</span>
+                    <span>Data Management</span>
+                </div>
+
+                <div class="wd-card-bottom">
+                    <span>04 / DATABASES</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- OVERVIEW HIGHLIGHT -->
+
+        <div class="wd-overview-highlight">
+
+            <div class="wd-highlight-icon">
+                <i class="fas fa-code"></i>
+            </div>
+
+            <div class="wd-highlight-content">
+
+                <span>OUR DEVELOPMENT PHILOSOPHY</span>
+
+                <h3>
+                    Great websites combine
+                    <span>creativity, functionality and performance.</span>
+                </h3>
+
+                <p>
+                    Every detail matters. We believe in building
+                    digital experiences with purpose, clarity
+                    and attention to detail.
+                </p>
+
+            </div>
+
+            <div class="wd-highlight-decoration">
+                <i class="fas fa-brackets-curly"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="wd-process" id="web-process">
+    <div class="wd-process-container">
+
+        <div class="wd-process-heading">
+            <span class="wd-section-label">HOW WE WORK</span>
+            <h2>FROM FIRST IDEA TO <span>FINAL LAUNCH.</span></h2>
+            <p>
+                Every great website starts with an idea. We turn that idea
+                into a digital experience through a clear, creative process.
+            </p>
+        </div>
+
+        <div class="wd-process-list">
+
+            <!-- STEP 01 -->
+            <article class="wd-process-item">
+                <div class="wd-process-image">
+                    <img
+                        src="images/web planning.png"
+                        alt="Illustrative website planning and wireframe workspace"
+                        loading="lazy"
+                    >
+                    <span class="wd-image-tag">01 / DISCOVERY</span>
+                </div>
+
+                <div class="wd-process-content">
+                    <span class="wd-process-number">STEP 01</span>
+                    <h3>Planning & Discovery</h3>
+                    <p>
+                        Every successful website begins with a clear direction.
+                        We explore the purpose, audience, goals and key features
+                        before deciding how the website should work.
+                    </p>
+                    <div class="wd-process-tags">
+                        <span>Research</span>
+                        <span>Ideas</span>
+                        <span>Wireframes</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STEP 02 -->
+            <article class="wd-process-item reverse">
+                <div class="wd-process-image">
+                    <img
+                        src="images/web design.png"
+                        alt="Illustrative futuristic website interface design"
+                        loading="lazy"
+                    >
+                    <span class="wd-image-tag">02 / DESIGN</span>
+                </div>
+
+                <div class="wd-process-content">
+                    <span class="wd-process-number">STEP 02</span>
+                    <h3>UI Design & Layout</h3>
+                    <p>
+                        We shape the visual experience with thoughtful layouts,
+                        balanced colours, clear typography and interface
+                        elements that make the website easy to explore.
+                    </p>
+                    <div class="wd-process-tags">
+                        <span>UI Design</span>
+                        <span>Layout</span>
+                        <span>Visual Style</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STEP 03 -->
+            <article class="wd-process-item">
+                <div class="wd-process-image">
+                    <img
+                        src="images/code editor.png"
+                        alt="Illustrative code editor and website development workspace"
+                        loading="lazy"
+                    >
+                    <span class="wd-image-tag">03 / DEVELOPMENT</span>
+                </div>
+
+                <div class="wd-process-content">
+                    <span class="wd-process-number">STEP 03</span>
+                    <h3>Development & Coding</h3>
+                    <p>
+                        This is where the design becomes functional. We use
+                        HTML, CSS and JavaScript to build interactive
+                        experiences, with PostgreSQL for projects that need
+                        database functionality.
+                    </p>
+                    <div class="wd-process-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STEP 04 -->
+            <article class="wd-process-item reverse">
+                <div class="wd-process-image">
+                    <img
+                        src="images/responsive.png"
+                        alt="Illustrative website displayed on desktop, tablet and mobile"
+                        loading="lazy"
+                    >
+                    <span class="wd-image-tag">04 / TESTING</span>
+                </div>
+
+                <div class="wd-process-content">
+                    <span class="wd-process-number">STEP 04</span>
+                    <h3>Testing & Responsiveness</h3>
+                    <p>
+                        We check the website across different screen sizes,
+                        test interactive features and review the layout to
+                        help ensure a consistent experience on different devices.
+                    </p>
+                    <div class="wd-process-tags">
+                        <span>Mobile Testing</span>
+                        <span>Bug Checks</span>
+                        <span>Optimization</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STEP 05 -->
+            <article class="wd-process-item">
+                <div class="wd-process-image">
+                    <img
+                        src="images/lunch.png"
+                        alt="Illustrative finished website displayed in a browser mockup"
+                        loading="lazy"
+                    >
+                    <span class="wd-image-tag">05 / LAUNCH</span>
+                </div>
+
+                <div class="wd-process-content">
+                    <span class="wd-process-number">STEP 05</span>
+                    <h3>Launch & Delivery</h3>
+                    <p>
+                        Once everything is ready, the website can be prepared
+                        for deployment. We review the final experience and
+                        make sure the project is ready for its next stage.
+                    </p>
+                    <div class="wd-process-tags">
+                        <span>Final Review</span>
+                        <span>Deployment</span>
+                        <span>Delivery</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="wd-process-bottom">
+            <span class="wd-bottom-line"></span>
+            <p>THOUGHTFUL PROCESS. MEANINGFUL DIGITAL EXPERIENCES.</p>
+            <span class="wd-bottom-line"></span>
+        </div>
+
+    </div>
+</section>
+
+<!-- FEATURED WEBSITE PROJECTS -->
+<section class="wd-projects" id="web-projects">
+    <div class="wd-projects-container">
+
+        <div class="wd-projects-heading">
+            <span class="wd-section-label">SELECTED SHOWCASE</span>
+
+            <h2>DESIGNS THAT <span>COME TO LIFE.</span></h2>
+
+            <p>
+                Explore website concepts and interactive experiences
+                that demonstrate creativity, design and development.
+            </p>
+        </div>
+
+        <div class="wd-projects-grid">
+
+            <!-- PROJECT 01 -->
+            <article class="wd-project-card">
+                <div class="wd-project-preview">
+                    <img
+                        src="images/e-commerce.png"
+                        alt="Illustrative modern e-commerce website concept"
+                        loading="lazy"
+                    >
+
+                    <span class="wd-project-category">01 / E-COMMERCE</span>
+
+                    <div class="wd-project-overlay">
+                        <span>WEBSITE CONCEPT</span>
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="wd-project-info">
+                    <div>
+                        <span class="wd-project-type">DESIGN CONCEPT</span>
+                        <h3>Modern E-Commerce</h3>
+                        <p>
+                            A modern online shopping experience with
+                            a clean layout and product-focused design.
+                        </p>
+                    </div>
+
+                    <div class="wd-project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 02 -->
+            <article class="wd-project-card">
+                <div class="wd-project-preview">
+                    <img
+                        src="images/agency web.png"
+                        alt="Illustrative creative agency website concept"
+                        loading="lazy"
+                    >
+
+                    <span class="wd-project-category">02 / AGENCY</span>
+
+                    <div class="wd-project-overlay">
+                        <span>WEBSITE CONCEPT</span>
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="wd-project-info">
+                    <div>
+                        <span class="wd-project-type">DESIGN CONCEPT</span>
+                        <h3>Creative Agency</h3>
+                        <p>
+                            A bold digital presence for a creative studio,
+                            featuring strong typography and visual storytelling.
+                        </p>
+                    </div>
+
+                    <div class="wd-project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 03 -->
+            <article class="wd-project-card">
+                <div class="wd-project-preview">
+                    <img
+                        src="images/agency.png"
+                        alt="Illustrative personal developer portfolio website"
+                        loading="lazy"
+                    >
+
+                    <span class="wd-project-category">03 / PORTFOLIO</span>
+
+                    <div class="wd-project-overlay">
+                        <span>WEBSITE CONCEPT</span>
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="wd-project-info">
+                    <div>
+                        <span class="wd-project-type">DESIGN CONCEPT</span>
+                        <h3>Personal Portfolio</h3>
+                        <p>
+                            A futuristic portfolio layout designed to
+                            present skills, services and creative work.
+                        </p>
+                    </div>
+
+                    <div class="wd-project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 04 -->
+            <article class="wd-project-card">
+                <div class="wd-project-preview">
+                    <img
+                        src="images/dash board.png"
+                        alt="Illustrative analytics dashboard interface concept"
+                        loading="lazy"
+                    >
+
+                    <span class="wd-project-category">04 / DASHBOARD</span>
+
+                    <div class="wd-project-overlay">
+                        <span>WEBSITE CONCEPT</span>
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="wd-project-info">
+                    <div>
+                        <span class="wd-project-type">DESIGN CONCEPT</span>
+                        <h3>Analytics Dashboard</h3>
+                        <p>
+                            A dashboard interface concept with organized
+                            data, visual summaries and a modern layout.
+                        </p>
+                    </div>
+
+                    <div class="wd-project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="wd-projects-footer">
+            <span class="wd-projects-line"></span>
+            <p>CREATIVITY MEETS CODE</p>
+            <span class="wd-projects-line"></span>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY CHOOSE AMORIDWEB STUDIO -->
+<section class="wd-why" id="why-choose-us">
+
+    <div class="wd-why-glow wd-why-glow-one"></div>
+    <div class="wd-why-glow wd-why-glow-two"></div>
+
+    <div class="wd-why-container">
+
+        <!-- Section heading -->
+        <div class="wd-why-heading">
+            <span class="wd-section-label">
+                <span class="wd-label-line"></span>
+                THE AMORIDWEB DIFFERENCE
+            </span>
+
+            <h2>
+                WHY CHOOSE
+                <span>AMORIDWEB STUDIO?</span>
+            </h2>
+
+            <p>
+                We believe every website should do more than look good.
+                It should deliver a smooth experience, communicate clearly
+                and help turn ideas into meaningful digital experiences.
+            </p>
+        </div>
+
+        <!-- Feature cards -->
+        <div class="wd-why-grid">
+
+            <!-- Card 1 -->
+            <div class="wd-why-card">
+                <div class="wd-why-card-top">
+                    <span class="wd-why-number">01</span>
+                    <div class="wd-why-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+
+                <h3>Responsive Design</h3>
+
+                <p>
+                    Websites designed to adapt beautifully across
+                    smartphones, tablets, laptops and desktop screens.
+                </p>
+
+                <span class="wd-why-tag">EVERY SCREEN. EVERY DEVICE.</span>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="wd-why-card">
+                <div class="wd-why-card-top">
+                    <span class="wd-why-number">02</span>
+                    <div class="wd-why-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+
+                <h3>Clean Development</h3>
+
+                <p>
+                    Organized code and thoughtful development practices
+                    that make websites easier to maintain and improve.
+                </p>
+
+                <span class="wd-why-tag">BUILT WITH PURPOSE.</span>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="wd-why-card">
+                <div class="wd-why-card-top">
+                    <span class="wd-why-number">03</span>
+                    <div class="wd-why-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                </div>
+
+                <h3>Performance Focus</h3>
+
+                <p>
+                    Lightweight layouts and optimized assets designed
+                    to support smooth and efficient browsing.
+                </p>
+
+                <span class="wd-why-tag">SPEED MEETS EXPERIENCE.</span>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="wd-why-card">
+                <div class="wd-why-card-top">
+                    <span class="wd-why-number">04</span>
+                    <div class="wd-why-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                </div>
+
+                <h3>Creative Design</h3>
+
+                <p>
+                    Modern layouts, thoughtful colors and engaging
+                    visual details that give each website character.
+                </p>
+
+                <span class="wd-why-tag">DESIGNED TO STAND OUT.</span>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="wd-why-card">
+                <div class="wd-why-card-top">
+                    <span class="wd-why-number">05</span>
+                    <div class="wd-why-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                </div>
+
+                <h3>User-Friendly Experience</h3>
+
+                <p>
+                    Clear navigation, accessible layouts and intuitive
+                    interactions that help visitors find what they need.
+                </p>
+
+                <span class="wd-why-tag">PEOPLE COME FIRST.</span>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="wd-why-card">
+                <div class="wd-why-card-top">
+                    <span class="wd-why-number">06</span>
+                    <div class="wd-why-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                </div>
+
+                <h3>Flexible Solutions</h3>
+
+                <p>
+                    Website solutions shaped around different ideas,
+                    goals and project requirements.
+                </p>
+
+                <span class="wd-why-tag">BUILT AROUND YOUR IDEAS.</span>
+            </div>
+
+        </div>
+
+        <!-- Bottom highlight -->
+        <div class="wd-why-bottom">
+            <div class="wd-why-bottom-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+
+            <div class="wd-why-bottom-text">
+                <h3>YOUR IDEA DESERVES A GREAT DIGITAL EXPERIENCE.</h3>
+                <p>
+                    From the first concept to the finished website,
+                    every detail matters.
+                </p>
+            </div>
+
+            <a href="index.html#contact" class="wd-why-bottom-btn">
+                LET'S TALK <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- TECHNOLOGIES WE USE -->
+<section class="wd-tech" id="technologies">
+
+    <div class="wd-tech-glow wd-tech-glow-one"></div>
+    <div class="wd-tech-glow wd-tech-glow-two"></div>
+
+    <div class="wd-tech-container">
+
+        <!-- Heading -->
+        <div class="wd-tech-heading">
+
+            <span class="wd-section-label">
+                <span class="wd-label-line"></span>
+                OUR TECHNOLOGY STACK
+            </span>
+
+            <h2>
+                POWERED BY
+                <span>MODERN TECHNOLOGIES.</span>
+            </h2>
+
+            <p>
+                The technologies behind our approach to creating
+                modern, responsive and interactive digital experiences.
+            </p>
+
+        </div>
+
+        <!-- Main technology showcase -->
+        <div class="wd-tech-showcase">
+
+            <!-- Decorative orbit -->
+            <div class="wd-tech-orbit wd-tech-orbit-one"></div>
+            <div class="wd-tech-orbit wd-tech-orbit-two"></div>
+
+            <!-- Center -->
+            <div class="wd-tech-center">
+
+                <div class="wd-tech-center-inner">
+                    <i class="fas fa-code"></i>
+                    <span>AMORIDWEB</span>
+                    <small>TECH STACK</small>
+                </div>
+
+            </div>
+
+            <!-- Technology 1 -->
+            <div class="wd-tech-item wd-tech-html">
+
+                <div class="wd-tech-icon html-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+
+                <div class="wd-tech-info">
+                    <h3>HTML5</h3>
+                    <span>STRUCTURE</span>
+                </div>
+
+            </div>
+
+            <!-- Technology 2 -->
+            <div class="wd-tech-item wd-tech-css">
+
+                <div class="wd-tech-icon css-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+
+                <div class="wd-tech-info">
+                    <h3>CSS3</h3>
+                    <span>STYLING</span>
+                </div>
+
+            </div>
+
+            <!-- Technology 3 -->
+            <div class="wd-tech-item wd-tech-js">
+
+                <div class="wd-tech-icon js-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+
+                <div class="wd-tech-info">
+                    <h3>JavaScript</h3>
+                    <span>INTERACTIVITY</span>
+                </div>
+
+            </div>
+
+            <!-- Technology 4 -->
+            <div class="wd-tech-item wd-tech-postgres">
+
+                <div class="wd-tech-icon postgres-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+
+                <div class="wd-tech-info">
+                    <h3>PostgreSQL</h3>
+                    <span>DATABASE</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom information -->
+        <div class="wd-tech-bottom">
+
+            <div class="wd-tech-bottom-content">
+
+                <span class="wd-tech-small-label">
+                    BUILT ON A SOLID FOUNDATION
+                </span>
+
+                <h3>THE RIGHT TOOLS. THE RIGHT EXPERIENCE.</h3>
+
+                <p>
+                    Every technology plays a role in creating
+                    structured, attractive, interactive and
+                    data-driven websites.
+                </p>
+
+            </div>
+
+            <div class="wd-tech-stack-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>PostgreSQL</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="wd-contact-cta" id="wd-contact-cta">
+    <div class="wd-cta-glow"></div>
+    <div class="wd-cta-content">
+        <span class="wd-cta-eyebrow">
+            <span class="wd-cta-dot"></span>
+            HAVE A PROJECT IN MIND?
+        </span>
+
+        <h2>
+            LET'S BUILD<br>
+            <span>SOMETHING GREAT.</span>
+        </h2>
+
+        <p>
+            Every great digital experience starts with an idea.
+            Let's turn yours into something extraordinary.
+        </p>
+
+        <a href="index.html#contact" class="wd-cta-button">
+            START A PROJECT
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+        <span class="wd-cta-note">
+            YOUR VISION. OUR CODE. ONE GREAT EXPERIENCE.
+        </span>
+    </div>
+
+    <div class="wd-cta-orbit wd-cta-orbit-one"></div>
+    <div class="wd-cta-orbit wd-cta-orbit-two"></div>
+</section>
+
+    </main>
+
+<footer class="wd-footer" id="wd-footer">
+
+    <div class="wd-footer-top">
+
+        <!-- BRAND -->
+        <div class="wd-footer-brand">
+            <a href="index.html" class="wd-footer-logo">
+                <img src="images/Glossy Blue A Monogram Emblem.png" alt="AMORIDWEB STUDIO Logo">
+                <span>AMORID<span>WEB</span></span>
+            </a>
+
+            <p>
+                Building modern digital experiences through
+                creative design, clean code and innovative technology.
+            </p>
+
+            <div class="wd-footer-status">
+                <span class="wd-footer-status-dot"></span>
+                BUILDING THE DIGITAL FUTURE
+            </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="wd-footer-column">
+            <h3>QUICK LINKS</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="#web-projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="wd-footer-column">
+            <h3>OUR SERVICES</h3>
+
+            <ul>
+                <li><a href="#web-overview">Website Development</a></li>
+                <li><a href="#web-overview">Responsive Design</a></li>
+                <li><a href="#web-overview">Frontend Development</a></li>
+                <li><a href="#technologies">Database Solutions</a></li>
+                <li><a href="#web-process">Website Launch</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="wd-footer-column wd-footer-social">
+            <h3>CONNECT WITH US</h3>
+
+            <p>Let's connect and create something meaningful.</p>
+
+            <div class="wd-footer-social-links">
+                <a href="#" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="wd-footer-bottom">
+
+        <p>
+            © <span id="wd-footer-year"></span>
+            AMORIDWEB STUDIO. ALL RIGHTS RESERVED.
+        </p>
+
+        <a href="#top" class="wd-footer-top-link">
+            BACK TO TOP
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+    </div>
+
+    <div class="wd-footer-glow"></div>
+
+</footer>
+
+   <script src="js/script.js"></script>
+   <script src="js/web-development.js"></script>
+</body>
+</html>

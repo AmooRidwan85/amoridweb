@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMORIDWEB STUDIO creates interactive website experiences with modern JavaScript development.">
+    <title>JavaScript Development | AMORIDWEB STUDIO</title>
+
+    <link rel="stylesheet" href="css/javascript-development.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="images/Glossy Blue A Monogram Emblem.png"
+    >
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- SHARED NAVIGATION -->
+<header class="site-header">
+    <div class="nav-container">
+
+        <a href="index.html#home" class="brand">
+            <img src="images/Glossy Blue A Monogram Emblem.png"
+                 alt="AMORIDWEB STUDIO logo">
+
+            <span class="logo-text">
+                <strong>AMORIDWEB</strong>
+                <small>STUDIO</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#about" class="nav-link">
+                        <i class="fa-solid fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+
+                <li class="dropdown">
+
+                    <button class="nav-link dropdown-toggle"
+                            id="serviceToggle"
+                            aria-expanded="false"
+                            aria-controls="serviceMenu">
+
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Service</span>
+                        <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </button>
+
+                    <ul class="dropdown-menu" id="serviceMenu">
+                        <li><a href="web-development.html"><i class="fa-solid fa-code"></i> Web Development</a></li>
+                        <li><a href="frontend-development.html"><i class="fa-solid fa-laptop-code"></i> Frontend Development</a></li>
+                        <li><a href="website-management.html"><i class="fa-solid fa-gears"></i> Website Management</a></li>
+                        <li><a href="web-design.html"><i class="fa-solid fa-pen-ruler"></i> Web Design</a></li>
+                        <li><a href="javascript-development.html"><i class="fa-brands fa-js"></i> JavaScript Development</a></li>
+                        <li><a href="ui-creation.html"><i class="fa-solid fa-palette"></i> UI Creation</a></li>
+                        <li><a href="responsive-websites.html"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Websites</a></li>
+                        <li><a href="website-improvements.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Website Improvements</a></li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="index.html#skills" class="nav-link">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#projects" class="nav-link">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Project</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact" class="nav-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+
+            <div class="online-badge">
+                <span class="online-dot"></span>
+                <span>ONLINE</span>
+            </div>
+
+            <button class="theme-toggle" id="themeToggle"
+                    type="button"
+                    aria-label="Switch to light mode"
+                    aria-pressed="false"
+                    title="Switch theme">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+<!-- JAVASCRIPT DEVELOPMENT HERO -->
+<section class="jd-hero" id="home">
+
+    <div class="jd-hero-grid"></div>
+
+    <div class="jd-glow jd-glow-one"></div>
+    <div class="jd-glow jd-glow-two"></div>
+    <div class="jd-glow jd-glow-three"></div>
+
+    <div class="jd-particles" id="jdParticles"></div>
+
+    <div class="jd-hero-orbit jd-orbit-one"></div>
+    <div class="jd-hero-orbit jd-orbit-two"></div>
+
+    <div class="jd-hero-container">
+
+        <!-- HERO TEXT -->
+        <div class="jd-hero-content">
+
+            <div class="jd-hero-label">
+                <span class="jd-label-dot"></span>
+                INTERACTIVE DEVELOPMENT STUDIO
+            </div>
+
+            <h1>
+                BRING YOUR WEBSITES
+                <span>TO LIFE.</span>
+            </h1>
+
+            <p class="jd-hero-description">
+                Transform static pages into dynamic digital experiences.
+                We use JavaScript to create interactive interfaces,
+                intelligent interactions and engaging website features.
+            </p>
+
+            <div class="jd-typing-line">
+                <span>BUILDING WITH</span>
+                <span class="jd-typing-text" id="jdTypingText">
+                    JAVASCRIPT
+                </span>
+                <span class="jd-typing-cursor"></span>
+            </div>
+
+            <div class="jd-hero-buttons">
+
+                <a href="#jd-overview" class="jd-btn-primary">
+                    EXPLORE DEVELOPMENT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="index.html#contact" class="jd-btn-secondary">
+                    START A PROJECT
+                    <i class="fa-solid fa-code"></i>
+                </a>
+
+            </div>
+
+            <div class="jd-tech-stack">
+
+                <div class="jd-tech-item">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="jd-tech-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>DOM</span>
+                </div>
+
+                <div class="jd-tech-item">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Interactive UI</span>
+                </div>
+
+                <div class="jd-tech-item">
+                    <i class="fa-solid fa-database"></i>
+                    <span>Data Logic</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO CODE VISUAL -->
+        <div class="jd-hero-visual">
+
+            <div class="jd-visual-glow"></div>
+
+            <div class="jd-code-orbit jd-code-orbit-one"></div>
+            <div class="jd-code-orbit jd-code-orbit-two"></div>
+
+            <!-- MAIN CODE EDITOR -->
+            <div class="jd-code-window">
+
+                <div class="jd-code-header">
+
+                    <div class="jd-window-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="jd-file-name">
+                        <i class="fa-brands fa-js"></i>
+                        script.js
+                    </span>
+
+                    <span class="jd-live-indicator">
+                        LIVE
+                    </span>
+
+                </div>
+
+                <div class="jd-code-body">
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">01</span>
+                        <code>
+                            <span class="jd-purple">const</span>
+                            <span class="jd-blue"> experience</span>
+                            =
+                            <span class="jd-yellow"> "interactive"</span>;
+                        </code>
+                    </div>
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">02</span>
+                        <code>
+                            <span class="jd-purple">function</span>
+                            <span class="jd-green"> createMagic</span>() {
+                        </code>
+                    </div>
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">03</span>
+                        <code>
+                            &nbsp;&nbsp;
+                            <span class="jd-purple">const</span>
+                            <span class="jd-blue"> website</span> = {
+                        </code>
+                    </div>
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">04</span>
+                        <code>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="jd-yellow">design</span>:
+                            <span class="jd-green"> "creative"</span>,
+                        </code>
+                    </div>
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">05</span>
+                        <code>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="jd-yellow">motion</span>:
+                            <span class="jd-purple">true</span>,
+                        </code>
+                    </div>
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">06</span>
+                        <code>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="jd-yellow">interaction</span>:
+                            <span class="jd-purple">true</span>
+                        </code>
+                    </div>
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">07</span>
+                        <code>&nbsp;&nbsp;};</code>
+                    </div>
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">08</span>
+                        <code>
+                            <span class="jd-purple">return</span>
+                            website;
+                        </code>
+                    </div>
+
+                    <div class="jd-code-line">
+                        <span class="jd-line-number">09</span>
+                        <code>}</code>
+                    </div>
+
+                    <div class="jd-code-line jd-code-result">
+                        <span class="jd-line-number">10</span>
+                        <code>
+                            <span class="jd-green">
+                                // Experience activated ✓
+                            </span>
+                        </code>
+                    </div>
+
+                </div>
+
+                <div class="jd-code-footer">
+                    <span><i class="fa-solid fa-circle-check"></i> NO ERRORS</span>
+                    <span>JAVASCRIPT ES6+</span>
+                </div>
+
+            </div>
+
+
+            <!-- FLOATING INTERACTIVE CARDS -->
+            <div class="jd-floating-card jd-float-function">
+                <div class="jd-floating-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                    <strong>FUNCTIONS</strong>
+                    <small>Logic & Actions</small>
+                </div>
+            </div>
+
+            <div class="jd-floating-card jd-float-animation">
+                <div class="jd-floating-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                    <strong>ANIMATIONS</strong>
+                    <small>Dynamic Motion</small>
+                </div>
+            </div>
+
+            <div class="jd-floating-card jd-float-interaction">
+                <div class="jd-floating-icon">
+                    <i class="fa-solid fa-hand-pointer"></i>
+                </div>
+                <div>
+                    <strong>INTERACTION</strong>
+                    <small>User Experience</small>
+                </div>
+            </div>
+
+            <!-- FLOATING JS SYMBOL -->
+            <div class="jd-js-symbol">
+                <span>JS</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="jd-scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+</section>
+
+
+<!-- JAVASCRIPT DEVELOPMENT OVERVIEW -->
+<section class="jd-overview" id="jd-overview">
+
+    <div class="jd-overview-grid"></div>
+    <div class="jd-overview-glow jd-overview-glow-one"></div>
+    <div class="jd-overview-glow jd-overview-glow-two"></div>
+
+    <div class="jd-overview-container">
+
+        <div class="jd-section-heading">
+            <span class="jd-section-eyebrow">
+                <i class="fa-brands fa-js"></i>
+                THE POWER OF JAVASCRIPT
+            </span>
+
+            <h2>
+                MAKING WEBSITES
+                <span>THINK, RESPOND & MOVE.</span>
+            </h2>
+
+            <p>
+                JavaScript adds life to web experiences. From interactive
+                interfaces to dynamic content, it transforms ordinary
+                websites into engaging digital experiences.
+            </p>
+        </div>
+
+        <div class="jd-overview-layout">
+
+            <!-- LEFT FEATURE CARDS -->
+            <div class="jd-overview-features">
+
+                <article class="jd-overview-card jd-card-one">
+                    <div class="jd-card-top">
+                        <div class="jd-overview-icon">
+                            <i class="fa-solid fa-hand-pointer"></i>
+                        </div>
+                        <span class="jd-feature-number">01</span>
+                    </div>
+
+                    <span class="jd-feature-label">USER INTERACTION</span>
+                    <h3>Interactive Experiences</h3>
+                    <p>
+                        Create responsive menus, buttons, tabs, sliders
+                        and interactive elements that react to user actions.
+                    </p>
+
+                    <div class="jd-card-decoration">
+                        <i class="fa-solid fa-arrow-pointer"></i>
+                        <span>CLICK · RESPOND · INTERACT</span>
+                    </div>
+                </article>
+
+                <article class="jd-overview-card jd-card-two">
+                    <div class="jd-card-top">
+                        <div class="jd-overview-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <span class="jd-feature-number">02</span>
+                    </div>
+
+                    <span class="jd-feature-label">DYNAMIC BEHAVIOUR</span>
+                    <h3>Dynamic Functionality</h3>
+                    <p>
+                        Build features that update content, respond to
+                        events and make websites more useful and engaging.
+                    </p>
+
+                    <div class="jd-card-decoration">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <span>UPDATE · CHANGE · RESPOND</span>
+                    </div>
+                </article>
+
+                <article class="jd-overview-card jd-card-three">
+                    <div class="jd-card-top">
+                        <div class="jd-overview-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <span class="jd-feature-number">03</span>
+                    </div>
+
+                    <span class="jd-feature-label">MOTION & EFFECTS</span>
+                    <h3>Animations & Effects</h3>
+                    <p>
+                        Add animated elements, smooth transitions,
+                        interactive effects and engaging visual details.
+                    </p>
+
+                    <div class="jd-card-decoration">
+                        <i class="fa-solid fa-film"></i>
+                        <span>ANIMATE · TRANSFORM · CREATE</span>
+                    </div>
+                </article>
+
+                <article class="jd-overview-card jd-card-four">
+                    <div class="jd-card-top">
+                        <div class="jd-overview-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <span class="jd-feature-number">04</span>
+                    </div>
+
+                    <span class="jd-feature-label">DATA & LOGIC</span>
+                    <h3>Smart Website Logic</h3>
+                    <p>
+                        Work with data, conditions, functions and user input
+                        to create structured website behaviour.
+                    </p>
+
+                    <div class="jd-card-decoration">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <span>PROCESS · ORGANISE · BUILD</span>
+                    </div>
+                </article>
+
+            </div>
+
+
+            <!-- CENTRAL 3D JAVASCRIPT VISUAL -->
+            <div class="jd-overview-visual">
+
+                <div class="jd-overview-orbit jd-overview-orbit-one"></div>
+                <div class="jd-overview-orbit jd-overview-orbit-two"></div>
+                <div class="jd-overview-orbit jd-overview-orbit-three"></div>
+
+                <div class="jd-orbit-node jd-node-one">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div class="jd-orbit-node jd-node-two">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div class="jd-orbit-node jd-node-three">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+
+                <div class="jd-orbit-node jd-node-four">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+
+                <div class="jd-js-core">
+
+                    <div class="jd-core-light"></div>
+
+                    <div class="jd-core-symbol">
+                        <span>JS</span>
+                    </div>
+
+                    <div class="jd-core-caption">
+                        JAVASCRIPT
+                    </div>
+
+                    <div class="jd-core-subtitle">
+                        POWERING INTERACTION
+                    </div>
+
+                </div>
+
+                <!-- FLOATING CODE LABELS -->
+                <div class="jd-code-float jd-code-float-one">
+                    <span>const</span> website = true;
+                </div>
+
+                <div class="jd-code-float jd-code-float-two">
+                    <span>function</span> createMagic()
+                </div>
+
+                <div class="jd-code-float jd-code-float-three">
+                    <span>return</span> interactive;
+                </div>
+
+                <div class="jd-visual-status">
+                    <span></span>
+                    INTERACTIVE SYSTEM
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="jd-overview-bottom">
+            <div class="jd-overview-bottom-line"></div>
+
+            <p>
+                <i class="fa-solid fa-terminal"></i>
+                FROM SIMPLE INTERACTIONS TO POWERFUL WEB EXPERIENCES.
+            </p>
+
+            <div class="jd-overview-bottom-line"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =====================================
+     THE JAVASCRIPT UNIVERSE
+===================================== -->
+
+<section class="jd-universe" id="jd-universe">
+
+    <div class="ju-background-grid"></div>
+    <div class="ju-background-glow ju-glow-left"></div>
+    <div class="ju-background-glow ju-glow-right"></div>
+
+    <!-- CINEMATIC INTRO -->
+
+    <div class="ju-intro" id="juIntro">
+
+        <div class="ju-intro-particles" id="juIntroParticles"></div>
+
+        <div class="ju-intro-content">
+
+            <span class="ju-intro-label">
+                AMORIDWEB STUDIO PRESENTS
+            </span>
+
+            <div class="ju-portal" id="juPortal">
+
+                <div class="ju-portal-ring ju-ring-one"></div>
+                <div class="ju-portal-ring ju-ring-two"></div>
+                <div class="ju-portal-ring ju-ring-three"></div>
+
+                <div class="ju-portal-energy"></div>
+
+                <div class="ju-portal-core">
+                    <span>JS</span>
+                </div>
+
+                <div class="ju-portal-orbit">
+                    <span class="ju-orbit-dot"></span>
+                </div>
+
+            </div>
+
+            <h2>
+                ENTER THE
+                <span>JAVASCRIPT UNIVERSE</span>
+            </h2>
+
+            <p>
+                Six interactive worlds. Endless possibilities.
+                Discover what happens when creativity meets code.
+            </p>
+
+            <div class="ju-intro-status">
+                <span class="ju-status-dot"></span>
+                DIGITAL ENVIRONMENT READY
+            </div>
+
+            <button class="ju-enter-button" id="juEnterButton" type="button">
+                <span>INITIALIZE EXPERIENCE</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <span class="ju-intro-hint">
+                CLICK TO OPEN THE PORTAL
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN UNIVERSE -->
+
+    <div class="ju-main" id="juMain">
+
+        <div class="ju-topbar">
+
+            <a href="#home" class="ju-brand">
+                <span class="ju-brand-symbol">JS</span>
+                <span>JAVASCRIPT <strong>UNIVERSE</strong></span>
+            </a>
+
+            <div class="ju-topbar-status">
+                <span class="ju-status-dot"></span>
+                ALL SYSTEMS ONLINE
+            </div>
+
+            <button class="ju-reset-button" id="juResetButton" type="button">
+                <i class="fa-solid fa-rotate-right"></i>
+                RESTART
+            </button>
+
+        </div>
+
+
+        <div class="ju-dashboard-heading">
+
+            <span class="ju-section-tag">
+                <span></span>
+                INTERACTIVE DIGITAL ENVIRONMENT
+            </span>
+
+            <h2>
+                EXPLORE THE
+                <span>UNKNOWN.</span>
+            </h2>
+
+            <p>
+                Choose a world. Experiment with technology.
+                Experience the power of JavaScript.
+            </p>
+
+        </div>
+
+
+        <!-- UNIVERSE MAP -->
+
+        <div class="ju-universe-map">
+
+            <div class="ju-map-grid"></div>
+
+            <svg class="ju-connections"
+                 viewBox="0 0 1000 680"
+                 preserveAspectRatio="none"
+                 aria-hidden="true">
+
+                <path d="M500 340 L200 135"/>
+                <path d="M500 340 L800 135"/>
+                <path d="M500 340 L155 340"/>
+                <path d="M500 340 L845 340"/>
+                <path d="M500 340 L200 545"/>
+                <path d="M500 340 L800 545"/>
+
+            </svg>
+
+
+            <!-- CENTRAL CORE -->
+
+            <div class="ju-central-core" id="juCentralCore">
+
+                <div class="ju-central-ring ju-central-ring-one"></div>
+                <div class="ju-central-ring ju-central-ring-two"></div>
+
+                <div class="ju-central-energy">
+                    <span>JS</span>
+                </div>
+
+                <span class="ju-core-caption">DIGITAL CORE</span>
+
+            </div>
+
+
+            <!-- WORLD 1 -->
+
+            <button class="ju-world ju-world-one"
+                    type="button"
+                    data-world="control">
+
+                <span class="ju-world-number">WORLD 01</span>
+
+                <span class="ju-world-icon">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                </span>
+
+                <span class="ju-world-name">CONTROL ROOM</span>
+                <span class="ju-world-description">Command the system</span>
+
+                <span class="ju-world-enter">
+                    EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </button>
+
+
+            <!-- WORLD 2 -->
+
+            <button class="ju-world ju-world-two"
+                    type="button"
+                    data-world="lab">
+
+                <span class="ju-world-number">WORLD 02</span>
+
+                <span class="ju-world-icon">
+                    <i class="fa-solid fa-flask"></i>
+                </span>
+
+                <span class="ju-world-name">EXPERIMENT LAB</span>
+                <span class="ju-world-description">Create and experiment</span>
+
+                <span class="ju-world-enter">
+                    EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </button>
+
+
+            <!-- WORLD 3 -->
+
+            <button class="ju-world ju-world-three"
+                    type="button"
+                    data-world="space">
+
+                <span class="ju-world-number">WORLD 03</span>
+
+                <span class="ju-world-icon">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+
+                <span class="ju-world-name">3D DIGITAL WORLD</span>
+                <span class="ju-world-description">Explore dimensions</span>
+
+                <span class="ju-world-enter">
+                    EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </button>
+
+
+            <!-- WORLD 4 -->
+
+            <button class="ju-world ju-world-four"
+                    type="button"
+                    data-world="terminal">
+
+                <span class="ju-world-number">WORLD 04</span>
+
+                <span class="ju-world-icon">
+                    <i class="fa-solid fa-terminal"></i>
+                </span>
+
+                <span class="ju-world-name">CODE TERMINAL</span>
+                <span class="ju-world-description">Discover the code</span>
+
+                <span class="ju-world-enter">
+                    EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </button>
+
+
+            <!-- WORLD 5 -->
+
+            <button class="ju-world ju-world-five"
+                    type="button"
+                    data-world="games">
+
+                <span class="ju-world-number">WORLD 05</span>
+
+                <span class="ju-world-icon">
+                    <i class="fa-solid fa-gamepad"></i>
+                </span>
+
+                <span class="ju-world-name">GAME ZONE</span>
+                <span class="ju-world-description">Play and challenge</span>
+
+                <span class="ju-world-enter">
+                    EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </button>
+
+
+            <!-- WORLD 6 -->
+
+            <button class="ju-world ju-world-six"
+                    type="button"
+                    data-world="universe">
+
+                <span class="ju-world-number">WORLD 06</span>
+
+                <span class="ju-world-icon">
+                    <i class="fa-solid fa-atom"></i>
+                </span>
+
+                <span class="ju-world-name">LIVING CODE</span>
+                <span class="ju-world-description">Connect the universe</span>
+
+                <span class="ju-world-enter">
+                    EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div class="ju-dashboard-footer">
+
+            <div>
+                <span class="ju-footer-dot"></span>
+                <span id="juWorldCount">6 WORLDS AVAILABLE</span>
+            </div>
+
+            <p>POWERED BY JAVASCRIPT & CREATIVITY</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- WORLD EXPERIENCE WINDOW -->
+
+    <div class="ju-experience-overlay" id="juExperienceOverlay">
+
+        <div class="ju-experience-window">
+
+            <div class="ju-experience-header">
+
+                <div class="ju-experience-title">
+                    <span class="ju-experience-icon" id="juExperienceIcon">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                    </span>
+
+                    <div>
+                        <span class="ju-experience-number" id="juExperienceNumber">
+                            WORLD 01
+                        </span>
+                        <h3 id="juExperienceTitle">CONTROL ROOM</h3>
+                    </div>
+                </div>
+
+                <button class="ju-close-experience"
+                        id="juCloseExperience"
+                        type="button"
+                        aria-label="Close experience">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+
+            <div class="ju-experience-content" id="juExperienceContent">
+
+                <div class="ju-experience-welcome">
+                    <span class="ju-welcome-orb">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+
+                    <h4>WORLD INITIALIZING</h4>
+
+                    <p>
+                        Your selected experience is being prepared.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="ju-experience-footer">
+                <span><span class="ju-status-dot"></span> EXPERIENCE ACTIVE</span>
+                <span>AMORIDWEB STUDIO</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     SPACE COMMAND CALCULATOR
+========================================= -->
+
+<section class="jd-space-command" id="jd-space-command">
+
+    <div class="jsc-stars"></div>
+    <div class="jsc-grid"></div>
+
+    <div class="jsc-orbit jsc-orbit-one"></div>
+    <div class="jsc-orbit jsc-orbit-two"></div>
+
+    <div class="jsc-energy energy-one"></div>
+    <div class="jsc-energy energy-two"></div>
+
+    <div class="jsc-container">
+
+        <!-- SECTION HEADER -->
+
+        <div class="jsc-heading">
+            <div class="jsc-eyebrow">
+                <span class="jsc-live-dot"></span>
+                <span>INTERACTIVE SYSTEM / MODULE 07</span>
+                <span class="jsc-heading-line"></span>
+            </div>
+
+            <h2>
+                ENTER THE
+                <span>SPACE INTERFACE.</span>
+            </h2>
+
+            <p>
+                A different dimension of JavaScript interaction.
+                Explore a futuristic interface powered by real-time calculations.
+            </p>
+        </div>
+
+        <!-- SPACE INTERFACE -->
+
+        <div class="jsc-interface">
+
+            <!-- TOP HUD -->
+
+            <div class="jsc-topbar">
+
+                <div class="jsc-brand">
+                    <div class="jsc-brand-icon">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+
+                    <div>
+                        <strong>AMORIDWEB</strong>
+                        <span>SPACE SYSTEMS</span>
+                    </div>
+                </div>
+
+                <div class="jsc-system-status">
+                    <span class="jsc-status-light"></span>
+                    SYSTEM ONLINE
+                </div>
+
+                <div class="jsc-system-version">
+                    INTERFACE V.07.26
+                </div>
+
+            </div>
+
+            <!-- MAIN CONTENT -->
+
+            <div class="jsc-main">
+
+                <!-- LEFT INFORMATION PANEL -->
+
+                <aside class="jsc-side-panel">
+
+                    <div class="jsc-panel-label">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                        SYSTEM OVERVIEW
+                    </div>
+
+                    <div class="jsc-core-visual">
+                        <div class="jsc-core-ring ring-a"></div>
+                        <div class="jsc-core-ring ring-b"></div>
+                        <div class="jsc-core-ring ring-c"></div>
+
+                        <div class="jsc-core-center">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <span class="jsc-core-node node-a"></span>
+                        <span class="jsc-core-node node-b"></span>
+                        <span class="jsc-core-node node-c"></span>
+                    </div>
+
+                    <div class="jsc-side-info">
+                        <span>PROCESSOR</span>
+                        <strong>JAVASCRIPT CORE</strong>
+                    </div>
+
+                    <div class="jsc-side-info">
+                        <span>CALCULATION ENGINE</span>
+                        <strong>ACTIVE</strong>
+                    </div>
+
+                    <div class="jsc-side-info">
+                        <span>INTERFACE MODE</span>
+                        <strong>INTERACTIVE</strong>
+                    </div>
+
+                    <div class="jsc-side-terminal">
+                        <span class="jsc-terminal-dot"></span>
+                        READY FOR INPUT
+                    </div>
+
+                </aside>
+
+                <!-- CALCULATOR -->
+
+                <div class="jsc-calculator-area">
+
+                    <div class="jsc-calculator-heading">
+                        <div>
+                            <span>PRIMARY CONTROL UNIT</span>
+                            <h3>QUANTUM CALCULATOR</h3>
+                        </div>
+
+                        <div class="jsc-calculator-symbol">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                    </div>
+
+                    <div class="jsc-calculator" id="jscCalculator">
+
+                        <!-- DISPLAY -->
+
+                        <div class="jsc-display">
+
+                            <div class="jsc-display-top">
+                                <span>LIVE COMPUTATION</span>
+                                <span class="jsc-display-indicator">● READY</span>
+                            </div>
+
+                            <div
+                                class="jsc-expression"
+                                id="jscExpression"
+                                aria-live="polite"
+                            >SYSTEM READY</div>
+
+                            <div
+                                class="jsc-result"
+                                id="jscResult"
+                                aria-live="polite"
+                            >0</div>
+
+                            <div class="jsc-display-line"></div>
+
+                        </div>
+
+                        <!-- BUTTONS -->
+
+                        <div class="jsc-buttons">
+
+                            <button class="jsc-key jsc-function" data-action="clear">AC</button>
+                            <button class="jsc-key jsc-function" data-action="sign">+/−</button>
+                            <button class="jsc-key jsc-function" data-action="percent">%</button>
+                            <button class="jsc-key jsc-operator" data-action="operator" data-value="÷">÷</button>
+
+                            <button class="jsc-key" data-action="digit" data-value="7">7</button>
+                            <button class="jsc-key" data-action="digit" data-value="8">8</button>
+                            <button class="jsc-key" data-action="digit" data-value="9">9</button>
+                            <button class="jsc-key jsc-operator" data-action="operator" data-value="×">×</button>
+
+                            <button class="jsc-key" data-action="digit" data-value="4">4</button>
+                            <button class="jsc-key" data-action="digit" data-value="5">5</button>
+                            <button class="jsc-key" data-action="digit" data-value="6">6</button>
+                            <button class="jsc-key jsc-operator" data-action="operator" data-value="−">−</button>
+
+                            <button class="jsc-key" data-action="digit" data-value="1">1</button>
+                            <button class="jsc-key" data-action="digit" data-value="2">2</button>
+                            <button class="jsc-key" data-action="digit" data-value="3">3</button>
+                            <button class="jsc-key jsc-operator" data-action="operator" data-value="+">+</button>
+
+                            <button class="jsc-key jsc-function" data-action="backspace">
+                                <i class="fa-solid fa-delete-left"></i>
+                            </button>
+
+                            <button class="jsc-key jsc-zero" data-action="digit" data-value="0">0</button>
+
+                            <button class="jsc-key" data-action="decimal">.</button>
+
+                            <button class="jsc-key jsc-equals" data-action="equals">=</button>
+
+                        </div>
+
+                        <div class="jsc-calculator-footer">
+                            <span>AMORIDWEB ENGINE</span>
+                            <span>100% JAVASCRIPT</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT INFORMATION PANEL -->
+
+                <aside class="jsc-right-panel">
+
+                    <div class="jsc-panel-label">
+                        <i class="fa-solid fa-wave-square"></i>
+                        DATA STREAM
+                    </div>
+
+                    <div class="jsc-data-card">
+                        <span>ENGINE STATUS</span>
+                        <strong class="jsc-green-text">OPERATIONAL</strong>
+                        <div class="jsc-data-bar">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="jsc-data-card">
+                        <span>INPUT RESPONSE</span>
+                        <strong>REAL TIME</strong>
+                        <div class="jsc-data-wave">
+                            <i></i><i></i><i></i><i></i><i></i>
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                    </div>
+
+                    <div class="jsc-data-card">
+                        <span>INTERACTION COUNT</span>
+                        <strong id="jscInteractionCount">000</strong>
+                    </div>
+
+                    <div class="jsc-data-card">
+                        <span>LAST ACTION</span>
+                        <strong id="jscLastAction">WAITING...</strong>
+                    </div>
+
+                    <div class="jsc-side-terminal">
+                        <span class="jsc-terminal-dot"></span>
+                        CONNECTION STABLE
+                    </div>
+
+                </aside>
+
+            </div>
+
+            <!-- BOTTOM STATUS BAR -->
+
+            <div class="jsc-bottom-bar">
+                <span><i class="fa-solid fa-shield-halved"></i> SECURE LOCAL INTERFACE</span>
+                <span>BUILT WITH HTML / CSS / JAVASCRIPT</span>
+                <span><i class="fa-solid fa-circle-nodes"></i> DIGITAL SPACE MODULE</span>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM DESCRIPTION -->
+
+        <div class="jsc-bottom-text">
+            <span class="jsc-bottom-icon">
+                <i class="fa-solid fa-code"></i>
+            </span>
+
+            <p>
+                Not just a visual interface. Every button is connected
+                to a working JavaScript calculation engine.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     LIVE JAVASCRIPT MISSION CONTROL
+====================================== -->
+<section class="jd-mission-control" id="jd-mission-control">
+    <div class="jmc-background-grid"></div>
+    <div class="jmc-glow jmc-glow-one"></div>
+    <div class="jmc-glow jmc-glow-two"></div>
+
+    <div class="jmc-container">
+
+        <div class="jmc-heading jd-reveal">
+            <span class="jmc-eyebrow">
+                <span class="jmc-live-dot"></span>
+                JAVASCRIPT SYSTEM MONITOR
+            </span>
+            <h2>WELCOME TO <span>MISSION CONTROL.</span></h2>
+            <p>
+                Explore how JavaScript brings interfaces to life through
+                real-time updates, interactive controls and dynamic data.
+            </p>
+        </div>
+
+        <div class="jmc-dashboard">
+
+            <!-- Dashboard top bar -->
+            <div class="jmc-topbar">
+                <div class="jmc-brand">
+                    <span class="jmc-brand-icon">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                    </span>
+                    <div>
+                        <strong>AMORID SYSTEMS</strong>
+                        <small>MISSION CONTROL INTERFACE</small>
+                    </div>
+                </div>
+
+                <div class="jmc-system-status">
+                    <span class="jmc-live-dot"></span>
+                    <span id="jmcGlobalStatus">ALL SYSTEMS ONLINE</span>
+                </div>
+
+                <div class="jmc-clock">
+                    <small>LOCAL SYSTEM TIME</small>
+                    <strong id="jmcClock">00:00:00</strong>
+                </div>
+            </div>
+
+            <div class="jmc-dashboard-grid">
+
+                <!-- Left panel -->
+                <aside class="jmc-panel jmc-system-panel">
+                    <div class="jmc-panel-heading">
+                        <span>SYSTEM CONTROLS</span>
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+
+                    <p class="jmc-panel-description">
+                        Toggle the systems and watch the dashboard respond.
+                    </p>
+
+                    <div class="jmc-control-list">
+
+                        <div class="jmc-control">
+                            <div>
+                                <strong>Core Engine</strong>
+                                <small id="jmcEngineLabel">Operational</small>
+                            </div>
+                            <button class="jmc-switch active"
+                                type="button"
+                                data-system="engine"
+                                aria-label="Toggle core engine"
+                                aria-pressed="true">
+                                <span></span>
+                            </button>
+                        </div>
+
+                        <div class="jmc-control">
+                            <div>
+                                <strong>Signal Network</strong>
+                                <small id="jmcSignalLabel">Connected</small>
+                            </div>
+                            <button class="jmc-switch active"
+                                type="button"
+                                data-system="signal"
+                                aria-label="Toggle signal network"
+                                aria-pressed="true">
+                                <span></span>
+                            </button>
+                        </div>
+
+                        <div class="jmc-control">
+                            <div>
+                                <strong>Data Stream</strong>
+                                <small id="jmcDataLabel">Streaming</small>
+                            </div>
+                            <button class="jmc-switch active"
+                                type="button"
+                                data-system="data"
+                                aria-label="Toggle data stream"
+                                aria-pressed="true">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="jmc-panel-divider"></div>
+
+                    <div class="jmc-mini-status">
+                        <span class="jmc-mini-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+                        <div>
+                            <strong>Interface Security</strong>
+                            <small>Demo environment active</small>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Centre panel -->
+                <div class="jmc-panel jmc-main-panel">
+                    <div class="jmc-panel-heading">
+                        <span>LIVE ACTIVITY MONITOR</span>
+                        <span class="jmc-monitor-tag">LIVE DEMO</span>
+                    </div>
+
+                    <div class="jmc-core-display">
+                        <div class="jmc-core-ring jmc-ring-one"></div>
+                        <div class="jmc-core-ring jmc-ring-two"></div>
+                        <div class="jmc-core-ring jmc-ring-three"></div>
+
+                        <div class="jmc-core">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JS</span>
+                        </div>
+
+                        <div class="jmc-core-caption">
+                            <span class="jmc-live-dot"></span>
+                            <strong id="jmcCoreStatus">ENGINE ACTIVE</strong>
+                        </div>
+                    </div>
+
+                    <div class="jmc-signal-area">
+                        <div class="jmc-signal-heading">
+                            <span>ACTIVITY SIGNAL</span>
+                            <strong id="jmcSignalValue">86%</strong>
+                        </div>
+                        <div class="jmc-signal-bars" id="jmcSignalBars">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right panel -->
+                <aside class="jmc-panel jmc-data-panel">
+                    <div class="jmc-panel-heading">
+                        <span>DATA ANALYTICS</span>
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div class="jmc-metric">
+                        <small>ACTIVE MODULES</small>
+                        <strong id="jmcActiveModules">03</strong>
+                        <span>Interactive demo systems</span>
+                    </div>
+
+                    <div class="jmc-metric">
+                        <small>DATA ACTIVITY</small>
+                        <strong id="jmcDataActivity">86<span>%</span></strong>
+                        <span id="jmcDataDescription">Data stream active</span>
+                    </div>
+
+                    <div class="jmc-chart-heading">
+                        <span>LIVE SIGNAL FLOW</span>
+                        <span class="jmc-chart-dot"></span>
+                    </div>
+
+                    <div class="jmc-chart">
+                        <canvas id="jmcChart" aria-label="Animated demo signal graph"></canvas>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div class="jmc-bottom-bar">
+                <div>
+                    <span class="jmc-live-dot"></span>
+                    <span id="jmcActivityMessage">Mission control is running normally.</span>
+                </div>
+                <span>AMORIDWEB STUDIO <b>•</b> JS INTERFACE</span>
+            </div>
+        </div>
+
+        <p class="jmc-note">
+            This is an interactive front-end demonstration. The displayed
+            readings are simulated and do not represent real server monitoring.
+        </p>
+
+    </div>
+</section>
+
+<!-- =========================================
+     THE CODE ARCADE
+========================================= -->
+<section class="jd-code-arcade" id="jd-code-arcade">
+    <div class="jca-grid-bg"></div>
+    <div class="jca-glow jca-glow-left"></div>
+    <div class="jca-glow jca-glow-right"></div>
+
+    <div class="jca-container">
+
+        <header class="jca-heading jd-reveal">
+            <span class="jca-eyebrow">
+                <span class="jca-live-dot"></span>
+                INTERACTIVE JAVASCRIPT PLAYGROUND
+            </span>
+
+            <h2>ENTER THE <span>CODE ARCADE.</span></h2>
+
+            <p>
+                Four challenges. One digital playground.
+                Test your reflexes, memory, logic and problem-solving skills.
+            </p>
+        </header>
+
+        <!-- Arcade HUD -->
+        <div class="jca-hud jd-reveal">
+            <div class="jca-hud-brand">
+                <span class="jca-hud-icon">
+                    <i class="fa-solid fa-gamepad"></i>
+                </span>
+                <div>
+                    <strong>AMORID ARCADE</strong>
+                    <small>PLAYER CONTROL CENTER</small>
+                </div>
+            </div>
+
+            <div class="jca-hud-stat">
+                <small>YOUR TOTAL SCORE</small>
+                <strong id="jcaTotalScore">0000</strong>
+            </div>
+
+            <div class="jca-hud-status">
+                <span class="jca-live-dot"></span>
+                ARCADE ONLINE
+            </div>
+        </div>
+
+        <!-- Game selection -->
+        <div class="jca-game-nav" aria-label="Arcade games">
+            <button class="jca-nav-button active" type="button" data-game="reaction">
+                <i class="fa-solid fa-bolt"></i>
+                <span>REACTION</span>
+            </button>
+
+            <button class="jca-nav-button" type="button" data-game="memory">
+                <i class="fa-solid fa-brain"></i>
+                <span>MEMORY</span>
+            </button>
+
+            <button class="jca-nav-button" type="button" data-game="breaker">
+                <i class="fa-solid fa-fingerprint"></i>
+                <span>CODE BREAKER</span>
+            </button>
+
+            <button class="jca-nav-button" type="button" data-game="number">
+                <i class="fa-solid fa-calculator"></i>
+                <span>NUMBER REACTOR</span>
+            </button>
+        </div>
+
+        <!-- Game stage -->
+        <div class="jca-stage">
+
+            <!-- REACTION REACTOR -->
+            <article class="jca-game-panel active" data-panel="reaction">
+                <div class="jca-game-info">
+                    <span class="jca-game-index">GAME 01 / 04</span>
+                    <span class="jca-difficulty">REFLEX TEST</span>
+                </div>
+
+                <div class="jca-game-title">
+                    <div>
+                        <h3>REACTION <span>REACTOR</span></h3>
+                        <p>Wait for the signal. Then hit the target as quickly as you can.</p>
+                    </div>
+                    <i class="fa-solid fa-bolt jca-title-icon"></i>
+                </div>
+
+                <div class="jca-reaction-arena" id="jcaReactionArena">
+                    <div class="jca-arena-corners"></div>
+
+                    <div class="jca-reaction-content">
+                        <div class="jca-reaction-light" id="jcaReactionLight">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <h4 id="jcaReactionMessage">READY TO TEST YOUR REFLEXES?</h4>
+                        <p id="jcaReactionHint">Press start and wait for the blue signal.</p>
+
+                        <button class="jca-reaction-target" id="jcaReactionTarget"
+                            type="button" disabled>
+                            <i class="fa-solid fa-crosshairs"></i>
+                            WAIT FOR SIGNAL
+                        </button>
+                    </div>
+
+                    <div class="jca-arena-label">REACTION CHAMBER <span>● LIVE</span></div>
+                </div>
+
+                <div class="jca-game-controls">
+                    <div class="jca-result-box">
+                        <small>YOUR LAST TIME</small>
+                        <strong id="jcaReactionResult">---</strong>
+                    </div>
+
+                    <div class="jca-result-box">
+                        <small>PERSONAL BEST</small>
+                        <strong id="jcaReactionBest">---</strong>
+                    </div>
+
+                    <button class="jca-primary-button" id="jcaReactionStart" type="button">
+                        <i class="fa-solid fa-play"></i>
+                        START CHALLENGE
+                    </button>
+                </div>
+            </article>
+
+            <!-- MEMORY MATRIX -->
+            <article class="jca-game-panel" data-panel="memory" hidden>
+                <div class="jca-game-info">
+                    <span class="jca-game-index">GAME 02 / 04</span>
+                    <span class="jca-difficulty">MEMORY TEST</span>
+                </div>
+
+                <div class="jca-game-title">
+                    <div>
+                        <h3>MEMORY <span>MATRIX</span></h3>
+                        <p>Watch the sequence of glowing tiles and repeat it in the same order.</p>
+                    </div>
+                    <i class="fa-solid fa-brain jca-title-icon"></i>
+                </div>
+
+                <div class="jca-memory-layout">
+                    <div class="jca-memory-board" id="jcaMemoryBoard">
+                        <button type="button" class="jca-memory-tile" data-tile="0" aria-label="Memory tile 1"></button>
+                        <button type="button" class="jca-memory-tile" data-tile="1" aria-label="Memory tile 2"></button>
+                        <button type="button" class="jca-memory-tile" data-tile="2" aria-label="Memory tile 3"></button>
+                        <button type="button" class="jca-memory-tile" data-tile="3" aria-label="Memory tile 4"></button>
+                        <button type="button" class="jca-memory-tile" data-tile="4" aria-label="Memory tile 5"></button>
+                        <button type="button" class="jca-memory-tile" data-tile="5" aria-label="Memory tile 6"></button>
+                        <button type="button" class="jca-memory-tile" data-tile="6" aria-label="Memory tile 7"></button>
+                        <button type="button" class="jca-memory-tile" data-tile="7" aria-label="Memory tile 8"></button>
+                        <button type="button" class="jca-memory-tile" data-tile="8" aria-label="Memory tile 9"></button>
+                    </div>
+
+                    <div class="jca-memory-side">
+                        <span class="jca-mini-label">CURRENT LEVEL</span>
+                        <strong id="jcaMemoryLevel">01</strong>
+
+                        <span class="jca-mini-label">YOUR PROGRESS</span>
+                        <strong id="jcaMemoryProgress">0 / 0</strong>
+
+                        <p id="jcaMemoryMessage">Ready to activate your memory?</p>
+
+                        <button class="jca-primary-button" id="jcaMemoryStart" type="button">
+                            <i class="fa-solid fa-play"></i>
+                            START MEMORY
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CODE BREAKER -->
+            <article class="jca-game-panel" data-panel="breaker" hidden>
+                <div class="jca-game-info">
+                    <span class="jca-game-index">GAME 03 / 04</span>
+                    <span class="jca-difficulty">LOGIC TEST</span>
+                </div>
+
+                <div class="jca-game-title">
+                    <div>
+                        <h3>CODE <span>BREAKER</span></h3>
+                        <p>Study the sequence. Find the missing number and crack the pattern.</p>
+                    </div>
+                    <i class="fa-solid fa-fingerprint jca-title-icon"></i>
+                </div>
+
+                <div class="jca-breaker-console">
+                    <div class="jca-console-top">
+                        <span><i class="fa-solid fa-terminal"></i> PATTERN ANALYSIS</span>
+                        <span>PUZZLE <b id="jcaBreakerRound">01</b></span>
+                    </div>
+
+                    <div class="jca-sequence" id="jcaSequence">
+                        <span>2</span>
+                        <span>4</span>
+                        <span>6</span>
+                        <span class="jca-missing">?</span>
+                    </div>
+
+                    <p class="jca-breaker-prompt" id="jcaBreakerPrompt">
+                        Identify the missing number in the sequence.
+                    </p>
+
+                    <div class="jca-breaker-options" id="jcaBreakerOptions">
+                        <button type="button" data-answer="8">08</button>
+                        <button type="button" data-answer="10">10</button>
+                        <button type="button" data-answer="12">12</button>
+                        <button type="button" data-answer="14">14</button>
+                    </div>
+
+                    <div class="jca-breaker-feedback" id="jcaBreakerFeedback" aria-live="polite">
+                        SELECT YOUR ANSWER TO DECODE THE PATTERN.
+                    </div>
+
+                    <button class="jca-primary-button" id="jcaBreakerNext" type="button" hidden>
+                        NEXT PUZZLE
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- NUMBER REACTOR -->
+            <article class="jca-game-panel" data-panel="number" hidden>
+                <div class="jca-game-info">
+                    <span class="jca-game-index">GAME 04 / 04</span>
+                    <span class="jca-difficulty">MATHS CHALLENGE</span>
+                </div>
+
+                <div class="jca-game-title">
+                    <div>
+                        <h3>NUMBER <span>REACTOR</span></h3>
+                        <p>Solve each calculation and keep your score climbing.</p>
+                    </div>
+                    <i class="fa-solid fa-calculator jca-title-icon"></i>
+                </div>
+
+                <div class="jca-number-console">
+                    <div class="jca-number-top">
+                        <span>REACTOR CHALLENGE</span>
+                        <span>ROUND <b id="jcaNumberRound">01</b></span>
+                    </div>
+
+                    <div class="jca-number-question" id="jcaNumberQuestion">
+                        8 + 4 = ?
+                    </div>
+
+                    <div class="jca-number-options" id="jcaNumberOptions">
+                        <button type="button" data-answer="10">10</button>
+                        <button type="button" data-answer="12">12</button>
+                        <button type="button" data-answer="14">14</button>
+                        <button type="button" data-answer="16">16</button>
+                    </div>
+
+                    <div class="jca-number-feedback" id="jcaNumberFeedback" aria-live="polite">
+                        CHOOSE THE CORRECT ANSWER.
+                    </div>
+
+                    <button class="jca-primary-button" id="jcaNumberNext" type="button" hidden>
+                        NEXT CALCULATION
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Arcade bottom bar -->
+        <div class="jca-bottom">
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                ALL GAMES RUN LOCALLY IN YOUR BROWSER
+            </div>
+            <span>POWERED BY JAVASCRIPT <b>✦</b></span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =====================================
+     JAVASCRIPT DEVELOPMENT CTA
+====================================== -->
+<section class="jd-final-cta" id="jd-final-cta">
+    <div class="jfc-grid"></div>
+    <div class="jfc-glow"></div>
+
+    <div class="jfc-content jd-reveal">
+        <span class="jfc-eyebrow">
+            <i class="fa-solid fa-bolt"></i>
+            READY TO BUILD SOMETHING AMAZING?
+        </span>
+
+        <h2>LET'S MAKE YOUR WEBSITE <span>COME ALIVE.</span></h2>
+
+        <p>
+            From interactive features to dynamic user experiences,
+            let's turn your next idea into something remarkable.
+        </p>
+
+        <div class="jfc-actions">
+            <a href="index.html#contact" class="jfc-primary-btn">
+                START A PROJECT
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="index.html#projects" class="jfc-secondary-btn">
+                EXPLORE MY WORK
+                <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+        </div>
+
+        <div class="jfc-bottom-label">
+            <span></span>
+            CREATIVE THINKING. INTERACTIVE EXPERIENCES. CLEAN CODE.
+            <span></span>
+        </div>
+    </div>
+</section>
+
+
+<!-- =====================================
+     JAVASCRIPT DEVELOPMENT FOOTER
+====================================== -->
+<footer class="jd-footer">
+    <div class="jdf-top-glow"></div>
+
+    <div class="jdf-container">
+
+        <div class="jdf-main">
+
+            <div class="jdf-brand-column">
+                <a href="index.html#home" class="jdf-brand">
+                    <span class="jdf-brand-symbol">A</span>
+                    <span>
+                        <strong>AMORIDWEB</strong>
+                        <small>STUDIO</small>
+                    </span>
+                </a>
+
+                <p>
+                    Building creative digital experiences through
+                    thoughtful design, clean code and interactive technology.
+                </p>
+
+                <div class="jdf-socials">
+                    <a href="mailto:amooridwan85@gmail.com"
+                        aria-label="Send an email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="index.html#contact"
+                        aria-label="Contact Amoridweb Studio">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="jdf-links-column">
+                <h3>QUICK LINKS</h3>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+
+            <div class="jdf-links-column">
+                <h3>MY SERVICES</h3>
+                <a href="web-development.html">Web Development</a>
+                <a href="frontend-development.html">Frontend Development</a>
+                <a href="website-management.html">Website Management</a>
+                <a href="web-design.html">Web Design</a>
+                <a href="javascript-development.html">JavaScript Development</a>
+            </div>
+
+            <div class="jdf-contact-column">
+                <h3>GET IN TOUCH</h3>
+                <p><i class="fa-solid fa-envelope"></i>
+                    amooridwan85@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>
+                    Nigeria</p>
+
+                <a href="index.html#contact" class="jdf-contact-link">
+                    LET'S CONNECT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="jdf-bottom">
+            <p>
+                © <span id="jdfYear"></span> AMORIDWEB STUDIO.
+                ALL RIGHTS RESERVED.
+            </p>
+
+            <a href="#home" class="jdf-back-top">
+                BACK TO TOP
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/javascript-development.js"></script>
+
+</body>
+</html>

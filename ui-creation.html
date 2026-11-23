@@ -1,0 +1,2364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMORIDWEB STUDIO creates interactive website experiences with modern JavaScript development.">
+    <title>JavaScript Development | AMORIDWEB STUDIO</title>
+
+    <link rel="stylesheet" href="css/ui-creation.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="images/Glossy Blue A Monogram Emblem.png"
+    >
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="nav-container">
+
+            <a href="index.html#home" class="brand">
+                <img src="images/Glossy Blue A Monogram Emblem.png"
+                     alt="AMORIDWEB STUDIO logo">
+
+                <span class="logo-text">
+                    <strong>AMORIDWEB</strong>
+                    <small>STUDIO</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#about" class="nav-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <button class="nav-link dropdown-toggle"
+                                id="serviceToggle"
+                                aria-expanded="false"
+                                aria-controls="serviceMenu">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>Service</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </button>
+
+                        <ul class="dropdown-menu" id="serviceMenu">
+                            <li><a href="web-development.html"><i class="fa-solid fa-code"></i> Web Development</a></li>
+                            <li><a href="frontend-development.html"><i class="fa-solid fa-laptop-code"></i> Frontend Development</a></li>
+                            <li><a href="website-management.html"><i class="fa-solid fa-gears"></i> Website Management</a></li>
+                            <li><a href="web-design.html"><i class="fa-solid fa-pen-ruler"></i> Web Design</a></li>
+                            <li><a href="javascript-development.html"><i class="fa-brands fa-js"></i> JavaScript Development</a></li>
+                            <li><a href="ui-creation.html"><i class="fa-solid fa-palette"></i> UI Creation</a></li>
+                            <li><a href="responsive-websites.html"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Websites</a></li>
+                            <li><a href="website-improvements.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Website Improvements</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html#skills" class="nav-link">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#projects" class="nav-link">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Project</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#contact" class="nav-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="online-badge">
+                    <span class="online-dot"></span>
+                    <span>ONLINE</span>
+                </div>
+
+                <button class="theme-toggle" id="themeToggle"
+                        type="button"
+                        aria-label="Switch to light mode"
+                        aria-pressed="false"
+                        title="Switch theme">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- UI CREATION HERO -->
+        <section class="ui-hero" id="home">
+            <div class="ui-hero-grid"></div>
+            <div class="ui-hero-glow ui-glow-one"></div>
+            <div class="ui-hero-glow ui-glow-two"></div>
+            <div class="ui-hero-noise"></div>
+
+            <div class="ui-hero-container">
+
+                <div class="ui-hero-copy">
+                    <div class="ui-eyebrow">
+                        <span class="ui-eyebrow-dot"></span>
+                        <span>AMORIDWEB INTERFACE LAB</span>
+                        <span class="ui-eyebrow-line"></span>
+                    </div>
+
+                    <h1>
+                        INTERFACES
+                        <span>THAT FEEL</span>
+                        <strong>ALIVE.</strong>
+                    </h1>
+
+                    <p class="ui-hero-description">
+                        We turn ideas into intuitive digital experiences.
+                        From thoughtful layouts to interactive components,
+                        every detail is designed to make digital products
+                        clearer, smoother and more enjoyable to use.
+                    </p>
+
+                    <div class="ui-hero-actions">
+                        <a href="#ui-toolkit" class="ui-primary-button">
+                            EXPLORE THE UI LAB
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="index.html#contact" class="ui-secondary-button">
+                            START A PROJECT
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <div class="ui-hero-tags">
+                        <span><i class="fa-solid fa-layer-group"></i> UI DESIGN</span>
+                        <span><i class="fa-solid fa-user-check"></i> UX THINKING</span>
+                        <span><i class="fa-solid fa-wand-magic-sparkles"></i> INTERACTIONS</span>
+                    </div>
+
+                    <div class="ui-hero-note">
+                        <span class="ui-note-line"></span>
+                        <span>DESIGN WITH PURPOSE. BUILD WITH PRECISION.</span>
+                    </div>
+                </div>
+
+                <!-- INTERACTIVE UI WORKSTATION -->
+                <div class="ui-workstation">
+
+                    <div class="ui-workstation-orbit orbit-a"></div>
+                    <div class="ui-workstation-orbit orbit-b"></div>
+
+                    <div class="ui-floating-label ui-label-top">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span>CREATIVE MODE</span>
+                        <b>ACTIVE</b>
+                    </div>
+
+                    <div class="ui-floating-label ui-label-side">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                        <span>PIXEL PRECISION</span>
+                    </div>
+
+                    <div class="ui-editor-window">
+
+                        <div class="ui-editor-topbar">
+                            <div class="ui-window-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="ui-editor-title">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                                interface-studio.ui
+                            </div>
+                            <span class="ui-editor-status">LIVE PREVIEW</span>
+                        </div>
+
+                        <div class="ui-editor-body">
+
+                            <aside class="ui-editor-sidebar">
+                                <button class="ui-tool-icon active" title="Design">
+                                    <i class="fa-solid fa-vector-square"></i>
+                                </button>
+                                <button class="ui-tool-icon" title="Typography">
+                                    <i class="fa-solid fa-font"></i>
+                                </button>
+                                <button class="ui-tool-icon" title="Colors">
+                                    <i class="fa-solid fa-palette"></i>
+                                </button>
+                                <button class="ui-tool-icon" title="Components">
+                                    <i class="fa-solid fa-cubes"></i>
+                                </button>
+                                <button class="ui-tool-icon" title="Prototype">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                </button>
+                            </aside>
+
+                            <div class="ui-canvas-area">
+                                <div class="ui-canvas-heading">
+                                    <span>CANVAS / 01</span>
+                                    <span><i class="fa-solid fa-expand"></i> 100%</span>
+                                </div>
+
+                                <div class="ui-preview-card">
+                                    <div class="ui-preview-nav">
+                                        <div class="ui-preview-logo">
+                                            <span></span>
+                                            <b>nexa.</b>
+                                        </div>
+                                        <div class="ui-preview-nav-links">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="ui-preview-avatar">N</div>
+                                    </div>
+
+                                    <div class="ui-preview-content">
+                                        <div class="ui-preview-copy">
+                                            <span class="ui-preview-kicker">DESIGN YOUR NEXT MOVE</span>
+                                            <h3>Ideas become<br><em>experiences.</em></h3>
+                                            <p>Make every interaction count.</p>
+                                            <button type="button" class="ui-preview-button">
+                                                Discover more <i class="fa-solid fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="ui-preview-art">
+                                            <div class="ui-art-ring"></div>
+                                            <div class="ui-art-cube">
+                                                <div class="cube-face cube-front"></div>
+                                                <div class="cube-face cube-side"></div>
+                                                <div class="cube-face cube-top"></div>
+                                            </div>
+                                            <span class="ui-art-spark spark-one">✦</span>
+                                            <span class="ui-art-spark spark-two">✧</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="ui-preview-bottom">
+                                        <span>01 — CLARITY</span>
+                                        <span>02 — CREATIVITY</span>
+                                        <span>03 — CONNECTION</span>
+                                    </div>
+                                </div>
+
+                                <div class="ui-canvas-footer">
+                                    <span><i class="fa-solid fa-circle-check"></i> All changes saved</span>
+                                    <span>DESKTOP FRAME · 1440 PX</span>
+                                </div>
+                            </div>
+
+                            <aside class="ui-properties">
+                                <div class="ui-properties-heading">PROPERTIES</div>
+
+                                <div class="ui-property-group">
+                                    <span>LAYOUT</span>
+                                    <div class="ui-property-line">
+                                        <i class="fa-solid fa-border-all"></i>
+                                        <b>Auto layout</b>
+                                    </div>
+                                    <div class="ui-property-values">
+                                        <small>W 100%</small>
+                                        <small>H AUTO</small>
+                                    </div>
+                                </div>
+
+                                <div class="ui-property-group">
+                                    <span>COLORS</span>
+                                    <div class="ui-color-swatches">
+                                        <i></i><i></i><i></i><i></i>
+                                    </div>
+                                </div>
+
+                                <div class="ui-property-group">
+                                    <span>TYPOGRAPHY</span>
+                                    <b class="ui-font-name">Inter / Bold</b>
+                                    <small>32 PX · 700</small>
+                                </div>
+
+                                <div class="ui-property-group">
+                                    <span>RADIUS</span>
+                                    <div class="ui-radius-value">16 PX</div>
+                                </div>
+                            </aside>
+
+                        </div>
+
+                        <div class="ui-editor-bottom">
+                            <span><i class="fa-solid fa-circle"></i> DESIGN SYSTEM READY</span>
+                            <span>UI / UX WORKSPACE <i class="fa-solid fa-code"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="ui-mini-card ui-mini-components">
+                        <i class="fa-solid fa-cubes"></i>
+                        <span>COMPONENTS</span>
+                        <b>24+</b>
+                    </div>
+
+                    <div class="ui-mini-card ui-mini-prototype">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                        <span>PROTOTYPE</span>
+                        <b>CONNECTED</b>
+                    </div>
+
+                    <div class="ui-workstation-caption">
+                        <span class="caption-pulse"></span>
+                        INTERFACE SYSTEM // 001
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ui-hero-bottom">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="ui-scroll-track"><span></span></div>
+                <span>01 / UI CREATION</span>
+            </div>
+        </section>
+
+        
+<!-- =====================================
+     UI / UX INSTRUMENT PANEL
+===================================== -->
+<section class="ui-toolkit" id="ui-toolkit">
+
+    <div class="uit-background-grid"></div>
+    <div class="uit-glow uit-glow-left"></div>
+    <div class="uit-glow uit-glow-right"></div>
+
+    <div class="uit-container">
+
+        <!-- SECTION INTRO -->
+        <div class="uit-heading">
+            <div class="uit-eyebrow">
+                <span></span>
+                THE CREATIVE WORKSPACE
+            </div>
+
+            <h2>
+                THE UI/UX
+                <span>INSTRUMENT PANEL.</span>
+            </h2>
+
+            <p>
+                Explore the tools behind meaningful digital experiences.
+                Adjust visual properties, experiment with components and
+                see your design decisions come to life.
+            </p>
+        </div>
+
+        <!-- WORKSPACE TOP BAR -->
+        <div class="uit-workspace">
+
+            <div class="uit-topbar">
+                <div class="uit-topbar-brand">
+                    <div class="uit-brand-icon">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <div>
+                        <strong>AMORID DESIGN SYSTEM</strong>
+                        <small>INTERACTIVE WORKSPACE</small>
+                    </div>
+                </div>
+
+                <div class="uit-topbar-center">
+                    <span class="uit-live-dot"></span>
+                    LIVE EDITOR
+                </div>
+
+                <div class="uit-topbar-right">
+                    <span class="uit-version">VERSION 1.0</span>
+                    <span class="uit-save-status">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        LOCAL PREVIEW
+                    </span>
+                </div>
+            </div>
+
+            <!-- TOOL NAVIGATION -->
+            <div class="uit-tool-navigation">
+                <button class="uit-tab active" data-tool="components">
+                    <i class="fa-solid fa-cubes"></i>
+                    <span>Components</span>
+                </button>
+
+                <button class="uit-tab" data-tool="colors">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Colors</span>
+                </button>
+
+                <button class="uit-tab" data-tool="type">
+                    <i class="fa-solid fa-font"></i>
+                    <span>Typography</span>
+                </button>
+
+                <button class="uit-tab" data-tool="layout">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>Layout</span>
+                </button>
+
+                <button class="uit-tab" data-tool="ux">
+                    <i class="fa-solid fa-route"></i>
+                    <span>UX Flow</span>
+                </button>
+            </div>
+
+            <!-- WORKSPACE CONTENT -->
+            <div class="uit-workspace-body">
+
+                <!-- LEFT TOOL PANEL -->
+                <aside class="uit-control-panel">
+
+                    <div class="uit-panel-heading">
+                        <span>DESIGN CONTROLS</span>
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+
+                    <!-- COMPONENT CONTROLS -->
+                    <div class="uit-tool-content active" data-content="components">
+
+                        <div class="uit-control-group">
+                            <label>BUTTON STYLE</label>
+                            <div class="uit-choice-row">
+                                <button class="uit-choice active" data-button-style="solid">Solid</button>
+                                <button class="uit-choice" data-button-style="outline">Outline</button>
+                                <button class="uit-choice" data-button-style="soft">Soft</button>
+                            </div>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label>BUTTON SIZE</label>
+                            <div class="uit-choice-row">
+                                <button class="uit-choice" data-button-size="small">Small</button>
+                                <button class="uit-choice active" data-button-size="medium">Medium</button>
+                                <button class="uit-choice" data-button-size="large">Large</button>
+                            </div>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label>COMPONENT STATE</label>
+                            <div class="uit-state-list">
+                                <button class="uit-state-option active" data-preview-state="default">
+                                    <span class="uit-state-indicator"></span>
+                                    Default
+                                </button>
+                                <button class="uit-state-option" data-preview-state="hover">
+                                    <span class="uit-state-indicator"></span>
+                                    Hover
+                                </button>
+                                <button class="uit-state-option" data-preview-state="disabled">
+                                    <span class="uit-state-indicator"></span>
+                                    Disabled
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label>COMPONENT OPTIONS</label>
+                            <label class="uit-switch-row">
+                                <span>Show icon</span>
+                                <input type="checkbox" id="uitShowIcon" checked>
+                                <span class="uit-switch"></span>
+                            </label>
+
+                            <label class="uit-switch-row">
+                                <span>Show card shadow</span>
+                                <input type="checkbox" id="uitShowShadow" checked>
+                                <span class="uit-switch"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <!-- COLOR CONTROLS -->
+                    <div class="uit-tool-content" data-content="colors">
+
+                        <div class="uit-control-group">
+                            <label>PRESET PALETTES</label>
+                            <div class="uit-palette-list">
+                                <button class="uit-palette active" data-palette="blue">
+                                    <span style="--swatch-a:#2563EB;--swatch-b:#60A5FA;--swatch-c:#0B1120;"></span>
+                                    <b>Electric Blue</b>
+                                </button>
+
+                                <button class="uit-palette" data-palette="violet">
+                                    <span style="--swatch-a:#7C3AED;--swatch-b:#C084FC;--swatch-c:#17112B;"></span>
+                                    <b>Violet Pulse</b>
+                                </button>
+
+                                <button class="uit-palette" data-palette="cyan">
+                                    <span style="--swatch-a:#0891B2;--swatch-b:#67E8F9;--swatch-c:#08232C;"></span>
+                                    <b>Cyber Cyan</b>
+                                </button>
+
+                                <button class="uit-palette" data-palette="emerald">
+                                    <span style="--swatch-a:#059669;--swatch-b:#6EE7B7;--swatch-c:#09251F;"></span>
+                                    <b>Emerald</b>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label for="uitPrimaryColor">CUSTOM PRIMARY COLOR</label>
+                            <div class="uit-color-picker-row">
+                                <input type="color" id="uitPrimaryColor" value="#2563EB">
+                                <span id="uitColorValue">#2563EB</span>
+                            </div>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label>COLOR ROLES</label>
+                            <div class="uit-color-role">
+                                <span>Primary</span>
+                                <i id="uitPrimarySwatch"></i>
+                            </div>
+                            <div class="uit-color-role">
+                                <span>Accent</span>
+                                <i id="uitAccentSwatch"></i>
+                            </div>
+                            <div class="uit-color-role">
+                                <span>Surface</span>
+                                <i id="uitSurfaceSwatch"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- TYPOGRAPHY CONTROLS -->
+                    <div class="uit-tool-content" data-content="type">
+
+                        <div class="uit-control-group">
+                            <label for="uitFontFamily">FONT FAMILY</label>
+                            <select id="uitFontFamily" class="uit-select">
+                                <option value="Inter, sans-serif">Inter</option>
+                                <option value="Arial, sans-serif">Arial</option>
+                                <option value="Georgia, serif">Georgia</option>
+                                <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+                                <option value="'Courier New', monospace">Courier New</option>
+                            </select>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label for="uitFontWeight">FONT WEIGHT</label>
+                            <select id="uitFontWeight" class="uit-select">
+                                <option value="400">Regular · 400</option>
+                                <option value="500">Medium · 500</option>
+                                <option value="600">Semi Bold · 600</option>
+                                <option value="700" selected>Bold · 700</option>
+                                <option value="800">Extra Bold · 800</option>
+                            </select>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <div class="uit-range-heading">
+                                <label for="uitFontSize">FONT SIZE</label>
+                                <output id="uitFontSizeValue">24 PX</output>
+                            </div>
+                            <input type="range" id="uitFontSize" min="16" max="38" value="24">
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label>TEXT ALIGNMENT</label>
+                            <div class="uit-choice-row">
+                                <button class="uit-choice active" data-text-align="left">
+                                    <i class="fa-solid fa-align-left"></i>
+                                </button>
+                                <button class="uit-choice" data-text-align="center">
+                                    <i class="fa-solid fa-align-center"></i>
+                                </button>
+                                <button class="uit-choice" data-text-align="right">
+                                    <i class="fa-solid fa-align-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- LAYOUT CONTROLS -->
+                    <div class="uit-tool-content" data-content="layout">
+
+                        <div class="uit-control-group">
+                            <div class="uit-range-heading">
+                                <label for="uitRadius">CORNER RADIUS</label>
+                                <output id="uitRadiusValue">16 PX</output>
+                            </div>
+                            <input type="range" id="uitRadius" min="0" max="40" value="16">
+                        </div>
+
+                        <div class="uit-control-group">
+                            <div class="uit-range-heading">
+                                <label for="uitSpacing">ELEMENT SPACING</label>
+                                <output id="uitSpacingValue">16 PX</output>
+                            </div>
+                            <input type="range" id="uitSpacing" min="8" max="36" value="16">
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label>LAYOUT STRUCTURE</label>
+                            <div class="uit-choice-row">
+                                <button class="uit-choice active" data-layout="stack">
+                                    <i class="fa-solid fa-bars-staggered"></i>
+                                    Stack
+                                </button>
+                                <button class="uit-choice" data-layout="split">
+                                    <i class="fa-solid fa-columns"></i>
+                                    Split
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label>CONTENT DENSITY</label>
+                            <div class="uit-choice-row">
+                                <button class="uit-choice active" data-density="comfortable">Comfort</button>
+                                <button class="uit-choice" data-density="compact">Compact</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- UX FLOW CONTROLS -->
+                    <div class="uit-tool-content" data-content="ux">
+
+                        <div class="uit-control-group">
+                            <label>USER JOURNEY</label>
+                            <div class="uit-journey">
+                                <div class="uit-journey-step active">
+                                    <span>01</span>
+                                    <div>
+                                        <b>Discover</b>
+                                        <small>User finds the product</small>
+                                    </div>
+                                </div>
+
+                                <div class="uit-journey-connector"></div>
+
+                                <div class="uit-journey-step">
+                                    <span>02</span>
+                                    <div>
+                                        <b>Explore</b>
+                                        <small>User understands the offer</small>
+                                    </div>
+                                </div>
+
+                                <div class="uit-journey-connector"></div>
+
+                                <div class="uit-journey-step">
+                                    <span>03</span>
+                                    <div>
+                                        <b>Interact</b>
+                                        <small>User takes an action</small>
+                                    </div>
+                                </div>
+
+                                <div class="uit-journey-connector"></div>
+
+                                <div class="uit-journey-step">
+                                    <span>04</span>
+                                    <div>
+                                        <b>Complete</b>
+                                        <small>User reaches their goal</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uit-control-group">
+                            <label>UX PRINCIPLES</label>
+                            <div class="uit-principle-tags">
+                                <span>Clarity</span>
+                                <span>Consistency</span>
+                                <span>Feedback</span>
+                                <span>Accessibility</span>
+                                <span>Usability</span>
+                            </div>
+                        </div>
+
+                        <div class="uit-ux-note">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <p>Good UX helps people understand what to do next without unnecessary friction.</p>
+                        </div>
+
+                    </div>
+
+                    <button class="uit-reset-button" id="uitReset">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        RESET DESIGN CONTROLS
+                    </button>
+
+                </aside>
+
+                <!-- LIVE PREVIEW -->
+                <div class="uit-preview-panel">
+
+                    <div class="uit-preview-toolbar">
+                        <div>
+                            <span class="uit-preview-label">LIVE CANVAS</span>
+                            <strong>Component Preview</strong>
+                        </div>
+
+                        <div class="uit-device-switch">
+                            <button class="active" data-device="desktop" title="Desktop preview">
+                                <i class="fa-solid fa-desktop"></i>
+                            </button>
+                            <button data-device="tablet" title="Tablet preview">
+                                <i class="fa-solid fa-tablet-screen-button"></i>
+                            </button>
+                            <button data-device="mobile" title="Mobile preview">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="uit-preview-stage" id="uitPreviewStage">
+
+                        <div class="uit-demo-interface" id="uitDemoInterface">
+
+                            <div class="uit-demo-nav">
+                                <div class="uit-demo-logo">
+                                    <span></span>
+                                    <b>nexa.</b>
+                                </div>
+
+                                <div class="uit-demo-links">
+                                    <span>Home</span>
+                                    <span>Features</span>
+                                    <span>About</span>
+                                </div>
+
+                                <button class="uit-demo-nav-button">Get started</button>
+                            </div>
+
+                            <div class="uit-demo-content">
+
+                                <div class="uit-demo-copy">
+                                    <span class="uit-demo-kicker">YOUR NEXT DIGITAL MOVE</span>
+
+                                    <h3 id="uitDemoHeading">
+                                        Design with
+                                        <span>intention.</span>
+                                    </h3>
+
+                                    <p id="uitDemoParagraph">
+                                        Build clear, thoughtful experiences
+                                        that help people move forward.
+                                    </p>
+
+                                    <div class="uit-demo-actions">
+                                        <button class="uit-demo-button" id="uitDemoButton">
+                                            <span>Explore experience</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+
+                                        <button class="uit-demo-text-button">
+                                            Learn more
+                                        </button>
+                                    </div>
+
+                                    <div class="uit-demo-proof">
+                                        <span><i class="fa-solid fa-circle-check"></i> Simple to use</span>
+                                        <span><i class="fa-solid fa-circle-check"></i> Made with purpose</span>
+                                    </div>
+                                </div>
+
+                                <div class="uit-demo-visual">
+                                    <div class="uit-demo-orbit"></div>
+
+                                    <div class="uit-demo-card">
+                                        <div class="uit-demo-card-top">
+                                            <span>YOUR WORKSPACE</span>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </div>
+
+                                        <div class="uit-demo-chart">
+                                            <span style="height:35%"></span>
+                                            <span style="height:55%"></span>
+                                            <span style="height:42%"></span>
+                                            <span style="height:78%"></span>
+                                            <span style="height:63%"></span>
+                                            <span style="height:92%"></span>
+                                        </div>
+
+                                        <div class="uit-demo-card-bottom">
+                                            <div>
+                                                <small>DESIGN PROGRESS</small>
+                                                <b>86%</b>
+                                            </div>
+                                            <div class="uit-demo-progress">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uit-demo-floating">
+                                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                        <span>Creative flow</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="uit-demo-footer">
+                                <span>DESIGNED FOR PEOPLE</span>
+                                <span>THOUGHTFUL BY DESIGN <i class="fa-solid fa-heart"></i></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="uit-preview-footer">
+                        <span><i class="fa-solid fa-circle-check"></i> PREVIEW READY</span>
+                        <span id="uitDeviceLabel">DESKTOP VIEW · 100%</span>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT INSPECTOR -->
+                <aside class="uit-inspector">
+
+                    <div class="uit-inspector-heading">
+                        <span>INSPECTOR</span>
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+
+                    <div class="uit-inspector-section">
+                        <span class="uit-inspector-label">SELECTED ELEMENT</span>
+                        <div class="uit-selected-element">
+                            <i class="fa-solid fa-square"></i>
+                            <b>Primary Button</b>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="uit-inspector-section">
+                        <span class="uit-inspector-label">CURRENT DESIGN TOKENS</span>
+
+                        <div class="uit-token-row">
+                            <span>Primary color</span>
+                            <b id="uitTokenColor">#2563EB</b>
+                        </div>
+
+                        <div class="uit-token-row">
+                            <span>Border radius</span>
+                            <b id="uitTokenRadius">16 PX</b>
+                        </div>
+
+                        <div class="uit-token-row">
+                            <span>Spacing</span>
+                            <b id="uitTokenSpacing">16 PX</b>
+                        </div>
+
+                        <div class="uit-token-row">
+                            <span>Font weight</span>
+                            <b id="uitTokenWeight">700</b>
+                        </div>
+                    </div>
+
+                    <div class="uit-inspector-section">
+                        <span class="uit-inspector-label">DESIGN CHECKLIST</span>
+
+                        <div class="uit-check-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Visual hierarchy</span>
+                        </div>
+
+                        <div class="uit-check-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Consistent spacing</span>
+                        </div>
+
+                        <div class="uit-check-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Readable typography</span>
+                        </div>
+
+                        <div class="uit-check-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Clear interaction</span>
+                        </div>
+                    </div>
+
+                    <div class="uit-inspector-tip">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>DESIGN TIP</span>
+                        <p>Consistency makes interfaces easier to learn and use.</p>
+                    </div>
+
+                </aside>
+
+            </div>
+
+            <div class="uit-workspace-status">
+                <span><i class="fa-solid fa-circle"></i> SYSTEM OPERATIONAL</span>
+                <span>AMORIDWEB UI LAB</span>
+                <span id="uitStatusMessage">READY FOR DESIGN</span>
+            </div>
+
+        </div>
+
+        <!-- INSTRUMENTS BELOW WORKSPACE -->
+        <div class="uit-instrument-strip">
+
+            <div class="uit-instrument-heading">
+                <span>INSIDE THE TOOLKIT</span>
+                <p>THE BUILDING BLOCKS OF A GREAT INTERFACE</p>
+            </div>
+
+            <div class="uit-instrument-grid">
+
+                <div class="uit-instrument-card">
+                    <i class="fa-solid fa-shapes"></i>
+                    <b>Components</b>
+                    <span>Reusable interface elements</span>
+                </div>
+
+                <div class="uit-instrument-card">
+                    <i class="fa-solid fa-swatchbook"></i>
+                    <b>Color Systems</b>
+                    <span>Palettes and design tokens</span>
+                </div>
+
+                <div class="uit-instrument-card">
+                    <i class="fa-solid fa-text-height"></i>
+                    <b>Typography</b>
+                    <span>Type scales and readability</span>
+                </div>
+
+                <div class="uit-instrument-card">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <b>Spacing & Grid</b>
+                    <span>Structure and alignment</span>
+                </div>
+
+                <div class="uit-instrument-card">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <b>User Flows</b>
+                    <span>Clear paths through a product</span>
+                </div>
+
+                <div class="uit-instrument-card">
+                    <i class="fa-solid fa-hand-pointer"></i>
+                    <b>Interactions</b>
+                    <span>States, feedback and motion</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================
+     UX RESEARCH & WIREFRAME STUDIO
+========================================= -->
+
+<section class="ux-studio" id="ux-studio">
+
+    <div class="uxs-grid-bg"></div>
+    <div class="uxs-glow uxs-glow-one"></div>
+    <div class="uxs-glow uxs-glow-two"></div>
+
+    <div class="uxs-container">
+
+        <!-- INTRO -->
+        <div class="uxs-heading">
+            <div class="uxs-eyebrow">
+                <span></span>
+                THINK · PLAN · PROTOTYPE
+            </div>
+
+            <h2>
+                UNDERSTAND THE USER.
+                <span>DESIGN THE EXPERIENCE.</span>
+            </h2>
+
+            <p>
+                Great interfaces begin with understanding people.
+                Explore how research, user journeys and wireframes
+                turn an idea into a thoughtful digital experience.
+            </p>
+        </div>
+
+        <!-- STUDIO HEADER -->
+        <div class="uxs-studio-shell">
+
+            <div class="uxs-topbar">
+                <div class="uxs-topbar-brand">
+                    <div class="uxs-logo">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                    </div>
+                    <div>
+                        <strong>AMORID UX STUDIO</strong>
+                        <small>RESEARCH & PROTOTYPING LAB</small>
+                    </div>
+                </div>
+
+                <div class="uxs-project-label">
+                    <span class="uxs-online-dot"></span>
+                    SAMPLE PROJECT
+                </div>
+
+                <div class="uxs-topbar-actions">
+                    <span><i class="fa-solid fa-lock"></i> LOCAL DEMO</span>
+                    <span class="uxs-project-version">PROJECT 001</span>
+                </div>
+            </div>
+
+            <!-- STUDIO NAVIGATION -->
+            <div class="uxs-navigation">
+                <button class="uxs-nav-tab active" data-uxs-tab="persona">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                    <span>Persona</span>
+                </button>
+
+                <button class="uxs-nav-tab" data-uxs-tab="empathy">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Empathy Map</span>
+                </button>
+
+                <button class="uxs-nav-tab" data-uxs-tab="journey">
+                    <i class="fa-solid fa-route"></i>
+                    <span>User Journey</span>
+                </button>
+
+                <button class="uxs-nav-tab" data-uxs-tab="wireframe">
+                    <i class="fa-solid fa-object-group"></i>
+                    <span>Wireframe Lab</span>
+                </button>
+
+                <button class="uxs-nav-tab" data-uxs-tab="prototype">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Prototype</span>
+                </button>
+            </div>
+
+            <!-- STUDIO CONTENT -->
+            <div class="uxs-content">
+
+                <!-- PERSONA -->
+                <div class="uxs-panel active" data-uxs-panel="persona">
+
+                    <div class="uxs-panel-heading">
+                        <div>
+                            <span class="uxs-section-index">01 / USER RESEARCH</span>
+                            <h3>Meet the user.</h3>
+                            <p>A sample persona helps us think about the people using a product.</p>
+                        </div>
+                        <span class="uxs-panel-icon"><i class="fa-solid fa-user"></i></span>
+                    </div>
+
+                    <div class="uxs-persona-layout">
+
+                        <div class="uxs-persona-card">
+                            <div class="uxs-persona-cover">
+                                <div class="uxs-persona-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <span>EXAMPLE PERSONA</span>
+                            </div>
+
+                            <div class="uxs-persona-info">
+                                <h4>Alex Morgan</h4>
+                                <p class="uxs-persona-role">Digital Product Explorer</p>
+
+                                <div class="uxs-persona-meta">
+                                    <span><i class="fa-solid fa-briefcase"></i> Student</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Urban area</span>
+                                </div>
+
+                                <div class="uxs-persona-bio">
+                                    <span>ABOUT</span>
+                                    <p>
+                                        Alex regularly discovers digital services
+                                        and prefers products that are simple,
+                                        accessible and easy to understand.
+                                    </p>
+                                </div>
+
+                                <div class="uxs-persona-tags">
+                                    <span>Mobile-first</span>
+                                    <span>Curious</span>
+                                    <span>Efficiency-focused</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uxs-persona-details">
+
+                            <div class="uxs-research-card">
+                                <div class="uxs-card-title">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                    <b>GOALS</b>
+                                </div>
+                                <ul>
+                                    <li>Find information quickly</li>
+                                    <li>Complete tasks without confusion</li>
+                                    <li>Understand what happens after each action</li>
+                                </ul>
+                            </div>
+
+                            <div class="uxs-research-card">
+                                <div class="uxs-card-title">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <b>FRUSTRATIONS</b>
+                                </div>
+                                <ul>
+                                    <li>Unclear navigation</li>
+                                    <li>Too many unnecessary steps</li>
+                                    <li>Buttons with confusing labels</li>
+                                </ul>
+                            </div>
+
+                            <div class="uxs-research-card">
+                                <div class="uxs-card-title">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <b>NEEDS</b>
+                                </div>
+                                <ul>
+                                    <li>Clear visual hierarchy</li>
+                                    <li>Helpful feedback</li>
+                                    <li>Consistent interface patterns</li>
+                                </ul>
+                            </div>
+
+                            <div class="uxs-persona-quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p>"I want to know where to go and what to do without having to figure everything out."</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <p class="uxs-disclaimer">
+                        <i class="fa-solid fa-circle-info"></i>
+                        This is an illustrative persona for demonstrating the UX research process, not a real research participant.
+                    </p>
+                </div>
+
+                <!-- EMPATHY MAP -->
+                <div class="uxs-panel" data-uxs-panel="empathy">
+
+                    <div class="uxs-panel-heading">
+                        <div>
+                            <span class="uxs-section-index">02 / UNDERSTAND THE USER</span>
+                            <h3>Step into their world.</h3>
+                            <p>Explore what a user might think, feel, say and do.</p>
+                        </div>
+                        <span class="uxs-panel-icon"><i class="fa-solid fa-brain"></i></span>
+                    </div>
+
+                    <div class="uxs-empathy-map">
+
+                        <div class="uxs-empathy-center">
+                            <div class="uxs-empathy-user">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <b>THE USER</b>
+                            <small>Alex's experience</small>
+                        </div>
+
+                        <div class="uxs-empathy-card uxs-thinks">
+                            <div class="uxs-empathy-title">
+                                <i class="fa-solid fa-cloud"></i>
+                                <b>THINKS</b>
+                            </div>
+                            <p>"Is this easy to use?"</p>
+                            <p>"Where can I find what I need?"</p>
+                        </div>
+
+                        <div class="uxs-empathy-card uxs-feels">
+                            <div class="uxs-empathy-title">
+                                <i class="fa-solid fa-heart"></i>
+                                <b>FEELS</b>
+                            </div>
+                            <p>Confident when things are clear</p>
+                            <p>Frustrated by unnecessary friction</p>
+                        </div>
+
+                        <div class="uxs-empathy-card uxs-says">
+                            <div class="uxs-empathy-title">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <b>SAYS</b>
+                            </div>
+                            <p>"Show me the next step."</p>
+                            <p>"Keep it simple."</p>
+                        </div>
+
+                        <div class="uxs-empathy-card uxs-does">
+                            <div class="uxs-empathy-title">
+                                <i class="fa-solid fa-person-walking"></i>
+                                <b>DOES</b>
+                            </div>
+                            <p>Scans headings and buttons</p>
+                            <p>Looks for familiar patterns</p>
+                        </div>
+
+                    </div>
+
+                    <div class="uxs-insight">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <div>
+                            <b>DESIGN INSIGHT</b>
+                            <p>Make the next action obvious, keep navigation predictable and provide useful feedback.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- USER JOURNEY -->
+                <div class="uxs-panel" data-uxs-panel="journey">
+
+                    <div class="uxs-panel-heading">
+                        <div>
+                            <span class="uxs-section-index">03 / EXPERIENCE MAPPING</span>
+                            <h3>Map every step.</h3>
+                            <p>Select a stage to inspect the user's experience and design opportunities.</p>
+                        </div>
+                        <span class="uxs-panel-icon"><i class="fa-solid fa-route"></i></span>
+                    </div>
+
+                    <div class="uxs-journey-track">
+
+                        <button class="uxs-journey-node active" data-journey="0">
+                            <span>01</span>
+                            <b>Discover</b>
+                            <small>Find the product</small>
+                        </button>
+
+                        <div class="uxs-journey-line"></div>
+
+                        <button class="uxs-journey-node" data-journey="1">
+                            <span>02</span>
+                            <b>Explore</b>
+                            <small>Understand options</small>
+                        </button>
+
+                        <div class="uxs-journey-line"></div>
+
+                        <button class="uxs-journey-node" data-journey="2">
+                            <span>03</span>
+                            <b>Decide</b>
+                            <small>Choose an action</small>
+                        </button>
+
+                        <div class="uxs-journey-line"></div>
+
+                        <button class="uxs-journey-node" data-journey="3">
+                            <span>04</span>
+                            <b>Complete</b>
+                            <small>Reach the goal</small>
+                        </button>
+
+                    </div>
+
+                    <div class="uxs-journey-detail" aria-live="polite">
+                        <div class="uxs-journey-detail-icon" id="uxsJourneyIcon">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+
+                        <div class="uxs-journey-detail-copy">
+                            <span id="uxsJourneyStep">STAGE 01</span>
+                            <h4 id="uxsJourneyTitle">Discover</h4>
+                            <p id="uxsJourneyDescription">
+                                The user first encounters the product through a link,
+                                search result or recommendation.
+                            </p>
+                        </div>
+
+                        <div class="uxs-journey-opportunity">
+                            <span>DESIGN OPPORTUNITY</span>
+                            <b id="uxsJourneyOpportunity">
+                                Make the first impression clear and relevant.
+                            </b>
+                        </div>
+                    </div>
+
+                    <div class="uxs-journey-controls">
+                        <button id="uxsJourneyPrevious" disabled>
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Previous
+                        </button>
+                        <span id="uxsJourneyCounter">01 / 04</span>
+                        <button id="uxsJourneyNext">
+                            Next stage
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- WIREFRAME LAB -->
+                <div class="uxs-panel" data-uxs-panel="wireframe">
+
+                    <div class="uxs-panel-heading">
+                        <div>
+                            <span class="uxs-section-index">04 / LOW-FIDELITY DESIGN</span>
+                            <h3>Build the structure.</h3>
+                            <p>Experiment with a simple website wireframe before adding visual styling.</p>
+                        </div>
+                        <span class="uxs-panel-icon"><i class="fa-solid fa-object-group"></i></span>
+                    </div>
+
+                    <div class="uxs-wireframe-toolbar">
+                        <div>
+                            <span class="uxs-wireframe-label">CANVAS / HOME PAGE</span>
+                            <b>Website Wireframe</b>
+                        </div>
+
+                        <div class="uxs-wireframe-actions">
+                            <button class="active" data-wireframe-device="desktop" title="Desktop">
+                                <i class="fa-solid fa-desktop"></i>
+                            </button>
+                            <button data-wireframe-device="mobile" title="Mobile">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </button>
+                            <button id="uxsWireframeReset" title="Reset wireframe">
+                                <i class="fa-solid fa-rotate-left"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="uxs-wireframe-stage" id="uxsWireframeStage">
+
+                        <div class="uxs-wireframe-page" id="uxsWireframePage">
+
+                            <div class="uxs-wf-nav">
+                                <div class="uxs-wf-logo">BRAND LOGO</div>
+                                <div class="uxs-wf-nav-links">
+                                    <span>HOME</span>
+                                    <span>ABOUT</span>
+                                    <span>SERVICES</span>
+                                    <span>CONTACT</span>
+                                </div>
+                                <div class="uxs-wf-nav-button">ACTION</div>
+                            </div>
+
+                            <div class="uxs-wf-hero">
+                                <div class="uxs-wf-hero-copy">
+                                    <div class="uxs-wf-line short"></div>
+                                    <div class="uxs-wf-title-lines">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="uxs-wf-line medium"></div>
+                                    <div class="uxs-wf-line medium"></div>
+                                    <div class="uxs-wf-button">CALL TO ACTION</div>
+                                </div>
+                                <div class="uxs-wf-hero-image">
+                                    <i class="fa-regular fa-image"></i>
+                                    <span>IMAGE PLACEHOLDER</span>
+                                </div>
+                            </div>
+
+                            <div class="uxs-wf-section-heading">
+                                <span></span>
+                                <b>FEATURES SECTION</b>
+                                <span></span>
+                            </div>
+
+                            <div class="uxs-wf-cards">
+                                <div class="uxs-wf-card">
+                                    <i class="fa-solid fa-square"></i>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="uxs-wf-card">
+                                    <i class="fa-solid fa-square"></i>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="uxs-wf-card">
+                                    <i class="fa-solid fa-square"></i>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <div class="uxs-wf-footer">
+                                <span>FOOTER CONTENT</span>
+                                <span>LINKS · SOCIAL · CONTACT</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="uxs-wireframe-legend">
+                        <span><i></i> Navigation</span>
+                        <span><i></i> Content area</span>
+                        <span><i></i> Action element</span>
+                        <span><i></i> Image placeholder</span>
+                    </div>
+
+                    <p class="uxs-wireframe-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        A wireframe focuses on layout, hierarchy and functionality rather than final colors and decoration.
+                    </p>
+
+                </div>
+
+                <!-- PROTOTYPE -->
+                <div class="uxs-panel" data-uxs-panel="prototype">
+
+                    <div class="uxs-panel-heading">
+                        <div>
+                            <span class="uxs-section-index">05 / INTERACTIVE PROTOTYPE</span>
+                            <h3>Test the experience.</h3>
+                            <p>Click through a simple sample flow to see how prototype interactions connect.</p>
+                        </div>
+                        <span class="uxs-panel-icon"><i class="fa-solid fa-play"></i></span>
+                    </div>
+
+                    <div class="uxs-prototype-layout">
+
+                        <div class="uxs-prototype-device">
+
+                            <div class="uxs-prototype-device-top">
+                                <span></span>
+                                <b>PRODUCT EXPERIENCE</b>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <div class="uxs-prototype-screen" id="uxsPrototypeScreen">
+
+                                <div class="uxs-prototype-page active" data-prototype-page="0">
+                                    <div class="uxs-proto-icon">
+                                        <i class="fa-solid fa-layer-group"></i>
+                                    </div>
+                                    <span class="uxs-proto-kicker">WELCOME</span>
+                                    <h4>Discover something useful.</h4>
+                                    <p>A simple introduction to the product and what it helps people do.</p>
+                                    <button class="uxs-proto-button" data-prototype-next="1">
+                                        Get started <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                    <small>SCREEN 01 · INTRODUCTION</small>
+                                </div>
+
+                                <div class="uxs-prototype-page" data-prototype-page="1">
+                                    <div class="uxs-proto-icon">
+                                        <i class="fa-solid fa-compass"></i>
+                                    </div>
+                                    <span class="uxs-proto-kicker">EXPLORE</span>
+                                    <h4>What would you like to explore?</h4>
+                                    <p>Choose a sample option to continue the experience.</p>
+
+                                    <button class="uxs-proto-option" data-prototype-next="2">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                        Discover ideas
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+
+                                    <button class="uxs-proto-option" data-prototype-next="2">
+                                        <i class="fa-solid fa-grid-2"></i>
+                                        Explore features
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+
+                                    <button class="uxs-proto-back" data-prototype-next="0">
+                                        <i class="fa-solid fa-arrow-left"></i> Back
+                                    </button>
+                                    <small>SCREEN 02 · CHOICE</small>
+                                </div>
+
+                                <div class="uxs-prototype-page" data-prototype-page="2">
+                                    <div class="uxs-proto-icon success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <span class="uxs-proto-kicker">COMPLETED</span>
+                                    <h4>You're all set.</h4>
+                                    <p>This sample flow has reached its final screen. Clear feedback helps users understand what happened.</p>
+                                    <button class="uxs-proto-button" data-prototype-next="0">
+                                        Start again <i class="fa-solid fa-rotate-right"></i>
+                                    </button>
+                                    <small>SCREEN 03 · CONFIRMATION</small>
+                                </div>
+
+                            </div>
+
+                            <div class="uxs-prototype-device-bottom">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="uxs-prototype-inspector">
+                            <div class="uxs-proto-inspector-heading">
+                                <span>PROTOTYPE FLOW</span>
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+
+                            <div class="uxs-proto-flow">
+                                <div class="uxs-proto-flow-node active" data-flow-node="0">
+                                    <span>01</span>
+                                    <div>
+                                        <b>Introduction</b>
+                                        <small>Welcome screen</small>
+                                    </div>
+                                </div>
+
+                                <div class="uxs-proto-flow-connector"></div>
+
+                                <div class="uxs-proto-flow-node" data-flow-node="1">
+                                    <span>02</span>
+                                    <div>
+                                        <b>Choice</b>
+                                        <small>Explore options</small>
+                                    </div>
+                                </div>
+
+                                <div class="uxs-proto-flow-connector"></div>
+
+                                <div class="uxs-proto-flow-node" data-flow-node="2">
+                                    <span>03</span>
+                                    <div>
+                                        <b>Confirmation</b>
+                                        <small>Show completion</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uxs-proto-current">
+                                <span>CURRENT SCREEN</span>
+                                <b id="uxsCurrentScreen">01 — INTRODUCTION</b>
+                                <p id="uxsCurrentDescription">Introduce the product and give the user a clear first action.</p>
+                            </div>
+
+                            <button class="uxs-proto-reset" id="uxsPrototypeReset">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                RESTART PROTOTYPE
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BOTTOM STATUS -->
+            <div class="uxs-bottom-status">
+                <span><i class="fa-solid fa-circle"></i> UX STUDIO READY</span>
+                <span>INTERACTIVE SAMPLE ENVIRONMENT</span>
+                <span id="uxsStatus">PERSONA VIEW ACTIVE</span>
+            </div>
+
+        </div>
+
+        <!-- PROCESS STRIP -->
+        <div class="uxs-process-strip">
+            <div class="uxs-process-heading">
+                <span>FROM RESEARCH TO REAL EXPERIENCE</span>
+                <p>A thoughtful design process starts with people.</p>
+            </div>
+
+            <div class="uxs-process-grid">
+                <div class="uxs-process-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <b>Research</b>
+                    <small>Understand user needs</small>
+                </div>
+
+                <div class="uxs-process-item">
+                    <i class="fa-solid fa-brain"></i>
+                    <b>Understand</b>
+                    <small>Find pain points</small>
+                </div>
+
+                <div class="uxs-process-item">
+                    <i class="fa-solid fa-sitemap"></i>
+                    <b>Structure</b>
+                    <small>Plan the experience</small>
+                </div>
+
+                <div class="uxs-process-item">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <b>Wireframe</b>
+                    <small>Shape the interface</small>
+                </div>
+
+                <div class="uxs-process-item">
+                    <i class="fa-solid fa-vial"></i>
+                    <b>Prototype</b>
+                    <small>Test the flow</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="ui-showcase" id="ui-project-showcase">
+    <div class="uis-background-grid"></div>
+    <div class="uis-glow uis-glow-one"></div>
+    <div class="uis-glow uis-glow-two"></div>
+
+    <div class="uis-container">
+
+        <div class="uis-heading">
+            <span class="uis-eyebrow">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                THE CREATIVE INTERFACE LAB
+            </span>
+
+            <h2>
+                IDEAS INTO
+                <span>DIGITAL EXPERIENCES.</span>
+            </h2>
+
+            <p>
+                Explore interface concepts where visual identity,
+                thoughtful interactions and user experience work together.
+            </p>
+        </div>
+
+        <div class="uis-toolbar">
+            <div class="uis-toolbar-copy">
+                <span class="uis-live-dot"></span>
+                <span>CONCEPT COLLECTION</span>
+            </div>
+
+            <div class="uis-filters" role="group" aria-label="Filter design concepts">
+                <button class="uis-filter active" data-filter="all" type="button">All Concepts</button>
+                <button class="uis-filter" data-filter="dashboard" type="button">Dashboards</button>
+                <button class="uis-filter" data-filter="commerce" type="button">E-Commerce</button>
+                <button class="uis-filter" data-filter="creative" type="button">Creative</button>
+                <button class="uis-filter" data-filter="mobile" type="button">Mobile UI</button>
+            </div>
+        </div>
+
+        <div class="uis-project-grid">
+
+            <!-- PROJECT 01 -->
+            <article class="uis-project-card" data-category="dashboard">
+                <div class="uis-preview uis-preview-dashboard">
+                    <div class="uis-preview-top">
+                        <span class="uis-mini-brand">
+                            <i class="fa-solid fa-cube"></i> NEXORA
+                        </span>
+                        <span class="uis-mini-avatar">A</span>
+                    </div>
+
+                    <div class="uis-dashboard-layout">
+                        <div class="uis-dashboard-sidebar">
+                            <span class="selected"><i class="fa-solid fa-chart-pie"></i></span>
+                            <span><i class="fa-solid fa-users"></i></span>
+                            <span><i class="fa-solid fa-folder"></i></span>
+                            <span><i class="fa-solid fa-gear"></i></span>
+                        </div>
+
+                        <div class="uis-dashboard-main">
+                            <div class="uis-preview-title">
+                                <div>
+                                    <small>OVERVIEW</small>
+                                    <strong>Dashboard</strong>
+                                </div>
+                                <span class="uis-date-chip">This month</span>
+                            </div>
+
+                            <div class="uis-stat-row">
+                                <div><small>Revenue</small><b>$24.8k</b><i>+12.8%</i></div>
+                                <div><small>Visitors</small><b>18.4k</b><i>+8.2%</i></div>
+                            </div>
+
+                            <div class="uis-chart-panel">
+                                <div class="uis-chart-heading">
+                                    <b>Performance</b>
+                                    <small>Weekly activity</small>
+                                </div>
+                                <div class="uis-chart-bars">
+                                    <span style="--bar:38%"></span>
+                                    <span style="--bar:65%"></span>
+                                    <span style="--bar:48%"></span>
+                                    <span style="--bar:82%"></span>
+                                    <span style="--bar:58%"></span>
+                                    <span style="--bar:94%"></span>
+                                    <span style="--bar:73%"></span>
+                                </div>
+                            </div>
+
+                            <div class="uis-preview-bottom-lines">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uis-card-content">
+                    <div class="uis-card-meta">
+                        <span>DASHBOARD DESIGN</span>
+                        <span>CONCEPT 01</span>
+                    </div>
+                    <h3>Nexora Analytics</h3>
+                    <p>A modern analytics dashboard concept focused on clarity, useful data and fast navigation.</p>
+
+                    <div class="uis-tags">
+                        <span>Data UI</span><span>Dashboard</span><span>Visual Hierarchy</span>
+                    </div>
+
+                    <button class="uis-details-button" type="button"
+                        data-project="nexora" aria-haspopup="dialog">
+                        Explore Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- PROJECT 02 -->
+            <article class="uis-project-card" data-category="commerce">
+                <div class="uis-preview uis-preview-commerce">
+                    <div class="uis-shop-nav">
+                        <strong>MONO<span>FORM</span></strong>
+                        <div><i class="fa-solid fa-magnifying-glass"></i><i class="fa-regular fa-user"></i><i class="fa-solid fa-bag-shopping"></i></div>
+                    </div>
+
+                    <div class="uis-shop-hero">
+                        <div class="uis-shop-copy">
+                            <small>THE EVERYDAY EDIT</small>
+                            <strong>Less, but<br>better.</strong>
+                            <span>Thoughtful essentials for modern living.</span>
+                            <b>EXPLORE COLLECTION <i class="fa-solid fa-arrow-right"></i></b>
+                        </div>
+                        <div class="uis-product-shape">
+                            <div class="uis-product-bottle"></div>
+                            <div class="uis-product-shadow"></div>
+                        </div>
+                    </div>
+
+                    <div class="uis-shop-products">
+                        <span><i></i><b>Essential Form</b><small>$48</small></span>
+                        <span><i></i><b>Daily Objects</b><small>$32</small></span>
+                        <span><i></i><b>Pure Design</b><small>$56</small></span>
+                    </div>
+                </div>
+
+                <div class="uis-card-content">
+                    <div class="uis-card-meta">
+                        <span>E-COMMERCE DESIGN</span>
+                        <span>CONCEPT 02</span>
+                    </div>
+                    <h3>Monoform Store</h3>
+                    <p>A minimalist shopping experience designed around product discovery and a clear buying journey.</p>
+
+                    <div class="uis-tags">
+                        <span>Product UI</span><span>Shopping Flow</span><span>Responsive</span>
+                    </div>
+
+                    <button class="uis-details-button" type="button"
+                        data-project="monoform" aria-haspopup="dialog">
+                        Explore Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- PROJECT 03 -->
+            <article class="uis-project-card" data-category="creative">
+                <div class="uis-preview uis-preview-creative">
+                    <div class="uis-creative-nav">
+                        <strong>FRAME<span>/</span>STUDIO</strong>
+                        <span>MENU <i class="fa-solid fa-bars"></i></span>
+                    </div>
+
+                    <div class="uis-creative-content">
+                        <small>INDEPENDENT CREATIVE STUDIO</small>
+                        <strong>MAKE<br><em>IT</em> MATTER.</strong>
+                        <div class="uis-creative-orb">
+                            <div></div>
+                        </div>
+                        <p>Ideas with intention.<br>Design with character.</p>
+                    </div>
+
+                    <div class="uis-creative-footer">
+                        <span>SELECTED WORK — 2026</span>
+                        <span><i class="fa-solid fa-arrow-down"></i></span>
+                    </div>
+                </div>
+
+                <div class="uis-card-content">
+                    <div class="uis-card-meta">
+                        <span>CREATIVE PORTFOLIO</span>
+                        <span>CONCEPT 03</span>
+                    </div>
+                    <h3>Frame Studio</h3>
+                    <p>An expressive portfolio concept using bold typography, contrast and visual storytelling.</p>
+
+                    <div class="uis-tags">
+                        <span>Art Direction</span><span>Typography</span><span>Brand Identity</span>
+                    </div>
+
+                    <button class="uis-details-button" type="button"
+                        data-project="frame" aria-haspopup="dialog">
+                        Explore Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- PROJECT 04 -->
+            <article class="uis-project-card" data-category="mobile">
+                <div class="uis-preview uis-preview-mobile">
+                    <div class="uis-mobile-top">
+                        <span>9:41</span><span><i class="fa-solid fa-signal"></i> <i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-battery-full"></i></span>
+                    </div>
+
+                    <div class="uis-mobile-app">
+                        <div class="uis-mobile-greeting">
+                            <div><small>MONDAY, 22 NOVEMBER</small><strong>Good morning,<br>Alex.</strong></div>
+                            <span><i class="fa-regular fa-bell"></i></span>
+                        </div>
+
+                        <div class="uis-mobile-feature">
+                            <small>YOUR DAILY FOCUS</small>
+                            <strong>Make space<br>for progress.</strong>
+                            <span>3 tasks waiting for you</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                        <div class="uis-mobile-task-heading"><b>Today's plan</b><small>View all</small></div>
+                        <div class="uis-mobile-task"><i class="fa-solid fa-check"></i><span>Review project goals</span><b>09:30</b></div>
+                        <div class="uis-mobile-task"><i class="fa-regular fa-circle"></i><span>Plan weekly priorities</span><b>11:00</b></div>
+                        <div class="uis-mobile-task"><i class="fa-regular fa-circle"></i><span>Read design notes</span><b>14:00</b></div>
+
+                        <div class="uis-mobile-nav">
+                            <i class="fa-solid fa-house"></i><i class="fa-regular fa-calendar"></i>
+                            <i class="fa-solid fa-chart-simple"></i><i class="fa-regular fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uis-card-content">
+                    <div class="uis-card-meta">
+                        <span>MOBILE APPLICATION UI</span>
+                        <span>CONCEPT 04</span>
+                    </div>
+                    <h3>Daylight Planner</h3>
+                    <p>A calm productivity app concept with simple task organization and a focused mobile layout.</p>
+
+                    <div class="uis-tags">
+                        <span>Mobile UI</span><span>Productivity</span><span>App Design</span>
+                    </div>
+
+                    <button class="uis-details-button" type="button"
+                        data-project="daylight" aria-haspopup="dialog">
+                        Explore Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="uis-bottom-note">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>All interfaces shown are original visual design concepts created for portfolio demonstration.</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- CASE STUDY MODAL -->
+<div class="uis-modal" id="uisCaseModal" aria-hidden="true">
+    <div class="uis-modal-backdrop" data-close-modal></div>
+
+    <div class="uis-modal-panel" role="dialog" aria-modal="true"
+        aria-labelledby="uisModalTitle">
+
+        <button class="uis-modal-close" id="uisModalClose" type="button"
+            aria-label="Close case study">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="uis-modal-header">
+            <span class="uis-eyebrow" id="uisModalCategory">DESIGN CASE STUDY</span>
+            <h2 id="uisModalTitle">Project title</h2>
+            <p id="uisModalIntro"></p>
+        </div>
+
+        <div class="uis-modal-grid">
+            <div class="uis-modal-block">
+                <span><i class="fa-solid fa-bullseye"></i> DESIGN OBJECTIVE</span>
+                <p id="uisModalObjective"></p>
+            </div>
+
+            <div class="uis-modal-block">
+                <span><i class="fa-solid fa-users"></i> USER NEED</span>
+                <p id="uisModalNeed"></p>
+            </div>
+
+            <div class="uis-modal-block">
+                <span><i class="fa-solid fa-compass-drafting"></i> UX DECISIONS</span>
+                <ul id="uisModalDecisions"></ul>
+            </div>
+
+            <div class="uis-modal-block">
+                <span><i class="fa-solid fa-palette"></i> VISUAL DIRECTION</span>
+                <p id="uisModalVisual"></p>
+            </div>
+        </div>
+
+        <div class="uis-modal-footer">
+            <span><i class="fa-solid fa-lightbulb"></i> ORIGINAL DESIGN CONCEPT</span>
+            <button type="button" id="uisModalDone">Close Case Study <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- =========================================
+     SECTION 1: INTERACTIVE DESIGN PLAYGROUND
+========================================= -->
+<section class="uid-playground" id="ui-design-playground">
+    <div class="uid-container">
+
+        <div class="uid-heading">
+            <span class="uid-eyebrow"><i class="fa-solid fa-sliders"></i> EXPERIMENT. CUSTOMIZE. CREATE.</span>
+            <h2>YOUR IDEAS. <span>YOUR INTERFACE.</span></h2>
+            <p>Explore the building blocks of a digital interface. Change the colors, typography and button style to create your own visual direction.</p>
+        </div>
+
+        <div class="uid-playground-shell">
+            <div class="uid-playground-topbar">
+                <div class="uid-window-dots"><i></i><i></i><i></i></div>
+                <span><i class="fa-solid fa-wand-magic-sparkles"></i> LIVE DESIGN PLAYGROUND</span>
+                <span class="uid-live-label"><i></i> INTERACTIVE</span>
+            </div>
+
+            <div class="uid-playground-layout">
+                <aside class="uid-controls">
+                    <div class="uid-control-group">
+                        <label>01 / ACCENT COLOR</label>
+                        <div class="uid-color-options">
+                            <button class="uid-color active" type="button" data-color="#3B82F6" style="--swatch:#3B82F6" aria-label="Blue accent"></button>
+                            <button class="uid-color" type="button" data-color="#8B5CF6" style="--swatch:#8B5CF6" aria-label="Purple accent"></button>
+                            <button class="uid-color" type="button" data-color="#06B6D4" style="--swatch:#06B6D4" aria-label="Cyan accent"></button>
+                            <button class="uid-color" type="button" data-color="#10B981" style="--swatch:#10B981" aria-label="Green accent"></button>
+                            <button class="uid-color" type="button" data-color="#F97316" style="--swatch:#F97316" aria-label="Orange accent"></button>
+                        </div>
+                    </div>
+
+                    <div class="uid-control-group">
+                        <label for="uidFontSelect">02 / TYPOGRAPHY</label>
+                        <select id="uidFontSelect">
+                            <option value="Inter, Arial, sans-serif">Modern Sans</option>
+                            <option value="Georgia, serif">Editorial Serif</option>
+                            <option value="'Trebuchet MS', sans-serif">Friendly Rounded</option>
+                            <option value="monospace">Technical Mono</option>
+                        </select>
+                    </div>
+
+                    <div class="uid-control-group">
+                        <label>03 / BUTTON STYLE</label>
+                        <div class="uid-button-styles">
+                            <button type="button" class="uid-style-option active" data-button-style="rounded">Rounded</button>
+                            <button type="button" class="uid-style-option" data-button-style="pill">Pill</button>
+                            <button type="button" class="uid-style-option" data-button-style="sharp">Sharp</button>
+                        </div>
+                    </div>
+
+                    <div class="uid-control-group">
+                        <label for="uidRadiusRange">04 / CORNER RADIUS</label>
+                        <input id="uidRadiusRange" type="range" min="0" max="30" value="14">
+                        <div class="uid-range-label"><span>0px</span><strong id="uidRadiusValue">14px</strong><span>30px</span></div>
+                    </div>
+
+                    <button class="uid-reset-button" id="uidReset" type="button">
+                        <i class="fa-solid fa-rotate-left"></i> RESET PLAYGROUND
+                    </button>
+                </aside>
+
+                <div class="uid-preview-area">
+                    <div class="uid-preview-label"><span>LIVE PREVIEW</span><span>YOUR DESIGN IN ACTION</span></div>
+
+                    <div class="uid-demo-card" id="uidDemoCard">
+                        <div class="uid-demo-nav">
+                            <strong><span class="uid-demo-logo">A</span> NOVA SPACE</strong>
+                            <div><span>Overview</span><span>Features</span><span>About</span></div>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="uid-demo-content">
+                            <span class="uid-demo-tag">DESIGN YOUR DIGITAL WORLD</span>
+                            <h3 id="uidDemoHeading">Create something<br>remarkable.</h3>
+                            <p>Thoughtful interfaces turn complex ideas into simple, memorable experiences.</p>
+                            <button id="uidDemoButton" type="button">Explore the experience <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                        <div class="uid-demo-footer">
+                            <span><i class="fa-solid fa-circle-check"></i> Clean interface</span>
+                            <span><i class="fa-solid fa-bolt"></i> Thoughtful interaction</span>
+                            <span><i class="fa-solid fa-mobile-screen"></i> Responsive layout</span>
+                        </div>
+                    </div>
+
+                    <div class="uid-preview-caption">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Changes update this preview instantly. Try different combinations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================
+     SECTION 2: UI COMPONENT LIBRARY
+========================================= -->
+<section class="uic-library" id="ui-component-library">
+    <div class="uic-container">
+
+        <div class="uic-heading">
+            <span class="uid-eyebrow"><i class="fa-solid fa-cubes"></i> THE INTERFACE TOOLKIT</span>
+            <h2>SMALL COMPONENTS. <span>BIG EXPERIENCES.</span></h2>
+            <p>Explore the reusable interface elements that help create consistent, intuitive and polished digital products.</p>
+        </div>
+
+        <div class="uic-library-layout">
+            <aside class="uic-sidebar">
+                <span class="uic-sidebar-label">COMPONENT CATEGORIES</span>
+                <button class="uic-tab active" data-uic-tab="buttons" type="button"><i class="fa-solid fa-square"></i> Buttons</button>
+                <button class="uic-tab" data-uic-tab="forms" type="button"><i class="fa-solid fa-rectangle-list"></i> Form Elements</button>
+                <button class="uic-tab" data-uic-tab="cards" type="button"><i class="fa-solid fa-id-card"></i> Cards</button>
+                <button class="uic-tab" data-uic-tab="toggles" type="button"><i class="fa-solid fa-toggle-on"></i> Toggles</button>
+                <button class="uic-tab" data-uic-tab="navigation" type="button"><i class="fa-solid fa-bars"></i> Navigation</button>
+            </aside>
+
+            <div class="uic-workspace">
+
+                <div class="uic-component-panel active" data-uic-panel="buttons">
+                    <div class="uic-panel-heading"><div><small>COMPONENT 01</small><h3>Button Collection</h3></div><span>INTERACTIVE</span></div>
+                    <p class="uic-panel-description">Buttons communicate actions. Explore a few common button treatments.</p>
+                    <div class="uic-button-showcase">
+                        <button class="uic-demo-button primary" type="button">Primary Action <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="uic-demo-button outline" type="button">Secondary Action</button>
+                        <button class="uic-demo-button subtle" type="button">Text Action <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        <button class="uic-demo-button icon-only" type="button" aria-label="Settings"><i class="fa-solid fa-gear"></i></button>
+                    </div>
+                    <div class="uic-component-info"><i class="fa-solid fa-lightbulb"></i><span>Use clear action labels and consistent visual states to make controls easier to understand.</span></div>
+                </div>
+
+                <div class="uic-component-panel" data-uic-panel="forms">
+                    <div class="uic-panel-heading"><div><small>COMPONENT 02</small><h3>Form Elements</h3></div><span>INPUT DESIGN</span></div>
+                    <p class="uic-panel-description">Forms should make it clear what information is needed and how to provide it.</p>
+                    <div class="uic-form-demo">
+                        <label for="uicName">Your name</label>
+                        <input id="uicName" type="text" placeholder="Enter your name">
+                        <label for="uicEmail">Email address</label>
+                        <input id="uicEmail" type="email" placeholder="you@example.com">
+                        <label for="uicSubject">Choose a topic</label>
+                        <select id="uicSubject"><option>UI Design</option><option>UX Research</option><option>Design Systems</option></select>
+                        <label for="uicMessage">Your message</label>
+                        <textarea id="uicMessage" rows="3" placeholder="Write a short message..."></textarea>
+                        <button class="uic-demo-button primary" type="button" id="uicFormDemoButton">Test Form Feedback</button>
+                        <span class="uic-form-feedback" id="uicFormFeedback" aria-live="polite"></span>
+                    </div>
+                </div>
+
+                <div class="uic-component-panel" data-uic-panel="cards">
+                    <div class="uic-panel-heading"><div><small>COMPONENT 03</small><h3>Content Cards</h3></div><span>CONTENT LAYOUT</span></div>
+                    <p class="uic-panel-description">Cards group related content into visual units that are easy to scan.</p>
+                    <div class="uic-card-demo-grid">
+                        <article class="uic-mini-card">
+                            <span class="uic-mini-card-icon"><i class="fa-solid fa-layer-group"></i></span>
+                            <small>DESIGN SYSTEM</small><h4>Build consistency.</h4>
+                            <p>Reusable patterns help create a unified interface.</p>
+                        </article>
+                        <article class="uic-mini-card featured">
+                            <span class="uic-mini-card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            <small>USER EXPERIENCE</small><h4>Make it intuitive.</h4>
+                            <p>Clear choices help people move through a product.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="uic-component-panel" data-uic-panel="toggles">
+                    <div class="uic-panel-heading"><div><small>COMPONENT 04</small><h3>Switches & Controls</h3></div><span>USER SETTINGS</span></div>
+                    <p class="uic-panel-description">Switches represent settings that can be turned on or off.</p>
+                    <div class="uic-toggle-list">
+                        <div><span><b>Motion effects</b><small>Enable decorative interface motion</small></span><label class="uic-switch"><input type="checkbox" checked><span></span></label></div>
+                        <div><span><b>Compact layout</b><small>Use a tighter content arrangement</small></span><label class="uic-switch"><input type="checkbox"><span></span></label></div>
+                        <div><span><b>Notifications</b><small>Show interface notifications</small></span><label class="uic-switch"><input type="checkbox" checked><span></span></label></div>
+                    </div>
+                </div>
+
+                <div class="uic-component-panel" data-uic-panel="navigation">
+                    <div class="uic-panel-heading"><div><small>COMPONENT 05</small><h3>Navigation Patterns</h3></div><span>WAYFINDING</span></div>
+                    <p class="uic-panel-description">Navigation gives users a predictable way to move between important areas.</p>
+                    <div class="uic-nav-demo">
+                        <div class="uic-nav-brand"><span>A</span> ATELIER</div>
+                        <button class="uic-nav-demo-link active" type="button">Home</button>
+                        <button class="uic-nav-demo-link" type="button">Projects</button>
+                        <button class="uic-nav-demo-link" type="button">About</button>
+                        <button class="uic-nav-demo-link" type="button">Contact</button>
+                    </div>
+                    <p class="uic-nav-feedback" id="uicNavFeedback" aria-live="polite">Home selected</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================
+     SECTION 3: DESIGN SYSTEM
+========================================= -->
+<section class="uds-system" id="ui-design-system">
+    <div class="uds-container">
+
+        <div class="uid-heading">
+            <span class="uid-eyebrow"><i class="fa-solid fa-swatchbook"></i> THE VISUAL FOUNDATION</span>
+            <h2>DESIGN WITH <span>CONSISTENCY.</span></h2>
+            <p>A design system creates a shared visual language. Explore the colors, type, spacing and principles behind this studio's interface direction.</p>
+        </div>
+
+        <div class="uds-system-header">
+            <div><span class="uds-system-mark">A</span><div><strong>AMORIDWEB DESIGN SYSTEM</strong><small>FOUNDATION LIBRARY / VERSION 1.0</small></div></div>
+            <span class="uds-status"><i></i> DESIGN TOKENS</span>
+        </div>
+
+        <div class="uds-grid">
+            <article class="uds-panel uds-colors">
+                <div class="uds-panel-title"><span>01</span><h3>Color Palette</h3></div>
+                <p>Core colors used to create depth, contrast and visual identity.</p>
+                <div class="uds-color-list">
+                    <button class="uds-color-token" type="button" data-token="#0B1120"><i style="--token:#0B1120"></i><span><b>Midnight</b><small>#0B1120</small></span><em>BASE</em></button>
+                    <button class="uds-color-token" type="button" data-token="#111827"><i style="--token:#111827"></i><span><b>Surface</b><small>#111827</small></span></button>
+                    <button class="uds-color-token" type="button" data-token="#2563EB"><i style="--token:#2563EB"></i><span><b>Royal Blue</b><small>#2563EB</small></span></button>
+                    <button class="uds-color-token" type="button" data-token="#3B82F6"><i style="--token:#3B82F6"></i><span><b>Electric Blue</b><small>#3B82F6</small></span></button>
+                    <button class="uds-color-token" type="button" data-token="#60A5FA"><i style="--token:#60A5FA"></i><span><b>Ice Blue</b><small>#60A5FA</small></span></button>
+                    <button class="uds-color-token" type="button" data-token="#F8FAFC"><i style="--token:#F8FAFC"></i><span><b>Cloud White</b><small>#F8FAFC</small></span></button>
+                </div>
+                <span class="uds-copy-feedback" id="udsCopyFeedback" aria-live="polite">Select a color to copy its HEX value.</span>
+            </article>
+
+            <article class="uds-panel uds-type">
+                <div class="uds-panel-title"><span>02</span><h3>Typography</h3></div>
+                <p>Clear type hierarchy helps organize information.</p>
+                <div class="uds-type-sample">
+                    <small>DISPLAY / 48 PX</small>
+                    <strong>Make it<br>meaningful.</strong>
+                    <div class="uds-type-divider"></div>
+                    <small>HEADING / 24 PX</small>
+                    <h4>Design with purpose.</h4>
+                    <small>BODY / 15 PX</small>
+                    <p>Good typography makes content easier to read, understand and navigate.</p>
+                    <small>CAPTION / 11 PX</small>
+                    <span>SUPPORTING INTERFACE INFORMATION</span>
+                </div>
+            </article>
+
+            <article class="uds-panel uds-spacing">
+                <div class="uds-panel-title"><span>03</span><h3>Spacing Scale</h3></div>
+                <p>Consistent spacing gives components room to breathe.</p>
+                <div class="uds-spacing-list">
+                    <div><span>XS</span><i style="--space:8px"></i><b>8 px</b></div>
+                    <div><span>SM</span><i style="--space:16px"></i><b>16 px</b></div>
+                    <div><span>MD</span><i style="--space:24px"></i><b>24 px</b></div>
+                    <div><span>LG</span><i style="--space:32px"></i><b>32 px</b></div>
+                    <div><span>XL</span><i style="--space:48px"></i><b>48 px</b></div>
+                </div>
+            </article>
+
+            <article class="uds-panel uds-principles">
+                <div class="uds-panel-title"><span>04</span><h3>Design Principles</h3></div>
+                <div class="uds-principle"><i class="fa-solid fa-eye"></i><div><b>Clarity first</b><small>Make important information easy to find.</small></div></div>
+                <div class="uds-principle"><i class="fa-solid fa-repeat"></i><div><b>Consistency</b><small>Reuse patterns so interfaces feel familiar.</small></div></div>
+                <div class="uds-principle"><i class="fa-solid fa-universal-access"></i><div><b>Accessibility</b><small>Consider different users and ways of interacting.</small></div></div>
+                <div class="uds-principle"><i class="fa-solid fa-mobile-screen"></i><div><b>Adaptability</b><small>Design for different screens and contexts.</small></div></div>
+            </article>
+        </div>
+
+        <div class="uds-token-footer">
+            <span><i class="fa-solid fa-code"></i> DESIGN TOKENS</span>
+            <code>--color-primary: #3B82F6;</code>
+            <code>--surface: #111827;</code>
+            <code>--radius-card: 16px;</code>
+            <span>SELECT A COLOR TO COPY</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================
+     SECTION 4: RESPONSIVE & ACCESSIBILITY LAB
+========================================= -->
+<section class="ura-lab" id="ui-responsive-lab">
+    <div class="ura-container">
+
+        <div class="uid-heading">
+            <span class="uid-eyebrow"><i class="fa-solid fa-universal-access"></i> DESIGNED FOR REAL PEOPLE</span>
+            <h2>ONE EXPERIENCE. <span>EVERY SCREEN.</span></h2>
+            <p>Explore how a layout adapts across devices and review the accessibility considerations that make interfaces more inclusive.</p>
+        </div>
+
+        <div class="ura-lab-grid">
+            <div class="ura-device-workspace">
+                <div class="ura-device-toolbar">
+                    <span>RESPONSIVE PREVIEW</span>
+                    <div>
+                        <button type="button" class="ura-device-button active" data-device="desktop" aria-label="Desktop preview"><i class="fa-solid fa-desktop"></i></button>
+                        <button type="button" class="ura-device-button" data-device="tablet" aria-label="Tablet preview"><i class="fa-solid fa-tablet-screen-button"></i></button>
+                        <button type="button" class="ura-device-button" data-device="mobile" aria-label="Mobile preview"><i class="fa-solid fa-mobile-screen-button"></i></button>
+                    </div>
+                </div>
+
+                <div class="ura-device-stage">
+                    <div class="ura-browser-frame desktop-mode" id="uraBrowserFrame">
+                        <div class="ura-browser-bar"><span></span><span></span><span></span><small>preview.amoridweb.design</small></div>
+                        <div class="ura-site-preview">
+                            <div class="ura-preview-nav"><b>STUDIO<span>.</span></b><div><span>Home</span><span>Work</span><span>About</span></div><i class="fa-solid fa-bars"></i></div>
+                            <div class="ura-preview-hero">
+                                <small>CREATIVE DIGITAL STUDIO</small>
+                                <h3>Ideas become<br><span>experiences.</span></h3>
+                                <p>Designing useful and memorable digital experiences.</p>
+                                <button type="button">Explore our work</button>
+                            </div>
+                            <div class="ura-preview-cards"><i></i><i></i><i></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ura-device-caption" id="uraDeviceCaption">Desktop view · Wide layout with full navigation.</div>
+            </div>
+
+            <div class="ura-accessibility">
+                <div class="ura-access-heading">
+                    <span><i class="fa-solid fa-universal-access"></i></span>
+                    <div><small>INCLUSIVE DESIGN CHECKLIST</small><h3>Accessibility matters.</h3></div>
+                </div>
+
+                <p>Explore important checks to consider when designing a user interface.</p>
+
+                <div class="ura-check-list">
+                    <label><input type="checkbox" checked><span><b>Readable contrast</b><small>Text should remain distinguishable from its background.</small></span><i class="fa-solid fa-check"></i></label>
+                    <label><input type="checkbox" checked><span><b>Clear labels</b><small>Controls should have understandable names.</small></span><i class="fa-solid fa-check"></i></label>
+                    <label><input type="checkbox"><span><b>Keyboard navigation</b><small>Important actions should be reachable without a mouse.</small></span><i class="fa-solid fa-check"></i></label>
+                    <label><input type="checkbox"><span><b>Visible focus states</b><small>Keyboard users should know which element is selected.</small></span><i class="fa-solid fa-check"></i></label>
+                    <label><input type="checkbox" checked><span><b>Responsive content</b><small>Content should adapt without unnecessary horizontal scrolling.</small></span><i class="fa-solid fa-check"></i></label>
+                    <label><input type="checkbox"><span><b>Reduced motion support</b><small>Respect users who prefer less animation.</small></span><i class="fa-solid fa-check"></i></label>
+                </div>
+
+                <div class="ura-check-progress">
+                    <div><span>CHECKLIST PROGRESS</span><b id="uraProgressText">3 of 6 reviewed</b></div>
+                    <div class="ura-progress-track"><i id="uraProgressBar" style="width:50%"></i></div>
+                    <small>This is a learning checklist, not an automated accessibility audit.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================
+     FINAL CTA
+========================================= -->
+<section class="uicta-section" id="ui-creation-cta">
+    <div class="uicta-orbit uicta-orbit-one"></div>
+    <div class="uicta-orbit uicta-orbit-two"></div>
+    <div class="uicta-glow"></div>
+
+    <div class="uicta-content">
+        <span class="uid-eyebrow"><i class="fa-solid fa-sparkles"></i> LET'S CREATE SOMETHING MEANINGFUL</span>
+        <h2>YOUR NEXT GREAT<br><span>INTERFACE STARTS HERE.</span></h2>
+        <p>Thoughtful design can turn a simple idea into an engaging digital experience. Let's make every interaction count.</p>
+
+        <div class="uicta-actions">
+            <a href="index.html#contact" class="uicta-primary">LET'S TALK DESIGN <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="index.html#projects" class="uicta-secondary">EXPLORE PROJECTS <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="uicta-bottom">
+            <span><i class="fa-solid fa-pen-ruler"></i> CREATIVE UI</span>
+            <span><i class="fa-solid fa-compass-drafting"></i> THOUGHTFUL UX</span>
+            <span><i class="fa-solid fa-code"></i> CLEAN IMPLEMENTATION</span>
+        </div>
+    </div>
+</section>
+    </main>
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+<footer class="ui-footer">
+    <div class="uif-container">
+
+        <div class="uif-main">
+            <div class="uif-brand-column">
+                <a href="index.html#home" class="uif-brand">
+                    <img src="images/Glossy Blue A Monogram Emblem.png" alt="AMORIDWEB STUDIO logo">
+                    <span><strong>AMORIDWEB</strong><small>STUDIO</small></span>
+                </a>
+
+                <p>Creative design. Clean code. Real results. Building thoughtful digital experiences through design and technology.</p>
+
+                <div class="uif-socials">
+                    <a href="mailto:amooridwan85@gmail.com" aria-label="Email AMORIDWEB STUDIO"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="index.html#contact" aria-label="Contact"><i class="fa-solid fa-paper-plane"></i></a>
+                </div>
+            </div>
+
+            <div class="uif-links-column">
+                <h3>EXPLORE</h3>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+
+            <div class="uif-links-column">
+                <h3>SERVICES</h3>
+                <a href="web-development.html">Web Development</a>
+                <a href="web-design.html">Web Design</a>
+                <a href="javascript-development.html">JavaScript Development</a>
+                <a href="ui-creation.html">UI Creation</a>
+                <a href="responsive-websites.html">Responsive Websites</a>
+            </div>
+
+            <div class="uif-contact-column">
+                <h3>LET'S CONNECT</h3>
+                <p>Have a question or an idea you'd like to explore?</p>
+                <a href="mailto:amooridwan85@gmail.com"><i class="fa-solid fa-envelope"></i> amooridwan85@gmail.com</a>
+                <span><i class="fa-solid fa-location-dot"></i> Nigeria</span>
+                <span class="uif-availability"><i></i> AVAILABLE FOR CREATIVE PROJECTS</span>
+            </div>
+        </div>
+
+        <div class="uif-bottom">
+            <span>© <span id="uifYear"></span> AMORIDWEB STUDIO. ALL RIGHTS RESERVED.</span>
+            <span>DESIGNED WITH PURPOSE <i class="fa-solid fa-heart"></i></span>
+            <a href="#top" class="uif-back-top">BACK TO TOP <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/ui-creation.js"></script>
+</body>
+</html>

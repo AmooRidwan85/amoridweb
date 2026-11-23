@@ -1,0 +1,2257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B1120">
+
+    <title>Frontend Development | AMORIDWEB STUDIO</title>
+
+    <!-- Website Favicon -->
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="images/Glossy Blue A Monogram Emblem.png"
+    >
+
+    <link rel="stylesheet" href="css/frontend-development.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Apply saved theme before the page renders -->
+    <script>
+        (() => {
+            try {
+                const savedTheme = localStorage.getItem("amoridweb-theme");
+
+                if (savedTheme === "light") {
+                    document.documentElement.classList.add("light-theme");
+                }
+            } catch (error) {
+                // Use dark theme if browser storage is unavailable.
+            }
+        })();
+    </script>
+</head>
+
+<body id="top">
+
+    <!-- HEADER -->
+    <header class="site-header">
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="#home" class="brand">
+            <img src="images/Glossy Blue A Monogram Emblem.png" alt="AMORIDWEB STUDIO logo">
+            <span class="logo-text">
+            <strong>AMORIDWEB</strong>
+            <small>STUDIO</small>
+            </span>
+        </a>
+
+        <!-- Mobile menu button -->
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="mainNav">
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home" class="nav-link active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">
+                        <i class="fa-solid fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+
+                <!-- Services dropdown -->
+                <li class="dropdown">
+                    <button class="nav-link dropdown-toggle"
+                            id="serviceToggle"
+                            aria-expanded="false"
+                            aria-controls="serviceMenu">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Service</span>
+                        <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </button>
+
+                    <ul class="dropdown-menu" id="serviceMenu">
+                        <li><a href="web-development.html"><i class="fa-solid fa-code"></i> Web Development</a></li>
+                        <li><a href="frontend-development.html"><i class="fa-solid fa-laptop-code"></i> Frontend Development</a></li>
+                        <li><a href="website-management.html"><i class="fa-solid fa-gears"></i> Website Management</a></li>
+                        <li><a href="web-design.html"><i class="fa-solid fa-pen-ruler"></i> Web Design</a></li>
+                        <li><a href="javascript-development.html"><i class="fa-brands fa-js"></i> JavaScript Development</a></li>
+                        <li><a href="ui-creation.html"><i class="fa-solid fa-palette"></i> UI Creation</a></li>
+                        <li><a href="responsive-websites.html"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Websites</a></li>
+                        <li><a href="website-improvements.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Website Improvements</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#skills" class="nav-link">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="nav-link">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Project</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Right-side controls -->
+        <div class="nav-actions">
+
+            <div class="online-badge">
+                <span class="online-dot"></span>
+                <span>ONLINE</span>
+            </div>
+
+            <!-- Day / Night toggle -->
+            <button class="theme-toggle" id="themeToggle"
+                    type="button"
+                    aria-label="Switch to light mode"
+                    aria-pressed="false"
+                    title="Switch theme">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+        <section class="fd-hero">
+
+            <div class="fd-hero-grid"></div>
+            <div class="fd-hero-glow fd-glow-one"></div>
+            <div class="fd-hero-glow fd-glow-two"></div>
+
+            <!-- Floating decorative elements -->
+            <div class="fd-floating-symbol fd-symbol-one">&lt;/&gt;</div>
+            <div class="fd-floating-symbol fd-symbol-two">{ }</div>
+            <div class="fd-floating-symbol fd-symbol-three">UI</div>
+
+            <div class="fd-hero-container">
+
+                <!-- LEFT CONTENT -->
+                <div class="fd-hero-content">
+
+                    <div class="fd-eyebrow">
+                        <span class="fd-eyebrow-line"></span>
+                        FRONTEND DEVELOPMENT
+                    </div>
+
+                    <h1>
+                        TURN IDEAS INTO
+                        <span>INTERACTIVE</span>
+                        EXPERIENCES.
+                    </h1>
+
+                    <p class="fd-hero-description">
+                        We create engaging, responsive and visually
+                        impressive interfaces that bring digital ideas
+                        to life through modern frontend technologies.
+                    </p>
+
+                    <div class="fd-hero-buttons">
+                        <a href="index.html#contact" class="fd-primary-btn">
+                            START A PROJECT
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#fd-overview" class="fd-secondary-btn">
+                            EXPLORE OUR APPROACH
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    </div>
+
+                    <div class="fd-tech-stack">
+                        <span>BUILT WITH</span>
+
+                        <div class="fd-tech-tags">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JAVASCRIPT</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT VISUAL -->
+                <div class="fd-hero-visual">
+
+                    <div class="fd-visual-orbit fd-orbit-one"></div>
+                    <div class="fd-visual-orbit fd-orbit-two"></div>
+
+                    <!-- Main browser mockup -->
+                    <div class="fd-browser">
+
+                        <div class="fd-browser-top">
+                            <div class="fd-browser-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="fd-browser-address">
+                                <i class="fas fa-lock"></i>
+                                amoridweb.dev/interface
+                            </div>
+
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+
+                        <div class="fd-browser-content">
+
+                            <div class="fd-mock-nav">
+                                <div class="fd-mock-logo">A<span>.</span></div>
+
+                                <div class="fd-mock-links">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="fd-mock-nav-button"></div>
+                            </div>
+
+                            <div class="fd-mock-hero">
+                                <div class="fd-mock-label">
+                                    <span></span> DIGITAL EXPERIENCE
+                                </div>
+
+                                <div class="fd-mock-heading">
+                                    <span></span>
+                                    <span></span>
+                                    <span class="short"></span>
+                                </div>
+
+                                <div class="fd-mock-description">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="fd-mock-button"></div>
+                            </div>
+
+                            <div class="fd-mock-cards">
+                                <div class="fd-mock-card">
+                                    <i class="fas fa-layer-group"></i>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="fd-mock-card active">
+                                    <i class="fas fa-bolt"></i>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="fd-mock-card">
+                                    <i class="fas fa-code"></i>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Floating code component -->
+                    <div class="fd-code-float">
+                        <div class="fd-code-header">
+                            <span class="fd-code-indicator"></span>
+                            <span>interface.js</span>
+                            <i class="fas fa-code"></i>
+                        </div>
+
+                        <div class="fd-code-lines">
+                            <p><span>const</span> experience = {</p>
+                            <p class="indent">design: <span>"creative"</span>,</p>
+                            <p class="indent">responsive: <span>true</span>,</p>
+                            <p class="indent">interactive: <span>true</span></p>
+                            <p>};</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Floating status component -->
+                    <div class="fd-live-float">
+                        <span class="fd-live-icon">
+                            <i class="fas fa-check"></i>
+                        </span>
+
+                        <div>
+                            <strong>Interface Ready</strong>
+                            <small>Experience optimized</small>
+                        </div>
+                    </div>
+
+
+                    <!-- Floating technology badge -->
+                    <div class="fd-tech-float">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="fd-scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+
+        </section>
+
+<!-- =====================================
+     FRONTEND DEVELOPMENT OVERVIEW
+===================================== -->
+
+<section class="fd-overview" id="fd-overview">
+
+    <div class="fd-overview-bg-glow"></div>
+
+    <div class="fd-section-container">
+
+        <!-- SECTION HEADING -->
+        <div class="fd-section-heading">
+
+            <span class="fd-section-eyebrow">
+                <span></span>
+                WHAT WE DO
+            </span>
+
+            <h2>
+                CREATING THE
+                <span>FRONTEND</span>
+                EXPERIENCE.
+            </h2>
+
+            <p>
+                The frontend is where design meets technology.
+                We focus on building interactive interfaces that
+                look impressive, feel intuitive and work smoothly.
+            </p>
+
+        </div>
+
+
+        <!-- OVERVIEW CARDS -->
+        <div class="fd-overview-grid">
+
+            <!-- CARD 1 -->
+            <article class="fd-overview-card">
+
+                <div class="fd-card-top">
+                    <span class="fd-card-number">01</span>
+
+                    <div class="fd-card-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                </div>
+
+                <h3>Modern UI Development</h3>
+
+                <p>
+                    Transforming creative ideas into polished
+                    interfaces with clear layouts, attractive
+                    visuals and consistent design elements.
+                </p>
+
+                <div class="fd-card-tags">
+                    <span>Layouts</span>
+                    <span>Components</span>
+                </div>
+
+                <div class="fd-card-bottom">
+                    <span>01 / INTERFACE</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 2 -->
+            <article class="fd-overview-card">
+
+                <div class="fd-card-top">
+                    <span class="fd-card-number">02</span>
+
+                    <div class="fd-card-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                    </div>
+                </div>
+
+                <h3>Responsive Interfaces</h3>
+
+                <p>
+                    Creating flexible layouts that adapt to
+                    different screen sizes, from mobile phones
+                    and tablets to desktop displays.
+                </p>
+
+                <div class="fd-card-tags">
+                    <span>Mobile First</span>
+                    <span>Flexible Layouts</span>
+                </div>
+
+                <div class="fd-card-bottom">
+                    <span>02 / RESPONSIVE</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 3 -->
+            <article class="fd-overview-card">
+
+                <div class="fd-card-top">
+                    <span class="fd-card-number">03</span>
+
+                    <div class="fd-card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                </div>
+
+                <h3>Interactive Experiences</h3>
+
+                <p>
+                    Bringing interfaces to life with smooth
+                    interactions, engaging animations and
+                    useful JavaScript-powered functionality.
+                </p>
+
+                <div class="fd-card-tags">
+                    <span>JavaScript</span>
+                    <span>Animations</span>
+                </div>
+
+                <div class="fd-card-bottom">
+                    <span>03 / INTERACTION</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 4 -->
+            <article class="fd-overview-card">
+
+                <div class="fd-card-top">
+                    <span class="fd-card-number">04</span>
+
+                    <div class="fd-card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+
+                <h3>Clean Frontend Code</h3>
+
+                <p>
+                    Organizing HTML, CSS and JavaScript into
+                    maintainable code that makes interfaces
+                    easier to develop and improve.
+                </p>
+
+                <div class="fd-card-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="fd-card-bottom">
+                    <span>04 / DEVELOPMENT</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- BOTTOM HIGHLIGHT -->
+        <div class="fd-overview-highlight">
+
+            <div class="fd-highlight-icon">
+                <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+
+            <div class="fd-highlight-text">
+                <span>THE AMORIDWEB APPROACH</span>
+
+                <h3>
+                    BEAUTIFUL INTERFACES.
+                    <span>THOUGHTFUL INTERACTIONS.</span>
+                </h3>
+
+                <p>
+                    Every element should have a purpose.
+                    Every interaction should feel natural.
+                </p>
+            </div>
+
+            <div class="fd-highlight-decoration">
+                <i class="fas fa-code"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="fd-process" id="fd-process">
+    <div class="fd-process-glow"></div>
+
+    <div class="fd-process-container">
+
+        <div class="fd-section-heading">
+            <span class="fd-eyebrow">
+                <i class="fas fa-code"></i>
+                HOW WE WORK
+            </span>
+
+            <h2>
+                FROM CONCEPT TO
+                <span>CREATION.</span>
+            </h2>
+
+            <p>
+                A thoughtful process for transforming ideas
+                into beautiful, responsive and interactive
+                digital experiences.
+            </p>
+        </div>
+
+        <div class="fd-process-timeline">
+
+            <!-- STEP 01 -->
+            <article class="fd-process-step">
+                <div class="fd-process-number">
+                    <span>01</span>
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+
+                <div class="fd-process-content">
+                    <span class="fd-process-label">STEP ONE</span>
+                    <h3>Discover & Plan</h3>
+
+                    <p>
+                        Every great interface starts with an idea.
+                        We define the purpose, understand the
+                        requirements and organize the structure
+                        of the website.
+                    </p>
+
+                    <div class="fd-process-tags">
+                        <span>Research</span>
+                        <span>Planning</span>
+                        <span>Structure</span>
+                    </div>
+                </div>
+
+                <div class="fd-process-visual">
+                    <div class="fd-process-visual-card">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>Project Planning</span>
+                        <div class="fd-visual-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="fd-visual-status">
+                            <i class="fas fa-check-circle"></i>
+                            Ideas organized
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STEP 02 -->
+            <article class="fd-process-step fd-process-reverse">
+                <div class="fd-process-number">
+                    <span>02</span>
+                    <i class="fas fa-pen-ruler"></i>
+                </div>
+
+                <div class="fd-process-content">
+                    <span class="fd-process-label">STEP TWO</span>
+                    <h3>Design the Interface</h3>
+
+                    <p>
+                        We shape the visual experience through
+                        thoughtful layouts, attractive colors,
+                        typography and reusable interface
+                        components.
+                    </p>
+
+                    <div class="fd-process-tags">
+                        <span>UI Design</span>
+                        <span>Layout</span>
+                        <span>Visual Style</span>
+                    </div>
+                </div>
+
+                <div class="fd-process-visual">
+                    <div class="fd-design-preview">
+                        <div class="fd-design-top"></div>
+                        <div class="fd-design-content">
+                            <div class="fd-design-sidebar"></div>
+                            <div class="fd-design-main">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <div class="fd-design-blocks">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-design-badge">
+                            <i class="fas fa-palette"></i>
+                            UI Concept
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STEP 03 -->
+            <article class="fd-process-step">
+                <div class="fd-process-number">
+                    <span>03</span>
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div class="fd-process-content">
+                    <span class="fd-process-label">STEP THREE</span>
+                    <h3>Build the Frontend</h3>
+
+                    <p>
+                        We turn the design into a working
+                        interface using HTML, CSS and JavaScript,
+                        creating clean layouts and meaningful
+                        interactions.
+                    </p>
+
+                    <div class="fd-process-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="fd-process-visual">
+                    <div class="fd-code-preview">
+                        <div class="fd-code-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <small>index.html</small>
+                        </div>
+
+                        <div class="fd-code-body">
+                            <p><span>01</span> <b>&lt;section&gt;</b></p>
+                            <p><span>02</span> &nbsp; &lt;h1&gt;</p>
+                            <p><span>03</span> &nbsp; &nbsp; Hello World</p>
+                            <p><span>04</span> &nbsp; &lt;/h1&gt;</p>
+                            <p><span>05</span> <b>&lt;/section&gt;</b></p>
+                        </div>
+
+                        <div class="fd-code-floating">
+                            <i class="fab fa-js"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STEP 04 -->
+            <article class="fd-process-step fd-process-reverse">
+                <div class="fd-process-number">
+                    <span>04</span>
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+
+                <div class="fd-process-content">
+                    <span class="fd-process-label">STEP FOUR</span>
+                    <h3>Test & Refine</h3>
+
+                    <p>
+                        We review the interface across different
+                        screen sizes, check interactions and
+                        refine the experience for usability,
+                        accessibility and performance.
+                    </p>
+
+                    <div class="fd-process-tags">
+                        <span>Responsive Testing</span>
+                        <span>Debugging</span>
+                        <span>Optimization</span>
+                    </div>
+                </div>
+
+                <div class="fd-process-visual">
+                    <div class="fd-device-preview">
+                        <div class="fd-device desktop">
+                            <i class="fas fa-desktop"></i>
+                            <span>Desktop</span>
+                        </div>
+
+                        <div class="fd-device tablet">
+                            <i class="fas fa-tablet-screen-button"></i>
+                            <span>Tablet</span>
+                        </div>
+
+                        <div class="fd-device mobile">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile</span>
+                        </div>
+
+                        <div class="fd-device-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STEP 05 -->
+            <article class="fd-process-step">
+                <div class="fd-process-number">
+                    <span>05</span>
+                    <i class="fas fa-rocket"></i>
+                </div>
+
+                <div class="fd-process-content">
+                    <span class="fd-process-label">STEP FIVE</span>
+                    <h3>Launch & Improve</h3>
+
+                    <p>
+                        Once everything is ready, the website
+                        can be prepared for launch. Future
+                        improvements help keep the experience
+                        useful and up to date.
+                    </p>
+
+                    <div class="fd-process-tags">
+                        <span>Deployment</span>
+                        <span>Maintenance</span>
+                        <span>Improvements</span>
+                    </div>
+                </div>
+
+                <div class="fd-process-visual">
+                    <div class="fd-launch-preview">
+                        <div class="fd-launch-orbit orbit-one"></div>
+                        <div class="fd-launch-orbit orbit-two"></div>
+
+                        <div class="fd-launch-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+
+                        <span>READY FOR LAUNCH</span>
+                        <div class="fd-launch-line"></div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="fd-process-footer">
+            <i class="fas fa-code"></i>
+            <p>PLAN WITH PURPOSE. BUILD WITH CREATIVITY.</p>
+            <span>AMORIDWEB STUDIO</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="fd-projects" id="fd-projects">
+
+    <div class="fd-projects-bg-glow"></div>
+
+    <div class="fd-projects-container">
+
+        <div class="fd-section-heading">
+            <span class="fd-eyebrow">
+                <i class="fas fa-layer-group"></i>
+                SELECTED CONCEPTS
+            </span>
+
+            <h2>
+                FRONTEND
+                <span>SHOWCASE.</span>
+            </h2>
+
+            <p>
+                A collection of creative interface concepts
+                exploring modern layouts, interactive elements
+                and engaging digital experiences.
+            </p>
+        </div>
+
+        <div class="fd-projects-grid">
+
+            <!-- PROJECT 01 -->
+            <article class="fd-project-card">
+                <div class="fd-project-image fd-project-ecommerce">
+
+                    <div class="fd-project-browser">
+                        <div class="fd-browser-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <small>shop.example</small>
+                        </div>
+
+                        <div class="fd-shop-preview">
+                            <div class="fd-shop-nav">
+                                <b>MODERN<span>SHOP.</span></b>
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+
+                            <div class="fd-shop-content">
+                                <div>
+                                    <small>NEW COLLECTION</small>
+                                    <h4>Discover<br>Something New.</h4>
+                                    <span class="fd-mini-button">EXPLORE NOW</span>
+                                </div>
+
+                                <div class="fd-shop-product">
+                                    <i class="fas fa-headphones"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="fd-project-floating-icon">
+                        <i class="fas fa-cart-shopping"></i>
+                    </span>
+                </div>
+
+                <div class="fd-project-info">
+                    <div class="fd-project-meta">
+                        <span>01 / E-COMMERCE</span>
+                        <span class="fd-concept-label">DESIGN CONCEPT</span>
+                    </div>
+
+                    <h3>Modern E-Commerce</h3>
+
+                    <p>
+                        A stylish shopping interface concept
+                        featuring product-focused layouts,
+                        clear navigation and interactive elements.
+                    </p>
+
+                    <div class="fd-project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#fd-contact-cta" class="fd-project-link">
+                        EXPLORE SERVICES
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PROJECT 02 -->
+            <article class="fd-project-card">
+                <div class="fd-project-image fd-project-agency">
+
+                    <div class="fd-agency-preview">
+                        <div class="fd-agency-nav">
+                            <b>CREATIVE<span>LAB</span></b>
+                            <i class="fas fa-bars"></i>
+                        </div>
+
+                        <div class="fd-agency-content">
+                            <small>DESIGN BEYOND LIMITS</small>
+                            <h4>Ideas Into<br><span>Impact.</span></h4>
+                            <div class="fd-agency-circle">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                        </div>
+
+                        <div class="fd-agency-bottom">
+                            <span>CREATIVE STUDIO</span>
+                            <span>01 — 04</span>
+                        </div>
+                    </div>
+
+                    <span class="fd-project-floating-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </span>
+                </div>
+
+                <div class="fd-project-info">
+                    <div class="fd-project-meta">
+                        <span>02 / AGENCY</span>
+                        <span class="fd-concept-label">DESIGN CONCEPT</span>
+                    </div>
+
+                    <h3>Creative Agency</h3>
+
+                    <p>
+                        A bold agency website concept combining
+                        expressive typography, creative sections
+                        and a distinctive visual identity.
+                    </p>
+
+                    <div class="fd-project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#fd-contact-cta" class="fd-project-link">
+                        EXPLORE SERVICES
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PROJECT 03 -->
+            <article class="fd-project-card">
+                <div class="fd-project-image fd-project-portfolio">
+
+                    <div class="fd-portfolio-preview">
+                        <div class="fd-portfolio-nav">
+                            <b>PORTFOLIO<span>.</span></b>
+                            <span>MENU +</span>
+                        </div>
+
+                        <div class="fd-portfolio-content">
+                            <small>INDEPENDENT CREATOR</small>
+                            <h4>Designing<br>the <span>Future.</span></h4>
+                            <p>CREATIVE DEVELOPER</p>
+                        </div>
+
+                        <div class="fd-portfolio-shape">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+
+                    <span class="fd-project-floating-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </span>
+                </div>
+
+                <div class="fd-project-info">
+                    <div class="fd-project-meta">
+                        <span>03 / PERSONAL BRAND</span>
+                        <span class="fd-concept-label">DESIGN CONCEPT</span>
+                    </div>
+
+                    <h3>Developer Portfolio</h3>
+
+                    <p>
+                        A modern personal portfolio concept
+                        designed to present skills, projects,
+                        professional identity and contact details.
+                    </p>
+
+                    <div class="fd-project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#fd-contact-cta" class="fd-project-link">
+                        EXPLORE SERVICES
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PROJECT 04 -->
+            <article class="fd-project-card">
+                <div class="fd-project-image fd-project-dashboard">
+
+                    <div class="fd-dashboard-preview">
+                        <div class="fd-dashboard-sidebar">
+                            <i class="fas fa-cube"></i>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="fd-dashboard-main">
+                            <div class="fd-dashboard-heading">
+                                <b>Overview</b>
+                                <i class="fas fa-ellipsis"></i>
+                            </div>
+
+                            <div class="fd-dashboard-stats">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <div class="fd-dashboard-chart">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="fd-project-floating-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </span>
+                </div>
+
+                <div class="fd-project-info">
+                    <div class="fd-project-meta">
+                        <span>04 / DASHBOARD</span>
+                        <span class="fd-concept-label">DESIGN CONCEPT</span>
+                    </div>
+
+                    <h3>Analytics Dashboard</h3>
+
+                    <p>
+                        A clean dashboard interface concept
+                        featuring information cards, organized
+                        navigation and visual data components.
+                    </p>
+
+                    <div class="fd-project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#fd-contact-cta" class="fd-project-link">
+                        EXPLORE SERVICES
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="fd-projects-bottom">
+            <div>
+                <span class="fd-projects-bottom-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </span>
+
+                <div>
+                    <h3>Have an idea in mind?</h3>
+                    <p>Let's turn your vision into a digital experience.</p>
+                </div>
+            </div>
+
+            <a href="index.html#contact">
+                LET'S TALK
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="fd-why" id="fd-why">
+
+    <div class="fd-why-bg fd-why-bg-one"></div>
+    <div class="fd-why-bg fd-why-bg-two"></div>
+
+    <div class="fd-why-container">
+
+        <div class="fd-section-heading">
+            <span class="fd-eyebrow">
+                <i class="fas fa-gem"></i>
+                THE AMORIDWEB DIFFERENCE
+            </span>
+
+            <h2>
+                WHY CHOOSE
+                <span>AMORIDWEB?</span>
+            </h2>
+
+            <p>
+                Great frontend development is more than
+                writing code. It's about creating meaningful
+                experiences through creativity, precision
+                and thoughtful technology.
+            </p>
+        </div>
+
+        <div class="fd-why-showcase">
+
+            <!-- CENTRAL VISUAL -->
+
+            <div class="fd-why-center">
+
+                <div class="fd-why-orbit fd-why-orbit-one"></div>
+                <div class="fd-why-orbit fd-why-orbit-two"></div>
+                <div class="fd-why-orbit fd-why-orbit-three"></div>
+
+                <div class="fd-why-orbit-dot dot-one"></div>
+                <div class="fd-why-orbit-dot dot-two"></div>
+                <div class="fd-why-orbit-dot dot-three"></div>
+
+                <div class="fd-why-center-core">
+                    <div class="fd-why-core-inner">
+                        <img src="images/Glossy Blue A Monogram Emblem.png"
+                             alt="AMORIDWEB STUDIO logo"
+                             class="fd-why-logo">
+
+                        <span>AMORIDWEB</span>
+                        <small>STUDIO</small>
+                    </div>
+                </div>
+
+                <div class="fd-why-center-caption">
+                    <span class="fd-why-live-dot"></span>
+                    CREATIVE DEVELOPMENT
+                </div>
+
+            </div>
+
+            <!-- FEATURE CARD 01 -->
+
+            <article class="fd-why-card fd-why-card-one">
+                <div class="fd-why-card-top">
+                    <div class="fd-why-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                    </div>
+
+                    <span class="fd-why-card-number">01</span>
+                </div>
+
+                <h3>Responsive by Design</h3>
+
+                <p>
+                    Interfaces designed to adapt smoothly
+                    across mobile phones, tablets and
+                    desktop screens.
+                </p>
+
+                <div class="fd-why-card-footer">
+                    <span>ADAPTIVE EXPERIENCES</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+            </article>
+
+            <!-- FEATURE CARD 02 -->
+
+            <article class="fd-why-card fd-why-card-two">
+                <div class="fd-why-card-top">
+                    <div class="fd-why-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <span class="fd-why-card-number">02</span>
+                </div>
+
+                <h3>Creative Interfaces</h3>
+
+                <p>
+                    Distinctive visual layouts, thoughtful
+                    typography and carefully designed
+                    interface details.
+                </p>
+
+                <div class="fd-why-card-footer">
+                    <span>VISUAL CREATIVITY</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+            </article>
+
+            <!-- FEATURE CARD 03 -->
+
+            <article class="fd-why-card fd-why-card-three">
+                <div class="fd-why-card-top">
+                    <div class="fd-why-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+
+                    <span class="fd-why-card-number">03</span>
+                </div>
+
+                <h3>Interactive Experiences</h3>
+
+                <p>
+                    Engaging interfaces with meaningful
+                    animations, smooth transitions and
+                    intuitive interactions.
+                </p>
+
+                <div class="fd-why-card-footer">
+                    <span>SMART INTERACTIONS</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+            </article>
+
+            <!-- FEATURE CARD 04 -->
+
+            <article class="fd-why-card fd-why-card-four">
+                <div class="fd-why-card-top">
+                    <div class="fd-why-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+
+                    <span class="fd-why-card-number">04</span>
+                </div>
+
+                <h3>Clean Code Structure</h3>
+
+                <p>
+                    Organized HTML, maintainable CSS and
+                    structured JavaScript that make
+                    projects easier to develop.
+                </p>
+
+                <div class="fd-why-card-footer">
+                    <span>DEVELOPMENT QUALITY</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+            </article>
+
+            <!-- FEATURE CARD 05 -->
+
+            <article class="fd-why-card fd-why-card-five">
+                <div class="fd-why-card-top">
+                    <div class="fd-why-icon">
+                        <i class="fas fa-gauge-high"></i>
+                    </div>
+
+                    <span class="fd-why-card-number">05</span>
+                </div>
+
+                <h3>Performance Focus</h3>
+
+                <p>
+                    Attention to efficient layouts, optimized
+                    assets and a smoother browsing experience.
+                </p>
+
+                <div class="fd-why-card-footer">
+                    <span>WEB PERFORMANCE</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+            </article>
+
+            <!-- FEATURE CARD 06 -->
+
+            <article class="fd-why-card fd-why-card-six">
+                <div class="fd-why-card-top">
+                    <div class="fd-why-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <span class="fd-why-card-number">06</span>
+                </div>
+
+                <h3>Continuous Improvement</h3>
+
+                <p>
+                    A learning-focused approach that embraces
+                    new ideas, evolving technologies and
+                    thoughtful improvements.
+                </p>
+
+                <div class="fd-why-card-footer">
+                    <span>ALWAYS EVOLVING</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- BOTTOM STATEMENT -->
+
+        <div class="fd-why-bottom">
+
+            <div class="fd-why-bottom-symbol">
+                <i class="fas fa-atom"></i>
+            </div>
+
+            <div class="fd-why-bottom-content">
+                <span>OUR CREATIVE PRINCIPLE</span>
+
+                <h3>
+                    NOT JUST WEBSITES.
+                    <span>BETTER EXPERIENCES.</span>
+                </h3>
+
+                <p>
+                    Every detail matters. Every interaction
+                    has a purpose. Every line of code
+                    contributes to the bigger picture.
+                </p>
+            </div>
+
+            <a href="index.html#contact" class="fd-why-cta">
+                START A PROJECT
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="fd-global" id="fd-global">
+
+    <div class="fd-global-glow"></div>
+    <div class="fd-global-stars"></div>
+
+    <div class="fd-global-container">
+
+        <div class="fd-global-content">
+
+            <span class="fd-eyebrow">
+                <i class="fas fa-earth-americas"></i>
+                OUR DIGITAL REACH
+            </span>
+
+            <h2>
+                BUILDING FOR
+                <span>THE WORLD.</span>
+            </h2>
+
+            <p>
+                The internet connects people everywhere.
+                AMORIDWEB STUDIO creates modern digital
+                experiences designed to reach audiences
+                beyond borders.
+            </p>
+
+            <div class="fd-global-highlight">
+                <div class="fd-global-highlight-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+
+                <div>
+                    <strong>ONE DIGITAL WORLD</strong>
+                    <span>Creative possibilities without borders.</span>
+                </div>
+            </div>
+
+            <div class="fd-global-features">
+
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <span>WEB DEVELOPMENT</span>
+                </div>
+
+                <div>
+                    <i class="fas fa-earth-africa"></i>
+                    <span>GLOBAL AUDIENCES</span>
+                </div>
+
+                <div>
+                    <i class="fas fa-mobile-screen"></i>
+                    <span>RESPONSIVE EXPERIENCES</span>
+                </div>
+
+            </div>
+
+            <a href="index.html#contact" class="fd-global-button">
+                LET'S BUILD SOMETHING
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- ROTATING EARTH -->
+
+        <div class="fd-globe-area">
+
+            <div class="fd-globe-top-label">
+                <span class="fd-globe-status-dot"></span>
+                CONNECTING IDEAS WORLDWIDE
+            </div>
+
+            <div class="fd-globe">
+
+                <div class="fd-globe-atmosphere"></div>
+
+                <div class="fd-globe-sphere">
+
+                    <div class="fd-globe-map">
+
+                        <svg
+                            class="fd-globe-svg"
+                            viewBox="0 0 1200 600"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+
+                            <defs>
+                                <linearGradient
+                                    id="fd-continent-gradient"
+                                    x1="0"
+                                    y1="0"
+                                    x2="1"
+                                    y2="1"
+                                >
+                                    <stop offset="0%" stop-color="#93C5FD"/>
+                                    <stop offset="50%" stop-color="#3B82F6"/>
+                                    <stop offset="100%" stop-color="#1D4ED8"/>
+                                </linearGradient>
+                            </defs>
+
+                            <g class="fd-globe-land">
+
+                                <!-- NORTH AMERICA -->
+                                <path d="
+                                    M65 95 L105 70 L155 65 L185 85
+                                    L220 80 L250 105 L270 135
+                                    L245 165 L220 180 L205 220
+                                    L180 235 L165 275 L140 260
+                                    L120 220 L95 195 L75 155 Z
+                                "/>
+
+                                <!-- CENTRAL AMERICA -->
+                                <path d="
+                                    M190 235 L215 245 L225 270
+                                    L245 290 L235 310 L215 295
+                                    L205 270 Z
+                                "/>
+
+                                <!-- SOUTH AMERICA -->
+                                <path d="
+                                    M240 300 L280 295 L310 320
+                                    L320 365 L305 410 L290 455
+                                    L270 510 L250 475 L240 425
+                                    L225 380 L220 335 Z
+                                "/>
+
+                                <!-- EUROPE -->
+                                <path d="
+                                    M460 105 L495 85 L530 95
+                                    L550 120 L535 145 L510 150
+                                    L490 170 L465 150 L445 125 Z
+                                "/>
+
+                                <!-- AFRICA -->
+                                <path d="
+                                    M470 175 L515 160 L555 185
+                                    L570 225 L550 275 L535 335
+                                    L505 385 L480 345 L460 290
+                                    L445 235 Z
+                                "/>
+
+                                <!-- ASIA -->
+                                <path d="
+                                    M540 90 L595 65 L660 70
+                                    L705 85 L755 75 L815 95
+                                    L850 125 L825 155 L790 170
+                                    L765 205 L725 195 L695 220
+                                    L660 190 L625 185 L600 155
+                                    L565 150 Z
+                                "/>
+
+                                <!-- INDIA -->
+                                <path d="
+                                    M640 200 L675 210 L690 245
+                                    L670 280 L650 260 L635 230 Z
+                                "/>
+
+                                <!-- SOUTHEAST ASIA -->
+                                <path d="
+                                    M720 225 L755 225 L780 250
+                                    L765 270 L740 260 Z
+                                "/>
+
+                                <!-- JAPAN -->
+                                <path d="
+                                    M830 180 L845 195 L838 220 L825 205 Z
+                                "/>
+
+                                <!-- AUSTRALIA -->
+                                <path d="
+                                    M785 345 L830 330 L875 345
+                                    L890 380 L865 405 L820 400
+                                    L790 380 Z
+                                "/>
+
+                                <!-- GREENLAND -->
+                                <path d="
+                                    M300 55 L340 35 L375 50
+                                    L370 90 L340 115 L310 95 Z
+                                "/>
+
+                                <!-- SECOND MAP COPY FOR SEAMLESS LOOP -->
+                                <g transform="translate(600 0)">
+
+                                    <path d="
+                                        M65 95 L105 70 L155 65 L185 85
+                                        L220 80 L250 105 L270 135
+                                        L245 165 L220 180 L205 220
+                                        L180 235 L165 275 L140 260
+                                        L120 220 L95 195 L75 155 Z
+                                    "/>
+
+                                    <path d="
+                                        M190 235 L215 245 L225 270
+                                        L245 290 L235 310 L215 295
+                                        L205 270 Z
+                                    "/>
+
+                                    <path d="
+                                        M240 300 L280 295 L310 320
+                                        L320 365 L305 410 L290 455
+                                        L270 510 L250 475 L240 425
+                                        L225 380 L220 335 Z
+                                    "/>
+
+                                    <path d="
+                                        M460 105 L495 85 L530 95
+                                        L550 120 L535 145 L510 150
+                                        L490 170 L465 150 L445 125 Z
+                                    "/>
+
+                                    <path d="
+                                        M470 175 L515 160 L555 185
+                                        L570 225 L550 275 L535 335
+                                        L505 385 L480 345 L460 290
+                                        L445 235 Z
+                                    "/>
+
+                                    <path d="
+                                        M540 90 L595 65 L660 70
+                                        L705 85 L755 75 L815 95
+                                        L850 125 L825 155 L790 170
+                                        L765 205 L725 195 L695 220
+                                        L660 190 L625 185 L600 155
+                                        L565 150 Z
+                                    "/>
+
+                                    <path d="
+                                        M640 200 L675 210 L690 245
+                                        L670 280 L650 260 L635 230 Z
+                                    "/>
+
+                                    <path d="
+                                        M720 225 L755 225 L780 250
+                                        L765 270 L740 260 Z
+                                    "/>
+
+                                    <path d="
+                                        M830 180 L845 195 L838 220 L825 205 Z
+                                    "/>
+
+                                    <path d="
+                                        M785 345 L830 330 L875 345
+                                        L890 380 L865 405 L820 400
+                                        L790 380 Z
+                                    "/>
+
+                                    <path d="
+                                        M300 55 L340 35 L375 50
+                                        L370 90 L340 115 L310 95 Z
+                                    "/>
+
+                                </g>
+
+                            </g>
+
+                            <!-- GLOBAL CONNECTION ROUTES -->
+<g class="fd-globe-connections">
+
+    <!-- First map: connection arcs -->
+    <g class="fd-connection-set">
+        <path class="fd-connection-arc" d="M 125 255 Q 190 105 285 220" />
+        <path class="fd-connection-arc fd-arc-delay-1" d="M 285 220 Q 360 125 455 255" />
+        <path class="fd-connection-arc fd-arc-delay-2" d="M 125 255 Q 300 390 455 255" />
+        <path class="fd-connection-arc fd-arc-delay-3" d="M 285 220 Q 350 310 410 390" />
+
+        <!-- Connection points -->
+        <circle class="fd-connection-pulse" cx="125" cy="255" r="5" />
+        <circle class="fd-connection-pulse fd-pulse-delay-1" cx="285" cy="220" r="5" />
+        <circle class="fd-connection-pulse fd-pulse-delay-2" cx="455" cy="255" r="5" />
+        <circle class="fd-connection-pulse fd-pulse-delay-3" cx="410" cy="390" r="5" />
+    </g>
+
+    <!-- Second map copy for seamless rotation -->
+    <g class="fd-connection-set" transform="translate(600 0)">
+        <path class="fd-connection-arc" d="M 125 255 Q 190 105 285 220" />
+        <path class="fd-connection-arc fd-arc-delay-1" d="M 285 220 Q 360 125 455 255" />
+        <path class="fd-connection-arc fd-arc-delay-2" d="M 125 255 Q 300 390 455 255" />
+        <path class="fd-connection-arc fd-arc-delay-3" d="M 285 220 Q 350 310 410 390" />
+
+        <circle class="fd-connection-pulse" cx="125" cy="255" r="5" />
+        <circle class="fd-connection-pulse fd-pulse-delay-1" cx="285" cy="220" r="5" />
+        <circle class="fd-connection-pulse fd-pulse-delay-2" cx="455" cy="255" r="5" />
+        <circle class="fd-connection-pulse fd-pulse-delay-3" cx="410" cy="390" r="5" />
+    </g>
+
+</g>
+                        </svg>
+
+                    </div>
+
+                    <div class="fd-globe-grid"></div>
+                    <div class="fd-globe-shading"></div>
+
+                </div>
+
+                <div class="fd-globe-ring fd-globe-ring-one"></div>
+                <div class="fd-globe-ring fd-globe-ring-two"></div>
+
+                <div class="fd-globe-satellite satellite-one">
+                    <i class="fas fa-satellite"></i>
+                </div>
+
+                <div class="fd-globe-satellite satellite-two">
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+            <div class="fd-globe-bottom-label">
+                <i class="fas fa-location-dot"></i>
+                DESIGNED FOR A CONNECTED WORLD
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="fd-global-bottom-line"></div>
+
+</section>
+<!-- =====================================
+     TECHNOLOGIES & TOOLS SECTION
+====================================== -->
+
+<section class="fd-tech" id="fd-technologies">
+
+    <div class="fd-tech-glow fd-tech-glow-one"></div>
+    <div class="fd-tech-glow fd-tech-glow-two"></div>
+
+    <div class="fd-tech-container">
+
+        <div class="fd-section-heading fd-tech-heading">
+            <span class="fd-section-eyebrow">
+                <i class="fas fa-microchip"></i>
+                OUR TECHNOLOGY STACK
+            </span>
+
+            <h2>
+                POWERING IDEAS WITH
+                <span>TECHNOLOGY.</span>
+            </h2>
+
+            <p>
+                The technologies behind our approach to building
+                modern, interactive and responsive digital experiences.
+            </p>
+        </div>
+
+        <div class="fd-tech-layout">
+
+            <!-- Technology Orbit -->
+            <div class="fd-tech-orbit-area">
+
+                <div class="fd-tech-orbit fd-tech-orbit-outer"></div>
+                <div class="fd-tech-orbit fd-tech-orbit-middle"></div>
+                <div class="fd-tech-orbit fd-tech-orbit-inner"></div>
+
+                <div class="fd-tech-center">
+                    <img src="images/Glossy Blue A Monogram Emblem.png" alt="AMORIDWEB STUDIO Logo">
+                    <span>AMORIDWEB</span>
+                    <small>TECH STACK</small>
+                </div>
+
+                <div class="fd-tech-orbit-icon fd-tech-icon-html">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="fd-tech-orbit-icon fd-tech-icon-css">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="fd-tech-orbit-icon fd-tech-icon-js">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="fd-tech-orbit-icon fd-tech-icon-db">
+                    <i class="fas fa-database"></i>
+                    <span>PostgreSQL</span>
+                </div>
+
+                <!-- Git -->
+<div class="fd-tech-orbit-icon fd-tech-icon-git">
+    <i class="fab fa-git-alt"></i>
+    <span>Git</span>
+</div>
+
+<!-- GitHub -->
+<div class="fd-tech-orbit-icon fd-tech-icon-github">
+    <i class="fab fa-github"></i>
+    <span>GitHub</span>
+</div>
+
+                <div class="fd-tech-orbit-dot fd-tech-dot-one"></div>
+                <div class="fd-tech-orbit-dot fd-tech-dot-two"></div>
+                <div class="fd-tech-orbit-dot fd-tech-dot-three"></div>
+
+            </div>
+
+            <!-- Technology Information -->
+            <div class="fd-tech-information">
+
+                <div class="fd-tech-card">
+                    <div class="fd-tech-card-icon html-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+
+                    <div>
+                        <h3>HTML5</h3>
+                        <p>
+                            Building meaningful website structures
+                            with clean and organized markup.
+                        </p>
+                    </div>
+
+                    <span class="fd-tech-number">01</span>
+                </div>
+
+                <div class="fd-tech-card">
+                    <div class="fd-tech-card-icon css-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+
+                    <div>
+                        <h3>CSS3</h3>
+                        <p>
+                            Creating beautiful layouts, responsive
+                            interfaces and engaging animations.
+                        </p>
+                    </div>
+
+                    <span class="fd-tech-number">02</span>
+                </div>
+
+                <div class="fd-tech-card">
+                    <div class="fd-tech-card-icon js-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Adding functionality, interactions and
+                            dynamic website experiences.
+                        </p>
+                    </div>
+
+                    <span class="fd-tech-number">03</span>
+                </div>
+
+                <div class="fd-tech-card">
+                    <div class="fd-tech-card-icon db-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <div>
+                        <h3>PostgreSQL</h3>
+                        <p>
+                            Working with structured data and
+                            reliable database solutions.
+                        </p>
+                    </div>
+
+                    <span class="fd-tech-number">04</span>
+                </div>
+
+                <!-- Git Card -->
+<div class="fd-tech-card">
+    <div class="fd-tech-card-icon git-icon">
+        <i class="fab fa-git-alt"></i>
+    </div>
+
+    <div>
+        <h3>Git</h3>
+        <p>
+            Tracking code changes, managing versions and
+            keeping development projects organized.
+        </p>
+    </div>
+
+    <span class="fd-tech-number">05</span>
+</div>
+
+<!-- GitHub Card -->
+<div class="fd-tech-card">
+    <div class="fd-tech-card-icon github-icon">
+        <i class="fab fa-github"></i>
+    </div>
+
+    <div>
+        <h3>GitHub</h3>
+        <p>
+            Hosting code repositories, sharing projects
+            and supporting collaborative development.
+        </p>
+    </div>
+
+    <span class="fd-tech-number">06</span>
+</div>
+
+            </div>
+
+        </div>
+
+        <div class="fd-tech-bottom">
+            <span class="fd-tech-bottom-icon">
+                <i class="fas fa-code"></i>
+            </span>
+
+            <p>
+                GREAT DIGITAL EXPERIENCES START WITH
+                <strong>THE RIGHT FOUNDATION.</strong>
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- =====================================
+     FAQ SECTION
+====================================== -->
+
+<section class="fd-faq" id="fd-faq">
+
+    <div class="fd-faq-glow"></div>
+
+    <div class="fd-faq-container">
+
+        <div class="fd-section-heading fd-faq-heading">
+
+            <span class="fd-section-eyebrow">
+                <i class="fas fa-circle-question"></i>
+                GOT QUESTIONS?
+            </span>
+
+            <h2>
+                FREQUENTLY ASKED
+                <span>QUESTIONS.</span>
+            </h2>
+
+            <p>
+                Here are some answers to common questions about
+                our frontend development services.
+            </p>
+
+        </div>
+
+        <div class="fd-faq-layout">
+
+            <div class="fd-faq-intro">
+
+                <div class="fd-faq-intro-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+
+                <span class="fd-faq-label">NEED MORE INFORMATION?</span>
+
+                <h3>
+                    LET'S MAKE
+                    THINGS CLEAR.
+                </h3>
+
+                <p>
+                    Every project is different. If you have a
+                    question that isn't answered here, get in touch
+                    and tell us what you're planning.
+                </p>
+
+                <a href="index.html#contact" class="fd-faq-contact">
+                    CONTACT US
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <div class="fd-faq-decoration">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <div class="fd-faq-list">
+
+                <div class="fd-faq-item">
+                    <button class="fd-faq-question"
+                            type="button"
+                            aria-expanded="false">
+
+                        <span>What is frontend development?</span>
+
+                        <i class="fas fa-plus"></i>
+                    </button>
+
+                    <div class="fd-faq-answer">
+                        <p>
+                            Frontend development focuses on the part
+                            of a website users see and interact with.
+                            It includes layouts, navigation, buttons,
+                            animations and responsive interfaces.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fd-faq-item">
+                    <button class="fd-faq-question"
+                            type="button"
+                            aria-expanded="false">
+
+                        <span>Will my website work on mobile devices?</span>
+
+                        <i class="fas fa-plus"></i>
+                    </button>
+
+                    <div class="fd-faq-answer">
+                        <p>
+                            Yes. Responsive design helps websites
+                            adapt to different screen sizes, including
+                            smartphones, tablets and desktop computers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fd-faq-item">
+                    <button class="fd-faq-question"
+                            type="button"
+                            aria-expanded="false">
+
+                        <span>Which technologies do you use?</span>
+
+                        <i class="fas fa-plus"></i>
+                    </button>
+
+                    <div class="fd-faq-answer">
+                        <p>
+                                Our current technology stack includes HTML5, CSS3,
+                                JavaScript, PostgreSQL, Git and GitHub. These tools
+                                support website development, database work and
+                                version control.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fd-faq-item">
+                    <button class="fd-faq-question"
+                            type="button"
+                            aria-expanded="false">
+
+                        <span>Can you create animated websites?</span>
+
+                        <i class="fas fa-plus"></i>
+                    </button>
+
+                    <div class="fd-faq-answer">
+                        <p>
+                            Yes. CSS and JavaScript can be used to
+                            create smooth transitions, interactive
+                            components, animated backgrounds and
+                            engaging visual effects.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fd-faq-item">
+                    <button class="fd-faq-question"
+                            type="button"
+                            aria-expanded="false">
+
+                        <span>How do I start a website project?</span>
+
+                        <i class="fas fa-plus"></i>
+                    </button>
+
+                    <div class="fd-faq-answer">
+                        <p>
+                            Start by contacting us and explaining
+                            your idea, goals and requirements.
+                            We can then discuss the next steps
+                            for your project.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fd-faq-item">
+                    <button class="fd-faq-question"
+                            type="button"
+                            aria-expanded="false">
+
+                        <span>Can I request improvements to an existing website?</span>
+
+                        <i class="fas fa-plus"></i>
+                    </button>
+
+                    <div class="fd-faq-answer">
+                        <p>
+                            Yes. Website improvements can include
+                            interface updates, responsive adjustments,
+                            visual refinements and interactive features.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- =====================================
+     FINAL CONTACT CTA
+====================================== -->
+
+<section class="fd-contact-cta" id="fd-contact-cta">
+
+    <div class="fd-cta-grid"></div>
+    <div class="fd-cta-glow fd-cta-glow-one"></div>
+    <div class="fd-cta-glow fd-cta-glow-two"></div>
+
+    <div class="fd-cta-container">
+
+        <div class="fd-cta-orbit fd-cta-orbit-one"></div>
+        <div class="fd-cta-orbit fd-cta-orbit-two"></div>
+
+        <div class="fd-cta-content">
+
+            <span class="fd-cta-eyebrow">
+                <span class="fd-cta-status"></span>
+                YOUR NEXT DIGITAL IDEA STARTS HERE
+            </span>
+
+            <h2>
+                HAVE AN IDEA?
+                <br>
+                <span>LET'S BUILD IT.</span>
+            </h2>
+
+            <p>
+                Turn your vision into a modern digital experience.
+                Let's explore what's possible and take your idea
+                to the next level.
+            </p>
+
+            <div class="fd-cta-actions">
+
+                <a href="index.html#contact" class="fd-cta-primary">
+                    START A PROJECT
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="index.html" class="fd-cta-secondary">
+                    EXPLORE STUDIO
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+            <div class="fd-cta-bottom-note">
+                <i class="fas fa-globe"></i>
+                BUILDING DIGITAL EXPERIENCES BEYOND BORDERS.
+            </div>
+
+        </div>
+
+        <div class="fd-cta-visual">
+
+            <div class="fd-cta-visual-ring"></div>
+
+            <div class="fd-cta-visual-core">
+                <img src="images/Glossy Blue A Monogram Emblem.png" alt="AMORIDWEB STUDIO">
+            </div>
+
+            <div class="fd-cta-floating-card fd-cta-card-top">
+                <i class="fas fa-code"></i>
+                <span>CREATIVE DEVELOPMENT</span>
+            </div>
+
+            <div class="fd-cta-floating-card fd-cta-card-bottom">
+                <span class="fd-cta-card-dot"></span>
+                <span>IDEA TO EXPERIENCE</span>
+            </div>
+
+            <span class="fd-cta-spark fd-cta-spark-one">✦</span>
+            <span class="fd-cta-spark fd-cta-spark-two">✧</span>
+            <span class="fd-cta-spark fd-cta-spark-three">✦</span>
+
+        </div>
+
+    </div>
+</section>
+    </main>
+<!-- =====================================
+     FRONTEND DEVELOPMENT FOOTER
+====================================== -->
+
+<footer class="fd-footer" id="fd-footer">
+
+    <div class="fd-footer-glow"></div>
+
+    <div class="fd-footer-container">
+
+        <div class="fd-footer-main">
+
+            <!-- Brand -->
+            <div class="fd-footer-brand">
+
+                <a href="index.html" class="fd-footer-logo">
+                    <img src="images/Glossy Blue A Monogram Emblem.png" alt="AMORIDWEB STUDIO">
+                    <span>AMORIDWEB <strong>STUDIO</strong></span>
+                </a>
+
+                <p>
+                    Building modern digital experiences through
+                    creative design, thoughtful development and
+                    interactive technology.
+                </p>
+
+                <div class="fd-footer-socials">
+
+                    <a href="#" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="fd-footer-column">
+
+                <h3>QUICK LINKS</h3>
+
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#services">Services</a>
+                <a href="#fd-projects">Projects</a>
+                <a href="#fd-faq">FAQs</a>
+                <a href="index.html#contact">Contact</a>
+
+            </div>
+
+            <!-- Services -->
+            <div class="fd-footer-column">
+
+                <h3>OUR SERVICES</h3>
+
+                <a href="web-development.html">Web Development</a>
+                <a href="frontend-development.html">Frontend Development</a>
+                <a href="website-management.html">Website Management</a>
+                <a href="web-design.html">Web Design</a>
+                <a href="javascript-development.html">JavaScript Development</a>
+                <a href="responsive-websites.html">Responsive Websites</a>
+
+            </div>
+
+            <!-- Page Navigation -->
+            <div class="fd-footer-column">
+
+                <h3>ON THIS PAGE</h3>
+
+                <a href="#fd-overview">Overview</a>
+                <a href="#fd-process">Our Process</a>
+                <a href="#fd-technologies">Technologies</a>
+                <a href="#fd-global">Global Reach</a>
+                <a href="#fd-faq">Questions</a>
+                <a href="#fd-contact-cta">Start a Project</a>
+
+            </div>
+
+        </div>
+
+        <div class="fd-footer-news">
+
+            <div>
+                <span class="fd-footer-news-label">THE AMORIDWEB MINDSET</span>
+                <p>CREATIVE THINKING. CLEAN CODE. DIGITAL POSSIBILITIES.</p>
+            </div>
+
+            <a href="#top" class="fd-footer-top">
+                BACK TO TOP
+                <i class="fas fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+        <div class="fd-footer-bottom">
+
+            <p>
+                &copy; <span id="fdCopyrightYear"></span>
+                AMORIDWEB STUDIO. ALL RIGHTS RESERVED.
+            </p>
+
+            <p>
+                DESIGNED WITH <span class="fd-footer-heart">♥</span>
+                AND BUILT WITH CODE.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="js/web-development.js"></script>
+    <script src="js/frontend-development.js"></script>
+</body>
+</html>
